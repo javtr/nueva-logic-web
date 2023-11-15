@@ -1,0 +1,28 @@
+.home__content {
+  background-color: rgb(0, 35, 76);
+}
+
+.navbar__content {
+  background-color: rgb(0, 35, 76);
+}
+
+.footer__content {
+  background-color: rgb(0, 35, 76);
+}
+
+.layout__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+}
+
+.init {
+  display: flex;
+  justify-content: center;
+}
+.init__c {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10px 0 10px;
+}/*# sourceMappingURL=App.css.map */

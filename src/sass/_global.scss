@@ -1,0 +1,12 @@
+.init{
+    display: flex;
+    justify-content: center;
+
+    &__c{
+        max-width: $max-width;
+        width: 100%;
+        padding: 0 $margen-lat 0 $margen-lat;
+    }
+
+
+}

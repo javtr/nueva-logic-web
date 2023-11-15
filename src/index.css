@@ -1,0 +1,74 @@
+/* Reset CSS */
+
+/* Box sizing border-box para mejorar la consistencia del modelo de caja */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Establece márgenes y rellenos a 0 para una consistencia inicial */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, dl, dd, ul, ol, li, pre {
+  margin: 0;
+  padding: 0;
+}
+
+/* Establece la fuente a la fuente del usuario o una fuente de sistema genérica */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Elimina la decoración de texto predeterminada */
+a {
+  text-decoration: none;
+}
+
+/* Establece el tamaño de fuente base y el color */
+body {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Establece la línea base de 1.5 para mejorar la legibilidad del texto */
+body {
+  line-height: 1.5;
+}
+
+/* Establece el color de fondo de la página */
+body {
+  background-color: #fff;
+}
+
+/* Establece el color de fondo para elementos que pueden afectar a toda la página */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Normaliza estilos de elementos de lista */
+ul, ol {
+  list-style: none;
+}
+
+/* Normaliza la apariencia de los elementos de formulario y botones */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* Normaliza la apariencia de los elementos multimedia */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Agrega bordes mínimos alrededor de elementos seleccionables */
+input, select, textarea, button {
+  border: 1px solid #ccc;
+}
+
+/* Agrega cursor de apuntador a elementos interactivos */
+button, [type="button"], [type="reset"], [type="submit"] {
+  cursor: pointer;
+}
