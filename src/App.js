@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import Education from "./pages/Education";
 import Contact from "./pages/Contact";
 import "./App.scss";
+import Buy from "./pages/Buy";
+import Product from "./components/Product";
+import Article from "./components/Article";
 
 function App() {
   return (
@@ -12,7 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
+          <Route path="/product/:productId" element={<Product />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/article/:articleId" element={<Article />} />
+          <Route path="/buy" element={<Buy />} />
           <Route path="/contact" element={<Contact />}/>
         </Route>
       </Routes>

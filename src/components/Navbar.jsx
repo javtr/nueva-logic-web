@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Image } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -10,6 +10,7 @@ export default function Navbar() {
         </Link>
         <div className="navbar__content--links">
           <Link to="/education">Education</Link>
+          <Link to="/buy">Buy</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </div>
