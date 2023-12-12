@@ -1,10 +1,12 @@
 @import "./variables.scss";
 
 .productlist {
+
+
     width: 100%;
 
-    &__content{
-    background-color: rgb(0, 95, 0);
+    &__content{  
+    background-color: rgb(89, 95, 0);
     width: 100%;
   }
 }
