@@ -28,8 +28,6 @@ a {
 
 /* Establece el tamaño de fuente base y el color */
 body {
-  font-size: 16px;
-  color: #333;
 }
 
 /* Establece la línea base de 1.5 para mejorar la legibilidad del texto */
@@ -39,7 +37,6 @@ body {
 
 /* Establece el color de fondo de la página */
 body {
-  background-color: #fff;
 }
 
 /* Establece el color de fondo para elementos que pueden afectar a toda la página */

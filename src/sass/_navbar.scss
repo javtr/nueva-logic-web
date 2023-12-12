@@ -1,32 +1,35 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-.navbar{
-    &__content{
-        display: flex;
-        justify-content: space-between;
-        height: 175px;
-        color: $white;
+.navbar {
+  background-color: $background;
+  display: flex;
+  justify-content: center;
+  height: 175px;
+  color: $white;
 
+  &__content {
+    max-width: $max-width;
+    width: 100%;
+    padding: 0 $margen-lat 0 $margen-lat;
 
-        &--logo{
-            margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
 
-            img{
-                width: 72px;
-            }
-            
-        }
+    &--logo {
+      margin-top: 75px;
 
-        &--links{
-            margin-top: 95px;
-            font-size: 24.75px;
-            
-            :nth-child(n){
-                margin: 0 25px 0 25px;
-            }
-
-        }
-
-
+      img {
+        width: 72px;
+      }
     }
+
+    &--links {
+      margin-top: 95px;
+      font-size: 1.546875rem;
+
+      :nth-child(n) {
+        margin: 0 25px 0 25px;
+      }
+    }
+  }
 }

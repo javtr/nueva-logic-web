@@ -4,8 +4,8 @@ import logo from "../assets/img/logo_nav.png";
 
 export default function Navbar() {
   return (
-    <div className="navbar init">
-      <div className="navbar__content init__c">
+    <div className="navbar">
+      <div className="navbar__content">
 
         <Link className="navbar__content--logo" to="/">
           <img src={logo} alt="Logo" />
