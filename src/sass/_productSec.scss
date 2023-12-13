@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+.productsSec{
+    background-color: $back-light;
+    display: flex;
+    justify-content: center;
+    color: $black;
+
+    &__content {
+        max-width: $max-width;
+        width: 100%;
+        padding: 0 $margen-lat 0 $margen-lat;
+
+        &--cont{
+            display: flex;
+
+            
+
+
+        }
+
+    }
+
+}

@@ -1,18 +1,21 @@
 import React from "react";
+import video_header from "../assets/img/header_video.mp4";
+import avatar from "../assets/img/avatar.png"
 
 export default function Header() {
   return (
     <div className="header">
       <div className="header__content">
         <div className="header__content--text">
-          Header1
           <h1>
             Eleva tu Trading a Nuevos Niveles con Nuestros Indicadores Avanzados
             para NinjaTrader 8.
           </h1>
           <h2>Descubre el Poder del Trading Profesional.</h2>
           <div className="header__content--text-testimonials">
-            <div className="header__content--text-testimonials-img"></div>
+            <div className="header__content--text-testimonials-img">
+              <img src={avatar} alt="Avatar" />
+            </div>
             <div className="header__content--text-testimonials-txt">
               <p>
                 Los indicadores de Logic Indicators han transformado mi carrera
@@ -25,7 +28,11 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="header__content--img">Header2</div>
+        <div className="header__content--img">
+          <video autoPlay loop muted>
+            <source src={video_header} type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
   );

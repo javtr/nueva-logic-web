@@ -1,10 +1,9 @@
 @import "./variables.scss";
 
 .sidebar {
-    width: 100%;
+  background-color: brown;
+  width: 30%;
 
     &__content{
-    background-color: rgb(0, 85, 95);
-    width: 100%;
   }
 }

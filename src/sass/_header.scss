@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .header {
-  background-color: rgb(13, 0, 0);
+  background-color: $background;
   display: flex;
   justify-content: center;
   color: $white;
@@ -14,9 +14,59 @@
     display: flex;
     justify-content: space-between;
 
-    &--text{}
+    &--text{
+      width: 50%;
+      max-width: 640px;
 
-    &--img{}
+
+      h1{
+        font-size:  $header_title;
+        line-height:1.333;
+      }
+
+      h2{
+        font-size: $header_sub;
+        margin-top: 50px;
+        font-weight: normal;
+      }
+
+      &-testimonials{
+        margin-top: 80px;
+        display: flex;
+
+        &-img{
+          width: 100%;
+          img{
+            width: 110px;
+          }
+        }
+
+        &-txt{
+          font-size: $header_parag;
+
+          p:first-child {
+          }
+
+          p:nth-child(2) {
+            margin-top: 20px;
+            font-style: italic;
+            margin-bottom: 115px;
+           }
+
+        
+        }
+      }
+    }
+
+    &--img{
+      width: 50%;
+      margin-top: 15px;
+      video{
+        width: 100%;
+        border-radius: 30px;
+
+      }
+    }
 
 
   }
