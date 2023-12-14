@@ -10,6 +10,29 @@
         max-width: $max-width;
         width: 100%;
         padding: 0 $margen-lat 0 $margen-lat;
+        display: flex;
+        flex-direction: column;
+
+        &--h2{
+            font-size: $sec_title;
+            text-align: center;
+            color: $black;
+            margin-top: 100px;
+            max-width: 1000px;
+            align-self: center;
+
+        }
+
+        &--h3{
+            font-size: $sec_sub;
+            text-align: center;
+            color: $black;
+            line-height: 1.49;
+            margin-top: 20px;
+            max-width: 1050x;
+            align-self: center;
+            margin-bottom: 125px;
+        }
 
         &--cont{
             display: flex;

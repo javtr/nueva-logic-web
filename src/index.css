@@ -13,6 +13,7 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, dl, dd, ul, ol, li, pre {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 /* Establece la fuente a la fuente del usuario o una fuente de sistema genérica */

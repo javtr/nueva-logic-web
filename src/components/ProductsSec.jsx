@@ -6,8 +6,8 @@ export default function ProductsSec() {
   return (
     <div className="productsSec">
       <div className="productsSec__content">
-        <h2>Potencia tu Trading con Nuestros Indicadores</h2>
-        <h3>
+        <h2 className="productsSec__content--h2" >Potencia tu Trading con Nuestros Indicadores</h2>
+        <h3  className="productsSec__content--h3">
           Descubre una nueva dimensión en tu estrategia de trading con nuestros
           indicadores avanzados, diseñados para ofrecer precisión y rendimiento.
         </h3>
