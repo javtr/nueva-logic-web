@@ -25,7 +25,13 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  border: none;
 }
+
+button{
+  border: none;
+}
+
 
 /* Establece el tamaño de fuente base y el color */
 body {
@@ -62,10 +68,6 @@ img, video {
   height: auto;
 }
 
-/* Agrega bordes mínimos alrededor de elementos seleccionables */
-input, select, textarea, button {
-  border: 1px solid #ccc;
-}
 
 /* Agrega cursor de apuntador a elementos interactivos */
 button, [type="button"], [type="reset"], [type="submit"] {

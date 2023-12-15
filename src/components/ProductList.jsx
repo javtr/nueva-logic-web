@@ -1,19 +1,18 @@
 import React from "react";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import productsData from "../assets/text/products.json";
 const images = require.context("../assets/img/", true);
 
 const ProductList = () => {
   const navigate = useNavigate();
 
-
-
-
   return (
     <div className="productlist">
       <div className="productlist__content">
         {productsData.map((product) => (
-          <div key={product.id} className="productlist__content--card"   
+          <div
+            key={product.id}
+            className="productlist__content--card"
             onClick={() => navigate(`/product/${product.id}`)}
           >
             <div className="productlist__content--card-img">
@@ -25,7 +24,6 @@ const ProductList = () => {
               <p>{product.description}</p>
               {/* <Link to={`/product/${product.id}`}>Ver detalles</Link> */}
             </div>
-
           </div>
         ))}
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import articlesData from '../utils/articles.json';
+import articlesData from '../assets/text/articles.json';
 
 const ArticleList = () => {
   return (
