@@ -68,6 +68,7 @@
 .sidebar__content {
   position: sticky;
   top: 20px;
+  margin-bottom: 80px;
   left: 0;
   padding: 50px 30px 30px 30px;
   background-color: rgb(26, 15, 49);
@@ -250,10 +251,83 @@
   color: rgb(5, 5, 5);
   line-height: 1.49;
   margin-top: 20px;
-  max-width: 1050x;
+  max-width: 1050px;
   align-self: center;
   margin-bottom: 125px;
 }
 .productsSec__content--cont {
   display: flex;
+}
+
+.advantages {
+  background-color: rgb(26, 15, 49);
+  color: rgb(250, 250, 250);
+  display: flex;
+  justify-content: center;
+}
+.advantages__content {
+  max-width: 1450px;
+  width: 100%;
+  padding: 0 52px 0 52px;
+}
+.advantages__content--h2 {
+  font-size: 3.7rem;
+  text-align: center;
+  margin-top: 100px;
+  max-width: 1000px;
+  align-self: center;
+}
+.advantages__content--h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.49;
+  margin-top: 20px;
+  max-width: 1050px;
+  align-self: center;
+  margin-bottom: 125px;
+}
+.advantages__content--cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+.advantages__content--cards-card {
+  border-radius: 15px;
+  color: rgb(5, 5, 5);
+  width: 620px;
+  margin-bottom: 100px;
+}
+.advantages__content--cards-card-img {
+  width: 620px;
+  height: 320px;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+  background: linear-gradient(0deg, #ff4b95 0%, #ff637b 50%, #ff6875 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages__content--cards-card-img img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+.advantages__content--cards-card-content {
+  background-color: rgb(250, 250, 250);
+  border-radius: 0 0 15px 15px;
+  padding: 45px;
+  min-height: 290px;
+}
+.advantages__content--cards-card-content-title {
+  font-size: 1.5rem;
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+}
+.advantages__content--cards-card-content-parag {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.49;
+  align-self: center;
 }/*# sourceMappingURL=App.css.map */
