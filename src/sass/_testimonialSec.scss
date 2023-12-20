@@ -1,0 +1,79 @@
+@import "./variables.scss";
+
+.testimonialSec {
+    background-color: $back-light;
+    display: flex;
+    justify-content: center;
+    color: $black;
+
+  &__container {
+    max-width: $max-width;
+    width: 100%;
+    padding: 0 $margen-lat 0 $margen-lat;
+    display: flex;
+    flex-direction: column;
+
+    &--h2 {
+        font-size: $sec_title;
+        text-align: center;
+        color: $black;
+        margin-top: 100px;
+        max-width: 1000px;
+        align-self: center;
+    }
+    &--h3 {
+        font-size: $sec_sub;
+        text-align: center;
+        color: $black;
+        line-height: 1.49;
+        margin-top: 20px;
+        max-width: 1050px;
+        align-self: center;
+        margin-bottom: 115px;
+    }
+
+    &--content {
+        display: flex;
+
+      &-testimonial {
+        max-width: 30%;
+        margin: 0 20px;
+        margin-bottom: 100px;
+
+        &-text {
+            font-size: 20px;
+            text-align: left;
+            color: $black;
+            line-height: 1.22;
+            font-style: italic;
+
+        }
+        div {
+            height: 100px;
+            position: relative;
+            
+          img {
+            position: absolute;
+            width: 80px;
+            top: 15px;
+            left: 10px;
+          }
+          h4 {
+            position: absolute;
+            top: 27px;
+            left: 100px;
+            font-size: 18px;
+            font-weight: bold;
+          }
+          p {
+            position: absolute;
+            top: 53px;
+            left: 100px;   
+            font-size: 18px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}
