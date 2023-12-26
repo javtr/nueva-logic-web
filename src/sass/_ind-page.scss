@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+
+.indicator-page{
+
+    background-color: $back-light;
+    display: flex;
+    justify-content: center;
+    color: $black;
+
+    &__container{
+        max-width: $max-width;
+        width: 100%;
+        padding: 90px $margen-lat 50px $margen-lat;
+
+    }
+
+}

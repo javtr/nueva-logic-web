@@ -1,6 +1,6 @@
 import React from "react";
-import video_header from "../assets/img/header_video.mp4";
-import avatar from "../assets/img/avatar.png"
+import video_header from "../../assets/img/header_video.mp4";
+import avatar from "../../assets/img/avatar.png"
 
 export default function Header() {
   return (

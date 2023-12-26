@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+.ind-header {
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    color: $white;
+
+
+  &__container {
+    max-width: $max-width;
+    width: 100%;
+    padding: 90px $margen-lat 50px $margen-lat;
+
+    display: flex;
+
+    &--text {
+      width: 50%;
+      padding-right: 30px;
+      h2 {
+        font-size: $header_title;
+        line-height: 1.333;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: $header_parag;
+        margin-top: 50px;
+        font-weight: normal;
+        margin-bottom: 30px;
+      }
+      button {
+        width: 50%;
+        height: 60px;
+        border-radius: 15px;
+        margin-top: 22px;
+        background-color: $secundary;
+
+        a {
+          font-size: 28px;
+          color: $white;
+        }
+      }
+    }
+    &--img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+
+      img {
+        width: 80%;
+        border-radius: $border-card;
+      }
+    }
+  }
+}

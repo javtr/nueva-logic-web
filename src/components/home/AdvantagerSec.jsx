@@ -1,13 +1,13 @@
 import React from "react";
-import adv1 from '../assets/img/adv01.png';
-import adv2 from '../assets/img/adv02.png';
-import adv3 from '../assets/img/adv03.png';
+import adv1 from '../../assets/img/adv01.png';
+import adv2 from '../../assets/img/adv02.png';
+import adv3 from '../../assets/img/adv03.png';
 
 
 export default function AdvantagerSec() {
   return (
     <div className="advantages">
-      <div className="productsSec__content">
+      <div className="advantages__content">
         <h2 className="advantages__content--h2">
           Razones para Elegir Nuestros Indicadores
         </h2>
