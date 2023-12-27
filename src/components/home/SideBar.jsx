@@ -1,5 +1,5 @@
 import React from 'react';
-import articlesData from '../../assets/text/articles.json';
+import {ArticlesData} from '../../assets/text/articles-page';
 
 
 export default function SideBar() {
@@ -27,9 +27,9 @@ export default function SideBar() {
         <div className="sidebar__content--blog">
           <h3>Aprende</h3>
           <div className="sidebar__content--blog-card">
-            <h4>{articlesData[0].name}</h4>
+            <h4>{ArticlesData[0].titSec}</h4>
             <p>
-            {articlesData[0].description}
+            {ArticlesData[0].subSec}
             </p>
           </div>
         </div>

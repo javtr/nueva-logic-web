@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import indicatorsData from "../../assets/text/indicators.json";
 import { IndicatorData } from "../../assets/text/indicators-page";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -7,13 +6,12 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const images = require.context("../../assets/img/", true);
   const params = useParams();
-  const ind = params.IndicatorId;
 
   const [indId, setIndId] = useState(null);
 
   useEffect(() => {
     setIndId(IndicatorData.findIndex((obj) => obj.url === params.IndicatorId));
-  }, []);
+  }, [params.IndicatorId]);
 
   return (
     <>

@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import "./App.scss";
 import Buy from "./pages/Buy";
 import Indicator from "./pages/Indicator";
-import Article from "./components/education/Article";
+import Article from "./pages/Article";
 
 function App() {
   return (

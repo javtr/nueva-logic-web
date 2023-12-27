@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import indicatorsData from "../../assets/text/indicators.json";
 import { IndicatorData } from "../../assets/text/indicators-page";
 const images = require.context("../../assets/img/", true);
 
