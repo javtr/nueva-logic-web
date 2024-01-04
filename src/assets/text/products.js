@@ -23,7 +23,7 @@ const ProductsData = [
     buyLink: "https://link.com",
   },
   {
-    product: "Logic Order Flow",
+    product: "Logic Order Flow 02",
     img01: "./of_home.jpeg",
     price: 197,
     description:
@@ -34,11 +34,11 @@ const ProductsData = [
       adv03: "Plantillas predeterminadas que se cargan con un solo click.",
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
-    indLink: "https://link.com",
-    buyLink: "https://link.com",
+    indLink: "logic-order-flow",
+    buyLink: "logic-order-flow",
   },
   {
-    product: "Logic Order Flow",
+    product: "Logic Order Flow 03",
     img01: "./of_home.jpeg",
     price: 197,
     description:
@@ -49,11 +49,11 @@ const ProductsData = [
       adv03: "Plantillas predeterminadas que se cargan con un solo click.",
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
-    indLink: "https://link.com",
-    buyLink: "https://link.com",
+    indLink: "logic-order-flow2",
+    buyLink: "https://link2.com",
   },
   {
-    product: "Logic Order Flow",
+    product: "Logic Order Flow 04",
     img01: "./of_home.jpeg",
     price: 197,
     description:
@@ -64,8 +64,8 @@ const ProductsData = [
       adv03: "Plantillas predeterminadas que se cargan con un solo click.",
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
-    indLink: "https://link.com",
-    buyLink: "https://link.com",
+    indLink: "logic-order-flow3",
+    buyLink: "https://link3.com",
   },
 ];
 

@@ -1,11 +1,10 @@
 @import "./variables.scss";
 
 .ind-header {
-    background-color: $background;
-    display: flex;
-    justify-content: center;
-    color: $white;
-
+  background-color: $background;
+  display: flex;
+  justify-content: center;
+  color: $white;
 
   &__container {
     max-width: $max-width;
@@ -28,17 +27,19 @@
         font-weight: normal;
         margin-bottom: 30px;
       }
-      button {
+
+      a {
+        display: inline-block;
+        text-align: center;
+        font-size: 28px;
+        color: $white;
         width: 50%;
         height: 60px;
         border-radius: 15px;
         margin-top: 22px;
         background-color: $secundary;
+        padding: 9px;
 
-        a {
-          font-size: 28px;
-          color: $white;
-        }
       }
     }
     &--img {

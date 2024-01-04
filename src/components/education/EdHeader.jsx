@@ -19,9 +19,7 @@ export default function EdHeader() {
             el conocimiento necesario para alcanzar nuevos niveles de éxito en
             tus operaciones.
           </p>
-          <button>
             <Link to="/buy">Buy</Link>
-          </button>
         </div>
         <div className="ed-header__container--img">
           <img

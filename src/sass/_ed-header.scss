@@ -28,18 +28,21 @@
         font-weight: normal;
         margin-bottom: 30px;
       }
-      button {
-        width: 50%;
-        height: 60px;
-        border-radius: 15px;
-        margin-top: 22px;
-        background-color: $secundary;
+
 
         a {
+          display: inline-block;
           font-size: 28px;
           color: $white;
+          width: 50%;
+          height: 60px;
+          border-radius: 15px;
+          margin-top: 22px;
+          background-color: $secundary;
+          text-align: center;
+          padding: 9px;
+  
         }
-      }
     }
     &--img {
       display: flex;

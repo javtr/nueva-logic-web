@@ -29,7 +29,7 @@ export default function BuyHeader() {
               <p>{ProductsData[0].advantages.adv06}</p>
             </div>
           </div>
-            <a className="BuyHeader__container--card-button" href="https://link.com" target="_blank" rel="noopener noreferrer">Comprar</a>
+            <a className="BuyHeader__container--card-button" href={ProductsData[0].buyLink} target="_blank" rel="noopener noreferrer">Comprar</a>
         </div>
       </div>
     </div>
