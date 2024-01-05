@@ -16,7 +16,7 @@ export default function BuyProductos() {
                 <div className="BuyProducts__container--card-content-left">
                   <div className="BuyProducts__container--card-content-left-img">
                     <img src={images(product.img01)} alt="product"></img>
-                    <Link to={`/indicator/${product.indLink}`}>Leer más</Link>
+                    <Link to={`/indicator/${product.indLink}`} target="_blank" rel="noopener noreferrer">Leer más</Link>
                   </div>
 
                   <h4>{product.product}</h4>

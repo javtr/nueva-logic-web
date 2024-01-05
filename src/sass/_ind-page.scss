@@ -1,18 +1,20 @@
-@import './variables.scss';
+@import "./variables.scss";
 
+.indicator-page {
+  background-color: $back-light;
+  display: flex;
+  justify-content: center;
+  color: $black;
 
-.indicator-page{
-
-    background-color: $back-light;
+  &__container {
+    max-width: $max-width;
+    width: 100%;
+    padding: 90px $margen-lat 50px $margen-lat;
     display: flex;
-    justify-content: center;
-    color: $black;
+    justify-content: space-between;
 
-    &__container{
-        max-width: $max-width;
-        width: 100%;
-        padding: 90px $margen-lat 50px $margen-lat;
-
+    &--blog {
+      width: 65%;
     }
-
+  }
 }

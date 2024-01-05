@@ -21,7 +21,7 @@ export default function Header() {
             <div className="ind-header__container--text">
               <h2>{IndicatorData[indId].titSec}</h2>
               <p>{IndicatorData[indId].subSec}</p>
-                <Link to="/buy">Buy</Link>
+                <Link to="/buy">Comprar</Link>
             </div>
             <div className="ind-header__container--img">
               <img src={images(IndicatorData[indId].img01Sec)} alt="indicator"></img>
