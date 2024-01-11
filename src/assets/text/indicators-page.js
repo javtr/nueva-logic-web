@@ -83,84 +83,72 @@ export const IndicatorData = [
     },    
     {       
 
-      titSec: "Logic Analytics",
+      titSec: "Logic Volumen Profile",
       subSec: "Descubre la sinergia entre precio, volumen y delta con Logic Analytics. Simplifica la comprensión de los rangos de mercado, visualizando de manera intuitiva las interacciones y obteniendo una comprensión profunda en tiempo real.",
+      
       img01Sec: "./of_home.jpeg",
       img02Sec: "./of_home.jpeg",
-      url:"logic-order-flow2",
+      url:"logic-volume-profile",
       
+      titb:"Potente Análisis de Volumen para una Estrategia Eficiente",
 
-      titb: "Order Flow2",
-      imgb: "./indicators_page/of_home.jpeg",
-      bytb: "OTM Team",
+      titk_1:["Ahorre tiempo en configuraciones","save"],
 
-      subb_1:
-        "After a bit of rest during the New Year holidays, our team began to develop functions for you actively. As a result, we've prepared new Local closing orders, updated the DOM Surface panel, and some more cool features. Let's dive inside this new version release.",
-    
-      tit2: "Otro titulo",
-        
-      txtb_1:
-        "The main feature of this release is Local stop loss & take profit orders functionality, allowing to set these types of orders for all connections that don't natively support them. Worth mentioning that You can place local SL/TP orders for any available integration of Quantower, thus being beneficial for those traders who wish to use advanced placement settings.",
-  
       iinb_1: "./indicators_page/of_home.jpeg",
-    
-      dtlb_1: [
-        "We insist that you read, practice, <link>and understand how the Local</link> closing orders work before using them for live trading. <link>You can also</link> watch this brief video manual",
-        "https://youtube.com",
-        "https://link.co",
-      ],
+      
+            
+      txtb_1:
+        "Descubra la eficiencia con Logic Volume Profile. Olvídese de recargar gráficas para ajustar opciones visuales. Simplemente abra la ventana rápida, ajuste sus preferencias y vea los cambios al instante. Además, utilice presets preestablecidos para una configuración rápida.",
   
-      dotb_2: "Local orders exist and are managed on the platform side only.",
-      
-      txlb_1: [
-        "One of the requests from our <link>trading community </link>was to show the trades volumes on a separate scale. Now you can enable volume display from the context menu as well as select one of the four types of view: Combined, Overlay, Mirror, & Delta. More about these types read in our documentation.",
-        "https://link.co/es-us",
-      ],
+      titk_2:["Profile Personalizado y Flexible con TPO, Sesiones y Más","features"],
 
-      lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+
+      iinb_2: "./indicators_page/of_home.jpeg",
+
+
+
+      txtb_2:"Con Logic Volume Profile, la flexibilidad es clave. Adáptelo a sus necesidades con perfiles diarios, semanales, mensuales y por fecha. Divida la sesión americana de la asiática según sus horarios preferidos. Consulte nuestro manual de configuración con plantillas listas para ahorrarle horas.",
+
+      iinb_3: "./indicators_page/of_home.jpeg",
+
+      txtb_3:"Explore las opciones de Volume Profile y Market Profile (TPO) completamente configurables. Elija entre cuatro tipos de perfiles en un solo indicador. Y para una configuración aún más rápida, utilice presets con un clic que no requieren recargar el indicador.",
+
+
+      lnkb1: ["/buy", "¡Comience a usar Logic Indicators Hoy!"],
       
-      vidb:"6BAv9sIQ6BU"
-      
-    },    
+    },
     {       
 
-      titSec: "Logic Profile",
+      titSec: "Logic Analytics",
       subSec: "Experimenta la versatilidad definitiva en el análisis de volumen con este perfil todo en uno, que incluye TPO y perfil de volumen. Su excepcional adaptabilidad a cualquier temporalidad y tipo de trading permite una personalización total. Simplifica tu análisis con un indicador que se ajusta perfectamente a tu estilo de trading.",
       img01Sec: "./of_home.jpeg",
       img02Sec: "./of_home.jpeg",
-      url:"logic-order-flow3",
+      url:"logic-analytics",
       
 
-      titb: "Order Flow3",
+      titb: "Aproveche el Poder del Análisis de Datos con Logic Analytics",
+
+      titk_1:["Precision Estratégica: Alinee sus Decisiones con Logic Analytics","precision"],
+      
       imgb: "./indicators_page/of_home.jpeg",
-      bytb: "OTM Team",
-
-      subb_1:
-        "After a bit of rest during the New Year holidays, our team began to develop functions for you actively. As a result, we've prepared new Local closing orders, updated the DOM Surface panel, and some more cool features. Let's dive inside this new version release.",
-    
-      tit2: "Otro titulo",
-        
+            
       txtb_1:
-        "The main feature of this release is Local stop loss & take profit orders functionality, allowing to set these types of orders for all connections that don't natively support them. Worth mentioning that You can place local SL/TP orders for any available integration of Quantower, thus being beneficial for those traders who wish to use advanced placement settings.",
+        "Seleccione con precisión el punto inicial y final en su gráfico con Logic Analytics para obtener una visión detallada de los datos. Esta herramienta avanzada de análisis de datos está diseñada para brindarle información valiosa y mejorar su toma de decisiones en el mercado.",
   
-      iinb_1: "./indicators_page/of_home.jpeg",
-    
-      dtlb_1: [
-        "We insist that you read, practice, <link>and understand how the Local</link> closing orders work before using them for live trading. <link>You can also</link> watch this brief video manual",
-        "https://youtube.com",
-        "https://link.co",
-      ],
-  
-      dotb_2: "Local orders exist and are managed on the platform side only.",
-      
-      txlb_1: [
-        "One of the requests from our <link>trading community </link>was to show the trades volumes on a separate scale. Now you can enable volume display from the context menu as well as select one of the four types of view: Combined, Overlay, Mirror, & Delta. More about these types read in our documentation.",
-        "https://link.co/es-us",
-      ],
+      titk_2:["Datos Cruciales a su Alcance para Decisiones Rápidas","datos"],
 
-      lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+
+      iinb_1: "./indicators_page/of_home.jpeg",
+
+      txtb_2:"Descubra datos esenciales para optimizar su ejecución:",
+
+
+      dotb_1: "Histograma Delta: Obtenga información sobre la presión compradora en el área seleccionada, permitiéndole detectar agotamientos o continuidad en los movimientos.",
+      dotb_2: "Detección de Umbrales: Mediante cálculos estadísticos, visualice los volúmenes más relevantes para mejorar su timing de entradas.",
+      dotb_3: "Estadísticas: Acceda a datos promedio, desviación estándar y valor máximo esperado de Volumen, Delta y Rango en una interfaz clara. Estos insights le ayudarán a filtrar entradas y tomar decisiones más informadas.",
+
+
+      lnkb3: ["/buy", "Obtén Tu Indicador"],
       
-      vidb:"6BAv9sIQ6BU"
-      
-    }
+    },        
 ]

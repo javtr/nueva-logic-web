@@ -3,7 +3,7 @@ import { ArticlesData } from "../../assets/text/articles-page";
 import { useNavigate } from "react-router-dom";
 import { IndicatorData } from "../../assets/text/indicators-page";
 
-export default function IndSideBar({ ind }) {
+export default function EdSideBar({ ind }) {
 
   console.log(ind);
 
