@@ -11,13 +11,13 @@ export default function EdSideBar({ ind }) {
 
     const titkValues = [];
 
-    const titkKeys = Object.keys(IndicatorData[ind]).filter((key) =>
+    const titkKeys = Object.keys(ArticlesData[ind]).filter((key) =>
     key.startsWith("titk")
   );
   
   
   titkKeys.forEach((titkKey) => {
-    const [titulo, id] = IndicatorData[ind][titkKey];
+    const [titulo, id] = ArticlesData[ind][titkKey];
     titkValues.push({ titulo, id });
   });
 

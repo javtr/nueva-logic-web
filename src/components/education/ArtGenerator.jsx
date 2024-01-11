@@ -73,6 +73,17 @@ export const ArtGenerator = ({ keyJson, valueJson, i }) => {
               </div>
             );
 
+            case "titk":
+              return (
+                <div className="article_gen--tit2" id={valueJson[1]}>
+    
+                  <h4>{valueJson[0]}</h4>
+    
+                </div>
+              );
+
+
+
           case "date":
             return (
               <div className="article_gen--date">
