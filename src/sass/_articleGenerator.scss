@@ -58,6 +58,16 @@
 
       }
 
+      &--tit3 {
+        font-size: $cont_tit3;
+        line-height: 1.22;
+        text-align: left;
+        margin-top:25px;
+        margin-bottom:15px;
+
+      }
+
+
 
   
       &--sub {
@@ -156,5 +166,28 @@
     
           }
       }
+
+      &--sepA{
+        height: 10px;
+        width: 100%;
+      }
+
+      &--sepB{
+        height: 25px;
+        width: 100%;
+      }
+
+      &--sepC{
+        height: 40px;
+        width: 100%;
+      }
+
+      &--sepD{
+        height: 100px;
+        width: 100%;
+      }
+
+
+
 
   }

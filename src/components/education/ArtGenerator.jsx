@@ -42,9 +42,16 @@ export const ArtGenerator = ({ keyJson, valueJson, i }) => {
             case "tit2":
               return (
                 <div className="article_gen--tit2">
-                  <h4>{valueJson}</h4>
+                  <h3>{valueJson}</h3>
                 </div>
               );
+
+              case "tit3":
+                return (
+                  <div className="article_gen--tit3">
+                    <h4>{valueJson}</h4>
+                  </div>
+                );
 
 
           case "subb":
@@ -82,6 +89,33 @@ export const ArtGenerator = ({ keyJson, valueJson, i }) => {
                 </div>
               );
 
+
+
+              case "sepA":
+                return (
+                  <div className="article_gen--sepA">      
+                  </div>
+                );
+
+                case "sepB":
+                  return (
+                    <div className="article_gen--sepB">      
+                    </div>
+                  );
+
+
+                  case "sepC":
+                    return (
+                      <div className="article_gen--sepC">      
+                      </div>
+                    );
+
+
+                    case "sepD":
+                      return (
+                        <div className="article_gen--sepD">      
+                        </div>
+                      );
 
 
           case "date":
