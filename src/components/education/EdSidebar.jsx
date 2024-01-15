@@ -27,9 +27,9 @@ export default function EdSideBar({ ind }) {
   const listaTitkValues = obtenerTitkValues();
 
   return (
-    <div className="indSidebar">
-      <div className="indSidebar__content">
-        <div className="indSidebar__content--susc">
+    <div className="edSidebar">
+      <div className="edSidebar__content">
+        <div className="edSidebar__content--susc">
         <h3>Contenido</h3>
           <ul>
             {listaTitkValues.map(({ titulo, id }, index) => (
