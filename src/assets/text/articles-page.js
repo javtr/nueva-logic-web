@@ -285,8 +285,8 @@ export const ArticlesData = [
   {
     titSec: "Futuros Mini y Micro, Que son y como funcionan",
     subSec: "¿Qué son y como funcionan?",
-    img01Sec: "./articles_page/art2_min.png",
-    img02Sec: "./articles_page/art2_min.png",
+    img01Sec: "./articles_page/art3_min.png",
+    img02Sec: "./articles_page/art3_min.png",
     url: "mini-micro-futuros",
 
     titb: "Futuros Mini y Micro ¿Qué son y como funcionan?",
@@ -345,8 +345,8 @@ export const ArticlesData = [
   {
     titSec: "METODO WYCKOFF ¡Descubre el movimiento del mercado!",
     subSec: "El Método Wyckoff explicado paso a paso",
-    img01Sec: "./articles_page/art2_min.png",
-    img02Sec: "./articles_page/art2_min.png",
+    img01Sec: "./articles_page/art4_min.png",
+    img02Sec: "./articles_page/art4_min.png",
     url: "metodo-wyckoff",
 
     titb: "El Método Wyckoff Guia completa",
