@@ -7,11 +7,20 @@
   height: 175px;
   color: $white;
 
+  @include breakpoint-down(medium) {
+    height: 90px;
+
+  }
+
+
   &__content {
     max-width: $max-width;
     width: 100%;
     padding: 0 $margen-lat 0 $margen-lat;
 
+    @include breakpoint-down(medium) {
+      padding: 0 $margen-lat-mobil 0 $margen-lat-mobil;
+    }
 
     display: flex;
     justify-content: space-between;
@@ -21,7 +30,19 @@
 
       img {
         width: 72px;
+
+        @include breakpoint-down(medium) {
+          width: 50px;
+        }
+
       }
+
+      @include breakpoint-down(medium) {
+        margin-top: 20px;
+
+      }
+
+
     }
 
     &--links {
@@ -30,6 +51,14 @@
 
       :nth-child(n) {
         margin: 0 25px 0 25px;
+
+
+        @include breakpoint-down(medium) {
+          display: none;
+
+        }
+
+
       }
     }
   }

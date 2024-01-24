@@ -14,6 +14,11 @@
         display: flex;
         flex-direction: column;
 
+        @include breakpoint-down(medium) {
+            padding: 0 $margen-lat-mobil 0 $margen-lat-mobil;
+
+        }
+
         &--h2{
             font-size: $sec_title;
             text-align: center;
@@ -21,6 +26,13 @@
             margin-top: 100px;
             max-width: 1000px;
             align-self: center;
+
+            @include breakpoint-down(medium) {
+                margin-top: 60px;
+                font-size: $header_title;
+
+            }
+
 
         }
 
@@ -33,13 +45,19 @@
             max-width: 1050px;
             align-self: center;
             margin-bottom: 125px;
+
+            @include breakpoint-down(large) {
+                margin-bottom: 70px;
+            }
+
         }
 
         &--cont{
             display: flex;
 
-            
-
+            @include breakpoint-down(large) {
+                flex-direction: column;
+            }
 
         }
 

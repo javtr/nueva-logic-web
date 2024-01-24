@@ -15,6 +15,15 @@
       display: flex;
       justify-content: center;
   
+      @include breakpoint-down(medium) {
+        padding: 0 $margen-lat-mobil 0 $margen-lat-mobil;
+        margin-top: 80px;
+        margin-bottom: 80px;
+  
+      }
+
+
+
         img{
             width: 85%;
         }

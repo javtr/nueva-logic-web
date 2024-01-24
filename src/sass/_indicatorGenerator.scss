@@ -47,6 +47,11 @@
         text-align: left;
         margin-bottom: 30px;
 
+        @include breakpoint-down(medium) {
+          font-size: $sec_sub;
+        }
+
+
       }
 
       &--tit2 {

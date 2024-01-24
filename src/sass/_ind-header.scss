@@ -13,8 +13,20 @@
 
     display: flex;
 
+    @include breakpoint-down(medium) {
+      padding: 90px $margen-lat-mobil 50px $margen-lat-mobil;
+      flex-direction: column;
+
+    }
+
+
     &--text {
       width: 50%;
+      @include breakpoint-down(medium) {
+        width: 100%;
+
+      }
+
       padding-right: 30px;
       h2 {
         font-size: $header_title;
@@ -48,9 +60,20 @@
       justify-content: center;
       width: 50%;
 
+      @include breakpoint-down(medium) {
+        width: 100%;
+        margin-top: 50px;
+
+      }
+
       img {
         width: 80%;
         border-radius: $border-card;
+        @include breakpoint-down(medium) {
+          width: 100%;
+        }
+
+
       }
     }
   }

@@ -89,7 +89,7 @@ const Contact = () => {
         setTimeout(function() {
           // Código que se ejecutará después de esperar 10 segundos
           console.log("Han pasado 10 segundos");
-          setMailState("succes");
+          setMailState("fail");
           scrollToTop();
         },5000);
 
@@ -157,8 +157,8 @@ const Contact = () => {
           }
         >
           {mailState === "fail" && mailState !== "sending"
-            ? "el mensaje no pudo ser enviado"
-            : "mensaje enviado exitosamente"}
+            ? <p>El mensaje no pudo ser enviado. Por favor, inténtalo nuevamente.</p>
+            : <p>El mensaje ha sido enviado exitosamente.</p>}
         </div>
       ) : (
         <></>

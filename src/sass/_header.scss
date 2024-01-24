@@ -14,34 +14,64 @@
     display: flex;
     justify-content: space-between;
 
-    &--text{
+    @include breakpoint-down(large) {
+      flex-direction: column;
+    }
+
+    @include breakpoint-down(medium) {
+      margin-top: 30px;
+      padding: 0 $margen-lat-mobil 0 $margen-lat-mobil;
+    }
+
+    &--text {
       width: 50%;
       max-width: 640px;
 
-
-      h1{
-        font-size:  $header_title;
-        line-height:1.333;
+      @include breakpoint-down(large) {
+        width: 100%;
+        max-width: 850px;
       }
 
-      h2{
+      h1 {
+        font-size: $header_title;
+        line-height: 1.333;
+
+        @include breakpoint-down(medium) {
+          font-size: $card_title;
+        }
+      }
+
+      h2 {
         font-size: $header_sub;
         margin-top: 50px;
         font-weight: normal;
       }
 
-      &-testimonials{
+      &-testimonials {
         margin-top: 80px;
         display: flex;
 
-        &-img{
+        @include breakpoint-down(medium) {
+          flex-direction: column;
+          margin-top: 45px;
+
+        }
+
+        &-img {
           width: 100%;
-          img{
+
+          @include breakpoint-down(medium) {
+            display: flex;
+            justify-content: center;
+
+          }
+
+          img {
             width: 110px;
           }
         }
 
-        &-txt{
+        &-txt {
           font-size: $header_parag;
 
           p:first-child {
@@ -51,23 +81,29 @@
             margin-top: 20px;
             font-style: italic;
             margin-bottom: 115px;
-           }
 
-        
+            @include breakpoint-down(large) {
+              margin-bottom: 50px;
+            }
+          }
         }
       }
     }
 
-    &--img{
+    &--img {
       width: 50%;
       margin-top: 15px;
-      video{
+
+      @include breakpoint-down(large) {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+
+      video {
         width: 100%;
         border-radius: 30px;
-
       }
     }
-
-
   }
 }

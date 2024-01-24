@@ -15,6 +15,14 @@
     align-items: center;
     color: $black;
 
+
+    @include breakpoint-down(large) {
+
+      padding: 50px 20px 30px 20px;
+
+    }
+
+
     &--form {
       background-color: $white;
       display: flex;
@@ -24,6 +32,12 @@
       border-radius: 45px;
       padding: 90px 50px;
       margin-bottom: 150px;
+
+      @include breakpoint-down(large) {
+        width: 90%;
+
+      }
+
 
       &-title {
         font-size: $header_title;
@@ -69,34 +83,38 @@
       }
     }
 
-    &--sending{
-
+    &--sending {
       font-size: 42px;
       text-align: center;
       padding: 40px 20px;
-
     }
 
-    &--fail{
-
-      background-color: red;
-
-    }
-
-    &--succes{
-
+    &--fail {
       font-size: 42px;
-      text-align: center;
-      margin: 160px 40px;
-      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px;
 
-      background-color: rgba(0, 255, 47, 0.353);
-
-
-
+      p {
+        background-color: rgb(255, 127, 161);
+        padding: 50px;
+        border-radius: 25px;
+      }
     }
 
+    &--succes {
+      font-size: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px;
 
-
+      p {
+        background-color: aquamarine;
+        padding: 50px;
+        border-radius: 25px;
+      }
+    }
   }
 }

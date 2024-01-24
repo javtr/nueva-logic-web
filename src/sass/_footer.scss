@@ -14,8 +14,21 @@
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint-down(medium) {
+
+      padding: 85px $margen-lat-mobil 45px $margen-lat-mobil;
+      flex-direction: column;
+
+    }
+
+
     &--left {
         width: 35%;
+
+        @include breakpoint-down(medium) {
+          width: 100%;
+          
+        }
 
       &-logo {
         display: block;
@@ -56,6 +69,11 @@
     }
     &--right {
         width: 35%;
+
+        @include breakpoint-down(medium) {
+          width: 100%;
+          
+        }
 
 
       h5 {
@@ -105,6 +123,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include breakpoint-down(medium) {
+      padding: 10px $margen-lat-mobil 10px $margen-lat-mobil;
+
+    }
+
 
     p{
       margin-bottom: 10px;
