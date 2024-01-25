@@ -35,15 +35,28 @@
 
       @include breakpoint-down(large) {
         width: 90%;
-
+        margin-bottom: 50px;
       }
 
+
+      @include breakpoint-down(medium) {
+        width: 100%;
+        padding: 20px 20px;
+        
+
+      }
 
       &-title {
         font-size: $header_title;
         text-align: center;
         font-weight: bold;
         margin-bottom: 110px;
+
+        @include breakpoint-down(medium) {
+          margin-bottom: 50px;
+
+        }
+
       }
 
       label {
@@ -59,6 +72,12 @@
         height: 70px;
         border-radius: 15px;
         margin-bottom: 50px;
+
+        @include breakpoint-down(medium) {
+          margin-bottom: 20px;
+          height: 60px;
+        }
+
       }
 
       textarea {
@@ -69,6 +88,11 @@
         border-radius: 15px;
         margin-bottom: 50px;
         resize: vertical;
+
+        @include breakpoint-down(medium) {
+          height: 100px;
+        }
+
       }
 
       button {
@@ -96,11 +120,21 @@
       align-items: center;
       margin: 100px;
 
+      @include breakpoint-down(medium) {
+        font-size: 22px;
+        margin: 20px;
+      }
+
       p {
         background-color: rgb(255, 127, 161);
         padding: 50px;
         border-radius: 25px;
+
+        @include breakpoint-down(medium) {
+          padding: 20px;
+        }
       }
+
     }
 
     &--succes {
@@ -110,10 +144,22 @@
       align-items: center;
       margin: 100px;
 
+      @include breakpoint-down(medium) {
+        font-size: 22px;
+        margin: 20px;
+      }
+
+
+
       p {
         background-color: aquamarine;
         padding: 50px;
         border-radius: 25px;
+
+        @include breakpoint-down(medium) {
+          padding: 20px;
+        }   
+             
       }
     }
   }

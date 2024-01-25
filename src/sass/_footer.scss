@@ -16,10 +16,11 @@
 
     @include breakpoint-down(medium) {
 
-      padding: 85px $margen-lat-mobil 45px $margen-lat-mobil;
+      padding: 45px $margen-lat-mobil 25px $margen-lat-mobil;
       flex-direction: column;
 
     }
+
 
 
     &--left {
@@ -34,6 +35,11 @@
         display: block;
         margin-bottom: 90px;
 
+        @include breakpoint-down(medium) {
+          margin-bottom: 20px;
+
+        }
+
         img{
             width: 60px;
         }
@@ -43,6 +49,10 @@
         font-size: 24px;
         margin-bottom: 90px;
 
+        @include breakpoint-down(medium) {
+          margin-bottom: 40px;
+          
+        }
 
         &-page{
             display: flex;

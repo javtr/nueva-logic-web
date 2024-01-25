@@ -16,6 +16,11 @@
     justify-content: center;
     align-items: center;
 
+    @include breakpoint-down(medium) {
+      padding: 50px $margen-lat-mobil 20px $margen-lat-mobil;
+
+    }
+
     &--card {
       max-width: 1080px;
       background-color: $white;
@@ -27,8 +32,10 @@
       align-items: center;
       margin-bottom: 80px;
 
+      @include breakpoint-down(medium) {
+        padding: 30px;
 
-
+      }
 
 
       &-content {
@@ -54,15 +61,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
             margin-bottom: 45px;
 
             height: 300px;
+            width: auto;
             overflow: hidden;
             border-radius: 25px;
 
             position: relative;
 
+            @include breakpoint-down(large) {
+              max-height: 300px;
+              height: auto;
+              width: 100%;
+              margin-bottom: 20px;
+              
+            }
 
 
             a {
@@ -79,12 +93,17 @@
             }
 
             img {
-              position: absolute;
               top: 0;
               right: 0;
-              width: 100%;
-              height: auto;
+              width: auto;
+              height: 100%;
               border-radius: 25px;
+
+              @include breakpoint-down(large) {
+                height: auto;
+                width: 100%;
+              }
+
 
             }
           }
@@ -129,10 +148,17 @@
           width: 55%;
           padding: 0 60px;
 
+
+
+
           @include breakpoint-down(large) {
             width: 100%;
             padding: 0 30px;
             
+          }
+
+          @include breakpoint-down(medium) {
+            padding: 0;
           }
 
 

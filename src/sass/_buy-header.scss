@@ -14,6 +14,12 @@
     display: flex;
     justify-content: center;
 
+    @include breakpoint-down(medium) {
+      padding: 50px $margen-lat-mobil 20px $margen-lat-mobil;
+
+    }
+
+
     &--card {
       max-width: 1080px;
       background-color: $white;
@@ -23,6 +29,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include breakpoint-down(medium) {
+        padding: 30px;
+
+      }
 
       &-img {
         display: flex;
@@ -45,8 +56,19 @@
       &-content {
         display: flex;
 
+        @include breakpoint-down(medium) {
+          flex-direction: column;
+
+        }
+
+
         &-left {
           width: 45%;
+
+          @include breakpoint-down(medium) {
+            width: 100%;
+            margin-bottom: 30px;
+          }
 
           h4 {
             font-size: $header_title;
@@ -55,6 +77,11 @@
             font-weight: bold;
             margin-bottom: 40px;
             text-align: left;
+
+            @include breakpoint-down(medium) {
+              text-align: center;
+            }
+
           }
 
           h3 {
@@ -64,6 +91,10 @@
             font-weight: bold;
             margin-bottom: 40px;
             text-align: left;
+
+            @include breakpoint-down(medium) {
+              text-align: center;
+            }
 
             span:nth-child(2) {
               font-style: italic;
@@ -86,6 +117,10 @@
         }
         &-right {
           width: 55%;
+
+          @include breakpoint-down(medium) {
+            width: 100%;
+          }
 
           p:nth-child(1) {
             font-size: $card_sub;

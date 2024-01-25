@@ -17,6 +17,10 @@
           
         justify-content: center;
 
+        @include breakpoint-down(medium) {
+          padding: 90px $margen-lat-mobil 50px $margen-lat-mobil;
+
+        }
 
 
 
@@ -38,6 +42,10 @@
                 box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.10); 
             }
 
+            @include breakpoint-down(medium) {
+              width: 100%;
+            }
+
 
             &-img {
                 width: 620px;
@@ -51,6 +59,12 @@
                 justify-content: center;
                 align-items: center;
       
+                @include breakpoint-down(medium) {
+                  width: 100%;
+                  height: auto;
+                }
+    
+
                 img {
                   width: 100%;
                   display: block;
@@ -66,6 +80,11 @@
                 padding: 45px;
                 min-height: 290px;
       
+                @include breakpoint-down(medium) {
+                  padding: 20px;
+                  min-height: 190px;
+                }
+
                 h3 {
                   font-size: $card_title2;
                   text-align: center;

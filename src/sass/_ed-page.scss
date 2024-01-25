@@ -13,8 +13,18 @@
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint-down(medium) {
+      padding: 30px $margen-lat-mobil 20px $margen-lat-mobil;
+      flex-direction: column-reverse;
+    }
+
     &--blog {
       width: 65%;
+
+      @include breakpoint-down(medium) {
+        width: 100%;
+      }
+
     }
   }
 }

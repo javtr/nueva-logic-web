@@ -13,8 +13,14 @@
 
     display: flex;
 
+    @include breakpoint-down(large) {
+      flex-direction: column;
+      padding: 60px $margen-lat 40px $margen-lat;
+    }
+
+
     @include breakpoint-down(medium) {
-      padding: 90px $margen-lat-mobil 50px $margen-lat-mobil;
+      padding: 50px $margen-lat-mobil 20px $margen-lat-mobil;
       flex-direction: column;
 
     }
@@ -22,7 +28,7 @@
 
     &--text {
       width: 50%;
-      @include breakpoint-down(medium) {
+      @include breakpoint-down(large) {
         width: 100%;
 
       }
@@ -60,7 +66,7 @@
       justify-content: center;
       width: 50%;
 
-      @include breakpoint-down(medium) {
+      @include breakpoint-down(large) {
         width: 100%;
         margin-top: 50px;
 
@@ -69,7 +75,8 @@
       img {
         width: 80%;
         border-radius: $border-card;
-        @include breakpoint-down(medium) {
+        
+        @include breakpoint-down(large) {
           width: 100%;
         }
 

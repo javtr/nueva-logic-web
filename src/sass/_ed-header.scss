@@ -7,6 +7,9 @@
     color: $white;
 
 
+
+
+
   &__container {
     max-width: $max-width;
     width: 100%;
@@ -14,9 +17,26 @@
 
     display: flex;
 
+
+    @include breakpoint-down(large) {
+      padding: 60px $margen-lat 40px $margen-lat;
+      flex-direction: column;
+    }
+
+
+    @include breakpoint-down(medium) {
+      padding: 50px $margen-lat-mobil 30px $margen-lat-mobil;
+      flex-direction: column;
+    }
+
     &--text {
       width: 50%;
       padding-right: 30px;
+
+      @include breakpoint-down(large) {
+        width: 100%;
+      }
+
       h2 {
         font-size: $header_title;
         line-height: 1.333;
@@ -50,9 +70,14 @@
       justify-content: center;
       width: 50%;
 
+      @include breakpoint-down(large) {
+        width: 100%;
+      }
+
       img {
-        width: 80%;
+        width: 100%;
         border-radius: $border-card;
+        margin-top: 50px;
       }
     }
   }
