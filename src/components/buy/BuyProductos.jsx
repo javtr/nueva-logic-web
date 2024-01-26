@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsData from "../../assets/text/products";
+import ProductsData from "../../assets/objects/products";
 import { Link } from "react-router-dom";
 
 

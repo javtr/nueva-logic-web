@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { IndicatorData } from "../../assets/text/indicators-page";
+import { IndicatorDataEn, IndicatorDataEs } from "../../assets/objects/indicators-page";
+import LanguageContext from "../../context/langContext";
+
+
 const images = require.context("../../assets/img/", true);
+
 
 
 const IndicatorsList = () => {
   const navigate = useNavigate();
 
+  const { lang } = useContext(LanguageContext);
+  const [text, setText] = useState([]);
+  const [isloading, setIsloading] = useState(true);
+
+  useEffect(() => {
+    if (lang === "en") {
+      setText(IndicatorDataEn);
+    } else if (lang === "es") {
+      setText(IndicatorDataEs);
+    } else {
+      setText(IndicatorDataEn);
+    }
+
+    setIsloading(false);
+  }, [lang]);
+
+
   return (
+
+    <>
+      {!isloading ? (
+
     <div className="indicatorlist">
       <div className="indicatorlist__content">
 
-        {IndicatorData.map((indicator,index) => (
+        {text.map((indicator,index) => (
           <div
             key={index}
             className="indicatorlist__content--card"
@@ -30,6 +55,12 @@ const IndicatorsList = () => {
         ))}
       </div>
     </div>
+
+    ) : (
+        <></>
+      )}
+    </>  
+      
   );
 };
 

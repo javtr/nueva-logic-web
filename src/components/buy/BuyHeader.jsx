@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsData from "../../assets/text/products";
+import ProductsData from "../../assets/objects/products";
 
 export default function BuyHeader() {
   const images = require.context("../../assets/img/", true);

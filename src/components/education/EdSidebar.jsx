@@ -1,7 +1,7 @@
 import React from "react";
-import { ArticlesData } from "../../assets/text/articles-page";
+import { ArticlesData } from "../../assets/objects/articles-page";
 import { useNavigate } from "react-router-dom";
-import { IndicatorData } from "../../assets/text/indicators-page";
+import { IndicatorData } from "../../assets/objects/indicators-page";
 
 export default function EdSideBar({ ind }) {
 

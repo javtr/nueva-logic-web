@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { ArticlesData } from "../assets/text/articles-page";
+import { ArticlesData } from "../assets/objects/articles-page";
 import { ArtGenerator } from "../components/education/ArtGenerator";
 import EdSideBar from "../components/education/EdSidebar"
 

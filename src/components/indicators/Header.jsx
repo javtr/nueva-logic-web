@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { IndicatorData } from "../../assets/text/indicators-page";
+import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+import { IndicatorDataEn, IndicatorDataEs } from "../../assets/objects/indicators-page";
+import LanguageContext from "../../context/langContext";
+
+
 
 export default function Header() {
   const images = require.context("../../assets/img/", true);
@@ -9,22 +13,51 @@ export default function Header() {
 
   const [indId, setIndId] = useState(null);
 
+
+  const { lang } = useContext(LanguageContext);
+  const [text, setText] = useState([]);
+  const [isloading, setIsloading] = useState(true);
+
+
   useEffect(() => {
-    setIndId(IndicatorData.findIndex((obj) => obj.url === params.IndicatorId));
-  }, [params.IndicatorId]);
+    setIndId(text.findIndex((obj) => obj.url === params.IndicatorId));
+  }, [text,params.IndicatorId]);
+
+
+
+  useEffect(() => {
+    if (lang === "en") {
+      setText(IndicatorDataEn);
+    } else if (lang === "es") {
+      setText(IndicatorDataEs);
+    } else {
+      setText(IndicatorDataEn);
+    }
+
+    setIsloading(false);
+  }, [lang]);
+
+
 
   return (
+
     <>
-      {indId !== null ? (
+      {!isloading ? (
+
+
+
+    <>
+      {text[indId] !== undefined ? (
+
         <div className="ind-header">
           <div className="ind-header__container">
             <div className="ind-header__container--text">
-              <h2>{IndicatorData[indId].titSec}</h2>
-              <p>{IndicatorData[indId].subSec}</p>
+              <h2>{text[indId].titSec}</h2>
+              <p>{text[indId].subSec}</p>
                 <Link to="/buy">Comprar</Link>
             </div>
             <div className="ind-header__container--img">
-              <img src={images(IndicatorData[indId].img01Sec)} alt="indicator"></img>
+              <img src={images(text[indId].img01Sec)} alt="indicator"></img>
             </div>
           </div>
         </div>
@@ -32,5 +65,12 @@ export default function Header() {
         <></>
       )}
     </>
+
+    ) : (
+        <></>
+      )}
+    </>  
+
+
   );
 }

@@ -17,16 +17,34 @@
     max-width: $max-width;
     width: 100%;
     padding: 0 $margen-lat 0 $margen-lat;
+    position: relative;
+
+    // display: flex;
+    // justify-content: space-between;
+
 
     @include breakpoint-down(medium) {
       padding: 0 $margen-lat-mobil 0 $margen-lat-mobil;
     }
 
-    display: flex;
-    justify-content: space-between;
+
+
 
     &--logo {
-      margin-top: 75px;
+      position: absolute;
+      top: 75px;
+      left: 50px;
+
+
+      @include breakpoint-down(large) {
+        top: 75px;
+      }
+
+      @include breakpoint-down(medium) {
+        top: 20px;
+        left: 25px;
+        
+      }
 
       img {
         width: 72px;
@@ -37,20 +55,22 @@
 
       }
 
-      @include breakpoint-down(medium) {
-        margin-top: 20px;
 
-      }
 
 
     }
 
     &--links {
-      margin-top: 95px;
-      font-size: 1.546875rem;
+      position: absolute;
+      top: 95px;
+      right:180px;
+
+
+
+      font-size: 1.3rem;
 
       :nth-child(n) {
-        margin: 0 25px 0 25px;
+        margin: 0 12px 0 12px;
 
 
         @include breakpoint-down(medium) {
@@ -61,5 +81,44 @@
 
       }
     }
+
+    &--languaje {
+
+      position: absolute;
+      top: 97px;
+      right: 50px;
+
+
+      @include breakpoint-down(medium) {
+        top: 20px;
+        right: 105px;
+        
+      }
+
+
+      select{
+        font-size: 18px;
+        height: 36px;
+        width: 100px;
+        background-color: $back-mid;
+        border: 1px solid #000;
+        border-radius: 8px;
+        color: $white;
+        font-weight: bold;
+        padding: 0 7px;
+
+        
+      }
+
+      option{
+        background-color: aqua;
+      }
+
+
+
+      
+
+    }
+
   }
 }

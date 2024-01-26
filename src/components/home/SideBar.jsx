@@ -1,5 +1,5 @@
 import React from 'react';
-import {ArticlesData} from '../../assets/text/articles-page';
+import {ArticlesData} from '../../assets/objects/articles-page';
 import { useNavigate } from 'react-router-dom';
 
 
