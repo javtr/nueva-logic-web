@@ -1,15 +1,46 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArticlesData } from "../../assets/objects/articles-page.js";
+
+import LanguageContext from "../../context/langContext";
+import { ArticlesDataEn, ArticlesDataEs } from "../../assets/objects/articles-page2.js";
+
+
 const images = require.context("../../assets/img/", true);
+
+
 
 const ArticleList = () => {
   const navigate = useNavigate();
 
+  const { lang } = useContext(LanguageContext);
+  const [text, setText] = useState([]);
+  const [isloading, setIsloading] = useState(true);
+
+  useEffect(() => {
+    if (lang === "en") {
+      setText(ArticlesDataEn);
+    } else if (lang === "es") {
+      setText(ArticlesDataEs);
+    } else {
+      setText(ArticlesDataEn);
+    }
+
+    setIsloading(false);
+  }, [lang]);
+
+
   return (
+
+    <>
+      {!isloading ? (
+
+        <>
+      {text !== undefined ? (
+
+
     <div className="article">
       <div className="article__container">
-        {ArticlesData.map((product, index) => (
+        {text.map((product, index) => (
           <div
             className="article__container--card"
             key={index}
@@ -27,6 +58,18 @@ const ArticleList = () => {
         ))}
       </div>
     </div>
+
+
+    ) : (
+        <></>
+      )}
+    </>
+
+    ) : (
+        <></>
+      )}
+    </>
+
   );
 };
 

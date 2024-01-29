@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import {
   ValidateForm,
@@ -8,10 +8,31 @@ import {
 import ReCAPTCHA from "react-google-recaptcha";
 import { TailSpin } from "react-loader-spinner";
 
+import LanguageContext from "../context/langContext";
+import { textEn, textEs } from "../assets/text/form-contact";
+
+
+
 const Contact = () => {
   const [arrVar, setArrVar] = useState([]);
   const [mailState, setMailState] = useState("none");
   const [captcha, setCaptcha] = useState(null);
+
+  const { lang } = useContext(LanguageContext);
+  const [text, setText] = useState([]);
+  const [isloading, setIsloading] = useState(true);
+
+  useEffect(() => {
+    if (lang === "en") {
+      setText(textEn);
+    } else if (lang === "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+    setIsloading(false);
+  }, [lang]);
+
 
   useEffect(() => {
     obtainFeatures();
@@ -39,9 +60,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario, por ejemplo, a través de una API.
     sendEmail(formData);
-    // Puedes resetear el formulario después de enviarlo si es necesario
     setFormData({
       name: "",
       email: "",
@@ -85,17 +104,17 @@ const Contact = () => {
         setMailState("sending");
         scrollToTop();
 
-
+        //! Test 
         setTimeout(function() {
           // Código que se ejecutará después de esperar 10 segundos
           console.log("Han pasado 10 segundos");
-          setMailState("fail");
+          setMailState("succes");
           scrollToTop();
         },5000);
 
 
 
-
+        //! No eliminar 
         // emailjs.send(service, template, formData, emailKey).then(
         //   (result) => {
         //     setMailState("succes");
@@ -124,12 +143,19 @@ const Contact = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Opcional: hace el desplazamiento suave
+      behavior: 'smooth'
     });
   };
 
 
   return (
+
+    <>
+      {!isloading ? (
+        <>
+          {text !== undefined ? (
+
+
     <div>
       {mailState === "sending" && (
         <div style={{ display: "flex", justifyContent: "center" }}
@@ -157,8 +183,8 @@ const Contact = () => {
           }
         >
           {mailState === "fail" && mailState !== "sending"
-            ? <p>El mensaje no pudo ser enviado. Por favor, inténtalo nuevamente.</p>
-            : <p>El mensaje ha sido enviado exitosamente.</p>}
+            ? <p>{text.error}</p>
+            : <p>{text.ok}</p>}
         </div>
       ) : (
         <></>
@@ -168,8 +194,8 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="form">
           <div className="form__container">
             <div className="form__container--form">
-              <h2 className="form__container--form-title">Contacto</h2>
-              <label className="form__container--form-name">Nombre:</label>
+              <h2 className="form__container--form-title">{text.tit}</h2>
+              <label className="form__container--form-name">{text.name}</label>
               <input
                 type="text"
                 name="name"
@@ -179,7 +205,7 @@ const Contact = () => {
               />
 
               <label className="form__container--form-mail">
-                <p>Correo Electrónico:</p>
+                <p>{text.mail}</p>
                 <input
                   type="email"
                   name="email"
@@ -189,7 +215,7 @@ const Contact = () => {
                 />
               </label>
               <label className="form__container--form-message">
-                <p>Mensaje:</p>
+                <p>{text.mess}</p>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -208,13 +234,24 @@ const Contact = () => {
               </div>
 
               <button type="submit" className="form__container--form-button">
-                Enviar
+              {text.button}
               </button>
             </div>
           </div>
         </form>
       )}
     </div>
+
+    ) : (
+            <></>
+          )}
+        </>
+      ) : (
+        <></>
+      )}
+    </>
+
+
   );
 };
 

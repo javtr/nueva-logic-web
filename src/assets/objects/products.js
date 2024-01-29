@@ -1,4 +1,4 @@
-const ProductsData = [
+export const ProductsDataEs = [
   {
     product: "Logic Pack",
     img01: "./of_home.jpeg",
@@ -69,4 +69,71 @@ const ProductsData = [
   },
 ];
 
-export default ProductsData;
+export const ProductsDataEn = [
+  {
+    product: "Logic Pack",
+    img01: "./of_home.jpeg",
+    price: 397,
+    features: {
+      product01: "Logic Order Flow",
+      product02: "Logic Profile",
+      product03: "Logic Analytics",
+    },
+    description:
+      "Enhance your trading strategy with objective data and tools. This package offers key advantages:",
+    advantages: {
+      adv01: "Evaluate auction data by price level.",
+      adv02: "Visualize volume distribution over different time ranges.",
+      adv03: "Get statistics on average, deviation, and expected maximum value.",
+      adv04: "Does not use Tick Replay, making it faster.",
+      adv05: "Visual options without reloading the chart.",
+      adv06: "Default templates with a single click.",
+    },
+    buyLink: "https://link.com",
+  },
+  {
+    product: "Logic Order Flow",
+    img01: "./of_home.jpeg",
+    price: 197,
+    description:
+      "OrderFlow provides you with the ability to analyze auction data by price level in Japanese candles, acting as a high-precision rifle in your operations. Its design offers multiple advantages, including:",
+    advantages: {
+      adv01: "No use of Tick Replay, making it 10 times faster.",
+      adv02: "Visualization of high-quality patterns.",
+      adv03: "Default templates loaded with a single click.",
+      adv04: "Additionally, you have daily educational material on Telegram.",
+    },
+    indLink: "logic-order-flow",
+    buyLink: "logic-order-flow",
+  },
+  {
+    product: "Logic Profile",
+    img01: "./of_home.jpeg",
+    price: 197,
+    description:
+      "OrderFlow provides you with the ability to analyze auction data by price level in Japanese candles, acting as a high-precision rifle in your operations. Its design offers multiple advantages, including:",
+    advantages: {
+      adv01: "No use of Tick Replay, making it 10 times faster.",
+      adv02: "Visualization of high-quality patterns.",
+      adv03: "Default templates loaded with a single click.",
+      adv04: "Additionally, you have daily educational material on Telegram.",
+    },
+    indLink: "logic-volume-profile",
+    buyLink: "https://link2.com",
+  },
+  {
+    product: "Logic Analytics",
+    img01: "./of_home.jpeg",
+    price: 197,
+    description:
+      "OrderFlow provides you with the ability to analyze auction data by price level in Japanese candles, acting as a high-precision rifle in your operations. Its design offers multiple advantages, including:",
+    advantages: {
+      adv01: "No use of Tick Replay, making it 10 times faster.",
+      adv02: "Visualization of high-quality patterns.",
+      adv03: "Default templates loaded with a single click.",
+      adv04: "Additionally, you have daily educational material on Telegram.",
+    },
+    indLink: "logic-analytics",
+    buyLink: "https://link3.com",
+  },
+];

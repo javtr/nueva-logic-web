@@ -1,6 +1,4 @@
 import React, { useEffect, useState, useContext } from "react";
-import { ArticlesData } from "../../assets/objects/articles-page";
-import { useNavigate } from "react-router-dom";
 
 import { IndicatorDataEn, IndicatorDataEs } from "../../assets/objects/indicators-page";
 import LanguageContext from "../../context/langContext";
