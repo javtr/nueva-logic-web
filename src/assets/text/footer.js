@@ -1,0 +1,20 @@
+export const textEn =
+  {
+    link1:"Education",
+    link2:"Contact",
+    link3:"Buy",
+    pr1:"Due to the ease of reproduction and storage of software products, we regret to inform you that no refunds of any kind will be made. All transactions are final and non-refundable.",
+    pr2:"Transactions related to futures and forex carry a significant risk and may not be suitable for all investors. There is a possibility that an investor may lose all or even more than their initial investment. Risk capital refers to funds that can be lost without affecting financial security or lifestyle. It is recommended to use only risk capital for trading, and only those with sufficient risk capital should consider participating in these activities. It is important to note that past results do not guarantee future results.",
+    pr3:"Hypothetical results have many inherent limitations, some of which are described below. It is not guaranteed that accounts will achieve or can achieve profits or losses similar to those shown; in fact, there are often significant differences between hypothetical results and actual results subsequently obtained by a particular trading program. One of the limitations of hypothetical results is that they are usually prepared in retrospect. Additionally, hypothetical trading does not involve financial risk, and no hypothetical trading record can fully account for the impact of financial risk in actual trading. For example, the ability to withstand losses or to adhere to a particular trading program despite losses are important aspects that can also negatively affect actual trading results. There are many other factors related to the markets in general or to the implementation of any specific trading program that cannot be fully taken into account in the preparation of hypothetical performance results and that can negatively affect trading results."
+  };
+
+
+export const textEs =
+  {
+    link1:"Educación",
+    link2:"Contacto",
+    link3:"Comprar",
+    pr1:"Debido a la facilidad de reproducción y almacenamiento de los productos de software, lamentamos informar que no se realizarán reembolsos de ningún tipo. Todas las transacciones son definitivas y no son elegibles para reembolso.",
+    pr2:"Las transacciones relacionadas con futuros y divisas conllevan un riesgo significativo y no son adecuadas para todos los inversores. Existe la posibilidad de que un inversor pierda la totalidad o incluso más de su inversión inicial. El capital de riesgo se refiere a fondos que pueden perderse sin afectar la seguridad financiera o el estilo de vida. Se recomienda utilizar únicamente el capital de riesgo para llevar a cabo operaciones, y solo aquellos con suficiente capital de riesgo deben considerar la posibilidad de participar en estas actividades. Es importante destacar que los resultados pasados no garantizan resultados futuros.",
+    pr3:"Los resultados hipotéticos tienen muchas limitaciones inherentes, algunas de las cuales se describen a continuación. No se garantiza que las cuentas obtengan o puedan obtener beneficios o pérdidas similares a los mostrados; de hecho, a menudo existen grandes diferencias entre los resultados hipotéticos y los resultados reales obtenidos posteriormente por un programa de negociación concreto. Una de las limitaciones de los resultados hipotéticos es que, por lo general, se elaboran en retrospectiva. Además, la negociación hipotética no implica riesgo financiero, y ningún registro de negociación hipotética puede dar cuenta completamente del impacto del riesgo financiero de la negociación real. Por ejemplo, la capacidad de soportar pérdidas o de seguir un determinado programa de negociación a pesar de las pérdidas son aspectos importantes que también pueden afectar negativamente a los resultados reales de la negociación. Existen otros muchos factores relacionados con los mercados en general o con la aplicación de cualquier programa de negociación específico que no pueden tenerse plenamente en cuenta en la preparación de los resultados hipotéticos de rendimiento y que pueden afectar negativamente a los resultados de negociación.",
+  };

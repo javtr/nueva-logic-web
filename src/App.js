@@ -4,6 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Education from "./pages/Education";
 import Contact from "./pages/Contact";
+import ContactLic from "./pages/ContactLic";
 import "./App.scss";
 import Buy from "./pages/Buy";
 import Indicator from "./pages/Indicator";
@@ -40,6 +41,8 @@ function App() {
             <Route path="/article/:articleId" element={<Article />} />
             <Route path="/buy" element={<Buy />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/lic" element={<ContactLic />} />
+            
           </Route>
         </Routes>
       </>
