@@ -72,6 +72,8 @@
         height: 70px;
         border-radius: 15px;
         margin-bottom: 50px;
+        font-size: 24px;
+        padding: 0 15px;
 
         @include breakpoint-down(medium) {
           margin-bottom: 20px;
@@ -88,6 +90,8 @@
         border-radius: 15px;
         margin-bottom: 50px;
         resize: vertical;
+        font-size: 24px;
+        padding: 0 15px;
 
         @include breakpoint-down(medium) {
           height: 100px;

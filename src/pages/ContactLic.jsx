@@ -5,11 +5,13 @@ import {
   getBannedEmail,
   ValidateEmail,
 } from "../../src/helpers/formValidation";
+import idmachine from "../assets/img/licence.jpg";
+
 import ReCAPTCHA from "react-google-recaptcha";
 import { TailSpin } from "react-loader-spinner";
 
 import LanguageContext from "../context/langContext";
-import { textEn, textEs } from "../assets/text/form-contact";
+import { textEn, textEs } from "../assets/text/form-contactLic";
 
 const ContactLic = () => {
   const [arrVar, setArrVar] = useState([]);
@@ -36,13 +38,14 @@ const ContactLic = () => {
   }, []);
 
   //variables de oficial
-  const service = "service_g9gfwit";
+  const service = "service_g9gfwit";//! estos 3 valores son  de emailjs, se puede crear un template aparte
   const template = "template_7vyrf6s";
   const emailKey = "QyQP72Hg4ObCGjDYM";
-  const captchaLocal = "6Le251MpAAAAAJ0Oec0l7x-koMG_kKUg6EypEbbi";
+  const captchaLocal = "6Le251MpAAAAAJ0Oec0l7x-koMG_kKUg6EypEbbi";//! se debe meter en la pagina la url de la pagina y obtener un nuevo codigo
 
   const [formData, setFormData] = useState({
     name: "",
+    idmachine: "",
     email: "",
     message: "",
   });
@@ -60,6 +63,7 @@ const ContactLic = () => {
     sendEmail(formData);
     setFormData({
       name: "",
+      idmachine: "",
       email: "",
       message: "",
     });
@@ -105,7 +109,7 @@ const ContactLic = () => {
         setTimeout(function () {
           // Código que se ejecutará después de esperar 10 segundos
           console.log("Han pasado 10 segundos");
-          setMailState("succes");
+          setMailState("fail");
           scrollToTop();
         }, 5000);
 
@@ -145,7 +149,7 @@ const ContactLic = () => {
             <div>
               <div className="noClose">
                 <div className="noClose-msg">
-                  ¡No cierres esta ventana hasta completar tu proceso!
+                {text.alert}
                 </div>
               </div>
 
@@ -192,6 +196,23 @@ const ContactLic = () => {
                       <h2 className="formLic__container--form-title">
                         {text.tit}
                       </h2>
+
+                      <p className="formLic__container--form-subt">
+                        {text.sub1}
+                      </p>
+
+                      <p className="formLic__container--form-subp">
+                        {text.subp1}
+                      </p>
+
+                      <div className="formLic__container--form-licImg">
+                        <img src={idmachine} alt="id machine"></img>
+                      </div>
+
+                      <p className="formLic__container--form-subp">
+                        {text.subp2}
+                      </p>
+
                       <label className="formLic__container--form-name">
                         {text.name}
                       </label>
@@ -204,6 +225,17 @@ const ContactLic = () => {
                       />
 
                       <label className="formLic__container--form-mail">
+                        <p>Machine ID</p>
+                        <input
+                          type="idmachine"
+                          name="idmachine"
+                          value={formData.idmachine}
+                          onChange={handleChange}
+                          required
+                        />
+                      </label>
+
+                      <label className="formLic__container--form-mail">
                         <p>{text.mail}</p>
                         <input
                           type="email"
@@ -213,6 +245,7 @@ const ContactLic = () => {
                           required
                         />
                       </label>
+
                       <label className="form__container--form-message">
                         <p>{text.mess}</p>
                         <textarea
