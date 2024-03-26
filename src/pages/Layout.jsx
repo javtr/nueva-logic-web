@@ -1,22 +1,18 @@
 import React, { useContext } from "react";
-import Navbar from '../components/layout/Navbar';
-import Footer from '../components/layout/Footer';
-import { Outlet } from 'react-router-dom';
-import {FloatingWhatsApp} from "react-floating-whatsapp";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import { Outlet } from "react-router-dom";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 import logo from "../assets/img/logo_nav.png";
 import ScrollToTop from "react-scroll-to-top";
 import { IconContext } from "react-icons";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-
+import CookieBannera from "../components/layout/CookieBanner";
 
 import LanguageContext from "../context/langContext";
 import { textEn, textEs } from "../assets/text/form-contactLic";
 
-
-
 function Layout() {
-
-
   const { lang, setLang } = useContext(LanguageContext);
   let repliTime = "";
   let message = "";
@@ -28,18 +24,11 @@ function Layout() {
     repliTime = "Normalmente responde en 1 hora";
     message = "¡Hola! 🤝 \n¿En qué podemos ayudarte?";
   }
-
-
-
-
-
-
-
   return (
     <div className="layout">
 
-
-<ScrollToTop
+      <CookieBannera></CookieBannera>    
+      <ScrollToTop
         className="gl-goTop--cont"
         smooth
         component={
@@ -51,9 +40,8 @@ function Layout() {
         }
       />
 
-
-<FloatingWhatsApp
-        phoneNumber={573113006826}//573113006826
+      <FloatingWhatsApp
+        phoneNumber={573113006826} //573113006826
         accountName={"Logic Indicators"}
         avatar={logo}
         chatMessage={message}
@@ -70,9 +58,8 @@ function Layout() {
         }}
       ></FloatingWhatsApp>
 
-
       <Navbar />
-        <Outlet />
+      <Outlet />
       <Footer />
     </div>
   );

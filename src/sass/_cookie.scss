@@ -1,0 +1,81 @@
+@import './variables.scss';
+
+.cookie{
+    position: fixed;
+    bottom: 10px; 
+    left: 40%; 
+    transform: translate(-30%); 
+    z-index: 9999;
+    color:$back-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    @include breakpoint-down(large) {
+    }
+
+    @include breakpoint-down(medium) {
+        min-width: 300px;
+        left: 35%; 
+    }
+    
+
+    &__cont{
+        max-width: 1000px;
+        background-color: $back-mid;
+        padding: 10px 20px;
+        border-radius: 10px;
+        
+
+        @include breakpoint-down(medium) {
+        }
+
+
+        h5{
+            font-size: $header_sub;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+        p{
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: $header_parag;
+        }
+        a{
+            text-align: left;
+            color: $secundary;
+            font-size: $header_parag;
+        }
+        button{
+            display: block; 
+            margin: 5px auto 0; 
+            padding: 5px 20px;
+            border-radius: 4px;
+            background-color: $secundary;
+            color:$back-light;
+            
+            
+
+        }
+
+    }
+}
+
+
+
+.cookie__fade-in {
+    animation: fadeIn 0.75s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

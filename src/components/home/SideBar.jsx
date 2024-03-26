@@ -54,7 +54,9 @@ export default function SideBar() {
       <div className="sidebar__content">
         <div className="sidebar__content--susc">
           <h3>{textSidebar.tit}</h3>
-            <a
+
+
+            {/* <a
               href={textSidebar.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +66,9 @@ export default function SideBar() {
             <script
               src="https://assets.lemonsqueezy.com/lemon.js"
               defer
-            ></script>{" "}
+            ></script>{" "} */}
+
+            <a target="_blank" rel="noopener noreferrer" href={textSidebar.url}>{textSidebar.lnk}</a><script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
           <p>{textSidebar.sub}</p>
         </div>
         <div className="sidebar__content--blog" onClick={handleClickBlog}>
