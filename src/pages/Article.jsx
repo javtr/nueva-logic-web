@@ -28,10 +28,16 @@ export default function Article() {
     setIsloading(false);
   }, [lang]);
 
+
   
   useEffect(() => {
     setIndId(text.findIndex((obj) => obj.url === params.articleId));
   }, [text, params.articleId]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   return (
 

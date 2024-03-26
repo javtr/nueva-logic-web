@@ -191,8 +191,9 @@ export const IndicatorDataEs = [
   {       
 
     titSec: "Logic Volumen Profile",
-    subSec: "Descubre la sinergia entre precio, volumen y delta con Logic Analytics. Simplifica la comprensión de los rangos de mercado, visualizando de manera intuitiva las interacciones y obteniendo una comprensión profunda en tiempo real.",
-    
+    subSec: "Experimenta la versatilidad definitiva en el análisis de volumen con este perfil todo en uno, que incluye TPO y perfil de volumen. Su excepcional adaptabilidad a cualquier temporalidad y tipo de trading permite una personalización total. Simplifica tu análisis con un indicador que se ajusta perfectamente a tu estilo de trading.",
+
+
     img01Sec: "./of_home.jpeg",
     img02Sec: "./of_home.jpeg",
     url: "logic-volume-profile",
@@ -227,7 +228,7 @@ export const IndicatorDataEs = [
   {       
 
     titSec: "Logic Analytics",
-    subSec: "Experimenta la versatilidad definitiva en el análisis de volumen con este perfil todo en uno, que incluye TPO y perfil de volumen. Su excepcional adaptabilidad a cualquier temporalidad y tipo de trading permite una personalización total. Simplifica tu análisis con un indicador que se ajusta perfectamente a tu estilo de trading.",
+    subSec: "Descubre la sinergia entre precio, volumen y delta con Logic Analytics. Simplifica la comprensión de los rangos de mercado, visualizando de manera intuitiva las interacciones y obteniendo una comprensión profunda en tiempo real.",
     img01Sec: "./of_home.jpeg",
     img02Sec: "./of_home.jpeg",
     url:"logic-analytics",

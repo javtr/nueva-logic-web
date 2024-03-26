@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect } from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { Outlet } from "react-router-dom";
@@ -24,6 +24,13 @@ function Layout() {
     repliTime = "Normalmente responde en 1 hora";
     message = "¡Hola! 🤝 \n¿En qué podemos ayudarte?";
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
+
+
   return (
     <div className="layout">
 

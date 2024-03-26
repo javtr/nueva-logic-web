@@ -18,6 +18,11 @@ export default function Home() {
     }
   }, [hash]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
+
   return (
     <div className="home">
       <div className="home__content">

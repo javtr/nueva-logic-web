@@ -35,6 +35,10 @@ export default function Indicator() {
     setIsloading(false);
   }, [lang]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
 
 
   return (
