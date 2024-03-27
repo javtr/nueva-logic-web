@@ -26,8 +26,8 @@ export const IndicatorDataEn = [
   {
     titSec: "Logic Order Flow",
     subSec: "Explore trading with our Order Flow indicator. Amazing ease in interpreting data and visualizing opportunities, Adaptability to any trading style or strategy. Simplify your analysis and make informed decisions.",
-    img01Sec: "./of_home.jpeg",
-    img02Sec: "./of_home.jpeg",
+    img01Sec: "./indicators_page/of_01.png",
+    img02Sec: "./indicators_page/of_01.png",
     url: "logic-order-flow",
 
     titb: "Enhance Your Trading with Logic OrderFlow for NinjaTrader 8",
@@ -134,8 +134,8 @@ export const IndicatorDataEs = [
 
     titSec: "Logic Order Flow",
     subSec: "Explora el trading con nuestro indicador Order Flow. Facilidad asombrosa para interpretar datos y visualizar oportunidades, Adaptabilidad a cualquier estilo de trading o estrategia. Simplifica tu análisis y toma decisiones.",
-    img01Sec: "./of_home.jpeg",
-    img02Sec: "./of_home.jpeg",
+    img01Sec: "./indicators_page/of_01.png",
+    img02Sec: "./indicators_page/of_01.png",
     url:"logic-order-flow",
     
 
@@ -151,17 +151,17 @@ export const IndicatorDataEs = [
     titk_1:["Identificación Sencilla de Patrones","patrones"],
 
 
-    iinb_1: "./indicators_page/of_home.jpeg",
+    iinb_1: "./indicators_page/of_ind_01.jpg",
 
     txtb_2:"Aprende a identificar patrones de manera fácil y efectiva con Logic OrderFlow. El área de alto volumen (High Volume Area/HVA) se destaca claramente en el gráfico con colores oscuros y números prominentes. Esta zona refleja donde el precio encuentra liquidez, generando pausas significativas en el mercado.",
 
-    iinb_2: "./indicators_page/of_home.jpeg",
+    iinb_2: "./indicators_page/of_ind_02.jpg",
 
     txtb_3:"De manera opuesta, el área de bajo volumen (Low Volume Area/LVA) se presenta con colores más claros que el resto de la vela. Esto indica que el precio ha negociado estos niveles rápidamente debido a la falta de liquidez en esa zona.",
 
 
 
-    iinb_3: "./indicators_page/of_home.jpeg",
+    iinb_3: "./indicators_page/of_ind_03.jpg",
 
     txtb_4:"El Low Imbalance, una variante del Low Volume Área, muestra desequilibrios en las compras o ventas (números en azul). Este patrón indica iniciativa, pero con una fuerza limitada. El movimiento puede continuar por pocos ticks antes de revertirse, señalando una subasta débil.",
 
@@ -171,7 +171,7 @@ export const IndicatorDataEs = [
     titk_2:["Carga Rápida: OrderFlow sin Uso de Tick Replay","caga-rapida"],
 
 
-    iinb_4: "./indicators_page/of_home.jpeg",
+    iinb_4: "./indicators_page/of_ind_03.gif",
     
     txtb_5:"Eliminando la carga innecesaria de recursos, nuestras herramientas de Logic Indicators se destacan al cargar de forma rápida y eficiente, prescindiendo del método Tick Replay. Experimenta hasta 10 veces más velocidad al integrarlas en tus gráficas de NinjaTrader.",
 
