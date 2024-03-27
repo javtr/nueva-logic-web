@@ -38,10 +38,10 @@ const ContactLic = () => {
   }, []);
 
   //variables de oficial
-  const service = "service_g9gfwit";//! estos 3 valores son  de emailjs, se puede crear un template aparte
+  const service = "service_g9gfwit"; //! estos 3 valores son  de emailjs, se puede crear un template aparte
   const template = "template_7vyrf6s";
   const emailKey = "QyQP72Hg4ObCGjDYM";
-  const captchaLocal = "6Le251MpAAAAAJ0Oec0l7x-koMG_kKUg6EypEbbi";//! se debe meter en la pagina la url de la pagina y obtener un nuevo codigo
+  const captchaLocal = "6Le251MpAAAAAJ0Oec0l7x-koMG_kKUg6EypEbbi"; //! se debe meter en la pagina la url de la pagina y obtener un nuevo codigo
 
   const [formData, setFormData] = useState({
     name: "",
@@ -148,9 +148,7 @@ const ContactLic = () => {
           {text !== undefined ? (
             <div>
               <div className="noClose">
-                <div className="noClose-msg">
-                {text.alert}
-                </div>
+                <div className="noClose-msg">{text.alert}</div>
               </div>
 
               {mailState === "sending" && (
@@ -271,6 +269,14 @@ const ContactLic = () => {
                       >
                         {text.button}
                       </button>
+
+                      <div className="formLic__container--form-indications">
+                        <p>{text.p1}</p>
+                        <p>{text.p2}</p>
+                        <p>{text.p3}</p>
+                        <p> {text.p4}</p>
+                        <p> {text.p5}</p>
+                      </div>
                     </div>
                   </div>
                 </form>

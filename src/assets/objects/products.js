@@ -18,7 +18,7 @@ export const ProductsDataEs = [
         "Obtén estadísticas de promedio, desviación y valor máximo esperado.",
       adv04: "No usa Tick Replay lo que lo hace más rápido",
       adv05: "Opciones visuales sin recargar el gráfico",
-      adv06: "Plantillas predeterminadas con un solo click",
+      adv06: "Plantillas predeterminadas con un solo clic",
     },
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/cc8f8316-9438-46fe-bbe0-db9a1f2c6fec",
   },
@@ -46,11 +46,11 @@ export const ProductsDataEs = [
     advantages: {
       adv01: "Perfil de mercado TPO, perfil composite y DrawBox incluidos",
       adv02: "No uso de Tick Replay, esto lo hace hasta 10 veces más rápido.",
-      adv03: "Plantillas predeterminadas que se cargan con un solo click.",
+      adv03: "Plantillas predeterminadas que se cargan con un solo clic.",
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
     indLink: "logic-volume-profile",
-    buyLink: "https://link2.com",
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/ef58c449-367a-473a-ab97-5e120db29c35",
   },
   {
     product: "Logic Analytics",
@@ -65,7 +65,7 @@ export const ProductsDataEs = [
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
     indLink: "logic-analytics",
-    buyLink: "https://link3.com",
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/9e3ccf11-7188-43cf-823c-4e70036b05b1",
   },
 ];
 
@@ -119,7 +119,7 @@ export const ProductsDataEn = [
       adv04: "Additionally, you have daily educational material on Telegram.",
     },
     indLink: "logic-volume-profile",
-    buyLink: "https://link2.com",
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/192de401-0db2-478d-acf6-eba03d06f658",
   },
   {
     product: "Logic Analytics",
@@ -134,7 +134,7 @@ export const ProductsDataEn = [
       adv04: "Additionally, you have daily educational material on Telegram.",
     },
     indLink: "logic-analytics",
-    buyLink: "https://link3.com",
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/6a132704-c1e3-4f8b-a89c-47380649ffe3",
   },
 ];
 

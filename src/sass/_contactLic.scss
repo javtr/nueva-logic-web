@@ -1,24 +1,17 @@
 @import "./variables.scss";
 
-
-
-.noClose{
+.noClose {
   background-color: $background;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 90px $margen-lat 20px $margen-lat;
 
-
   @include breakpoint-down(large) {
-
     padding: 20px;
-
   }
 
-
-
-  &-msg{
+  &-msg {
     width: 80%;
     max-width: 1000px;
     background-color: $secundary;
@@ -31,36 +24,27 @@
     font-size: $card_title2;
     padding: 20px 40px;
 
-
     @include breakpoint-down(large) {
       width: 90%;
       height: 180px;
       padding: 20px 10px;
       text-align: center;
-  
     }
-
 
     @include breakpoint-down(medium) {
       width: 100%;
       height: 180px;
       padding: 20px 10px;
       text-align: center;
-  
     }
-
-
   }
-
 }
-
 
 .formLic {
   background-color: $background;
   display: flex;
   justify-content: center;
   color: $white;
-
 
   &__container {
     max-width: $max-width;
@@ -71,17 +55,9 @@
     align-items: center;
     color: $black;
 
-
     @include breakpoint-down(large) {
-
       padding: 20px 20px 30px 20px;
-
     }
-
-
-
-  
-
 
     &--form {
       background-color: $white;
@@ -98,12 +74,9 @@
         margin-bottom: 50px;
       }
 
-
       @include breakpoint-down(medium) {
         width: 100%;
         padding: 20px 20px;
-        
-
       }
 
       &-title {
@@ -114,9 +87,7 @@
 
         @include breakpoint-down(medium) {
           margin-bottom: 50px;
-
         }
-
       }
 
       &-subt {
@@ -126,11 +97,9 @@
 
         @include breakpoint-down(medium) {
           margin-bottom: 50px;
-
         }
+      }
 
-      }  
-      
       &-subp {
         font-size: $card_title2;
         text-align: left;
@@ -138,24 +107,18 @@
 
         @include breakpoint-down(medium) {
           margin-bottom: 50px;
-
         }
+      }
 
-      }        
-
-
-      &-licImg{
+      &-licImg {
         width: 100%;
         margin-bottom: 30px;
 
-        img{
+        img {
           height: auto;
           width: 95%;
         }
-
       }
-
-
 
       label {
         font-size: $card_title2;
@@ -177,7 +140,6 @@
           margin-bottom: 20px;
           height: 60px;
         }
-
       }
 
       textarea {
@@ -194,7 +156,6 @@
         @include breakpoint-down(medium) {
           height: 100px;
         }
-
       }
 
       button {
@@ -206,6 +167,33 @@
 
         font-size: 28px;
         color: $white;
+      }
+
+      &-indications {
+        margin-top: 20px;
+
+        p {
+          font-size: 20px;
+
+          &:nth-of-type(-n + 3) {
+            font-weight: normal;
+            margin-bottom: 15px;
+
+            &:before {
+              content: "•";
+              margin-right: 5px;
+            }
+
+          }
+          &:nth-last-of-type(-n + 2) {
+            font-style: italic;
+            margin-bottom: 5px;
+
+
+
+          }
+
+        }
       }
     }
 
@@ -236,7 +224,6 @@
           padding: 20px;
         }
       }
-
     }
 
     &--succes {
@@ -251,8 +238,6 @@
         margin: 20px;
       }
 
-
-
       p {
         background-color: aquamarine;
         padding: 50px;
@@ -260,8 +245,7 @@
 
         @include breakpoint-down(medium) {
           padding: 20px;
-        }   
-             
+        }
       }
     }
   }

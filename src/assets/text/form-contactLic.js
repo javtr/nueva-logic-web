@@ -9,7 +9,14 @@ export const textEn = {
   mess: "Message",
   button: "Send",
   ok: "Information has been successfully sent! Thank you for your cooperation.",
-  error: "We're sorry, an error occurred while processing your request. Please try again later. If the problem persists, contact technical support."
+  error: "We're sorry, an error occurred while processing your request. Please try again later. If the problem persists, contact technical support.",
+  p1: "You will receive your software via email within 1 business day (8 AM to 5 PM GMT-4).",
+  p2: "Please make sure to check your spam or promotions folder, as occasionally our emails may end up there.",
+  p3: "If you have any concerns, feel free to contact us:",
+  p4: "info@logicindicators.com",
+  p5: "Support WhatsApp (+57 311 3006826)"
+  
+
 };
 
 export const textEs = {
@@ -23,5 +30,11 @@ export const textEs = {
   mess: "Mensaje",
   button: "Enviar",
   ok: "¡La información se ha enviado correctamente! Gracias por su colaboración.",
-  error: "Lo sentimos, ha ocurrido un error al procesar su solicitud. Por favor, inténtelo nuevamente más tarde. Si el problema persiste, comuníquese con el soporte técnico."
+  error: "Lo sentimos, ha ocurrido un error al procesar su solicitud. Por favor, inténtelo nuevamente más tarde. Si el problema persiste, comuníquese con el soporte técnico.",
+  p1:"Recibirás en tu correo tu software en un plazo de 1 día hábil (8 a 5 PM GMT- 4).",
+  p2:"Por favor, asegúrate de revisar tu bandeja de spam o de promociones, ya que ocasionalmente nuestros correos electrónicos pueden terminar allí.",
+  p3:"Si tienes cualquier inquietud no dudes en contactarnos:",
+  p4:"info@logicindicators.com",
+  p5:"WhatsApp de soporte (+57 311 3006826)",
+  
 };
