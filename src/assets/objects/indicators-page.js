@@ -196,13 +196,14 @@ export const IndicatorDataEs = [
 
     img01Sec: "./of_home.jpeg",
     img02Sec: "./of_home.jpeg",
+
     url: "logic-volume-profile",
     
     titb:"Potente Análisis de Volumen para una Estrategia Eficiente",
 
     titk_1:["Ahorre tiempo en configuraciones","save"],
 
-    iinb_1: "./indicators_page/of_home.jpeg",
+    imgb: "./indicators_page/pr_01.gif",
     
           
     txtb_1:
