@@ -194,8 +194,8 @@ export const IndicatorDataEs = [
     subSec: "Experimenta la versatilidad definitiva en el análisis de volumen con este perfil todo en uno, que incluye TPO y perfil de volumen. Su excepcional adaptabilidad a cualquier temporalidad y tipo de trading permite una personalización total. Simplifica tu análisis con un indicador que se ajusta perfectamente a tu estilo de trading.",
 
 
-    img01Sec: "./of_home.jpeg",
-    img02Sec: "./of_home.jpeg",
+    img01Sec: "./indicators_page/pr_home.jpg",
+    img02Sec: "./indicators_page/pr_header.jpg",
 
     url: "logic-volume-profile",
     
@@ -212,13 +212,13 @@ export const IndicatorDataEs = [
     titk_2:["Profile Personalizado y Flexible con TPO, Sesiones y Más","features"],
 
 
-    iinb_2: "./indicators_page/of_home.jpeg",
-
+    imgb_1: "./indicators_page/pr_02.gif",
+  
 
 
     txtb_2:"Con Logic Volume Profile, la flexibilidad es clave. Adáptelo a sus necesidades con perfiles diarios, semanales, mensuales y por fecha. Divida la sesión americana de la asiática según sus horarios preferidos. Consulte nuestro manual de configuración con plantillas listas para ahorrarle horas.",
 
-    iinb_3: "./indicators_page/of_home.jpeg",
+    imgb_2: "./indicators_page/pr_03.gif",
 
     txtb_3:"Explore las opciones de Volume Profile y Market Profile (TPO) completamente configurables. Elija entre cuatro tipos de perfiles en un solo indicador. Y para una configuración aún más rápida, utilice presets con un clic que no requieren recargar el indicador.",
 
@@ -230,24 +230,24 @@ export const IndicatorDataEs = [
 
     titSec: "Logic Analytics",
     subSec: "Descubre la sinergia entre precio, volumen y delta con Logic Analytics. Simplifica la comprensión de los rangos de mercado, visualizando de manera intuitiva las interacciones y obteniendo una comprensión profunda en tiempo real.",
-    img01Sec: "./of_home.jpeg",
-    img02Sec: "./of_home.jpeg",
+    img01Sec: "./indicators_page/an_02.jpg",
+    img02Sec: "./indicators_page/an_01.jpg",
     url:"logic-analytics",
     
 
     titb: "Aproveche el Poder del Análisis de Datos con Logic Analytics",
 
     titk_1:["Precision Estratégica: Alinee sus Decisiones con Logic Analytics","precision"],
+              
+    imgb_1: "./indicators_page/an_04.gif",
     
-    imgb: "./indicators_page/of_home.jpeg",
-          
     txtb_1:
       "Seleccione con precisión el punto inicial y final en su gráfico con Logic Analytics para obtener una visión detallada de los datos. Esta herramienta avanzada de análisis de datos está diseñada para brindarle información valiosa y mejorar su toma de decisiones en el mercado.",
 
     titk_2:["Datos Cruciales a su Alcance para Decisiones Rápidas","datos"],
 
 
-    iinb_1: "./indicators_page/of_home.jpeg",
+    imgb_2: "./indicators_page/an_03.jpg",
 
     txtb_2:"Descubra datos esenciales para optimizar su ejecución:",
 

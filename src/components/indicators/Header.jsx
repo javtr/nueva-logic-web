@@ -57,7 +57,7 @@ export default function Header() {
                 <Link to="/buy">Comprar</Link>
             </div>
             <div className="ind-header__container--img">
-              <img src={images(text[indId].img01Sec)} alt="indicator"></img>
+              <img src={images(text[indId].img02Sec)} alt="indicator"></img>
             </div>
           </div>
         </div>
