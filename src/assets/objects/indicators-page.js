@@ -40,15 +40,15 @@ export const IndicatorDataEn = [
 
     titk_1: ["Easy Identification of Patterns", "patterns"],
 
-    iinb_1: "./indicators_page/of_home.jpeg",
+    iinb_1: "./indicators_page/of_ind_01.jpg",
 
     txtb_2: "Learn to identify patterns easily and effectively with Logic OrderFlow. The High Volume Area (HVA) stands out clearly on the chart with dark colors and prominent numbers. This area reflects where price finds liquidity, generating significant market pauses.",
 
-    iinb_2: "./indicators_page/of_home.jpeg",
+    iinb_2: "./indicators_page/of_ind_02.jpg",
 
     txtb_3: "Conversely, the Low Volume Area (LVA) is presented with lighter colors than the rest of the candle. This indicates that the price has traded these levels quickly due to a lack of liquidity in that area.",
 
-    iinb_3: "./indicators_page/of_home.jpeg",
+    iinb_3: "./indicators_page/of_ind_03.jpg",
 
     txtb_4: "The Low Imbalance, a variant of the Low Volume Area, shows imbalances in buys or sells (numbers in blue). This pattern indicates initiative but with limited strength. The movement may continue for a few ticks before reversing, signaling weak auction.",
 
@@ -56,7 +56,7 @@ export const IndicatorDataEn = [
 
     titk_2: ["Quick Loading: OrderFlow without Tick Replay", "quick-load"],
 
-    iinb_4: "./indicators_page/of_home.jpeg",
+    iinb_4: "./indicators_page/of_ind_03.gif",
 
     txtb_5: "By eliminating unnecessary resource loading, our Logic Indicators tools excel at loading quickly and efficiently, without using the Tick Replay method. Experience up to 10 times more speed when integrating them into your NinjaTrader charts.",
 
@@ -73,26 +73,26 @@ export const IndicatorDataEn = [
   {
     titSec: "Logic Volume Profile",
     subSec: "Discover the synergy between price, volume, and delta with Logic Analytics. Simplify understanding market ranges, intuitively visualizing interactions, and gaining a real-time deep understanding.",
-    img01Sec: "./of_home.jpeg",
-    img02Sec: "./of_home.jpeg",
+    img01Sec: "./indicators_page/pr_home.jpg",
+    img02Sec: "./indicators_page/pr_header.jpg",
     url: "logic-volume-profile",
 
     titb: "Powerful Volume Analysis for Efficient Strategy",
 
     titk_1: ["Save Time on Configurations", "save"],
 
-    iinb_1: "./indicators_page/of_home.jpeg",
+    imgb: "./indicators_page/pr_01.gif",
 
     txtb_1:
       "Experience efficiency with Logic Volume Profile. Forget reloading charts to adjust visual options. Simply open the quick window, adjust your preferences, and see instant changes. Also, use preset presets for quick setup.",
 
     titk_2: ["Custom and Flexible Profile with TPO, Sessions, and More", "features"],
 
-    iinb_2: "./indicators_page/of_home.jpeg",
+    imgb_1: "./indicators_page/pr_02.gif",
 
     txtb_2: "With Logic Volume Profile, flexibility is key. Adapt it to your needs with daily, weekly, monthly, and date profiles. Split the American session from the Asian session according to your preferred hours. Check our setup manual with ready-made templates to save you hours.",
 
-    iinb_3: "./indicators_page/of_home.jpeg",
+    imgb_2: "./indicators_page/pr_03.gif",
 
     txtb_3: "Explore fully configurable Volume Profile and Market Profile (TPO) options. Choose from four profile types in a single indicator. And for even faster setup, use one-click presets that don't require reloading the indicator.",
 
@@ -101,22 +101,22 @@ export const IndicatorDataEn = [
   {
     titSec: "Logic Analytics",
     subSec: "Experience the ultimate versatility in volume analysis with this all-in-one profile, including TPO and volume profile. Its exceptional adaptability to any timeframe and trading type allows total customization. Simplify your analysis with an indicator that perfectly fits your trading style.",
-    img01Sec: "./of_home.jpeg",
-    img02Sec: "./of_home.jpeg",
+    img01Sec: "./indicators_page/an_02.jpg",
+    img02Sec: "./indicators_page/an_01.jpg",
     url: "logic-analytics",
 
     titb: "Harness the Power of Data Analysis with Logic Analytics",
 
     titk_1: ["Strategic Precision: Align Your Decisions with Logic Analytics", "precision"],
 
-    imgb: "./indicators_page/of_home.jpeg",
+    imgb_1: "./indicators_page/an_04.gif",
 
     txtb_1:
       "Precisely select the starting and ending points on your chart with Logic Analytics to gain a detailed view of the data. This advanced data analysis tool is designed to provide valuable insights and improve your decision-making in the market.",
 
     titk_2: ["Crucial Data at Your Fingertips for Quick Decisions", "data"],
 
-    iinb_1: "./indicators_page/of_home.jpeg",
+    imgb_2: "./indicators_page/an_03.jpg",
 
     txtb_2: "Discover essential data to optimize your execution:",
 

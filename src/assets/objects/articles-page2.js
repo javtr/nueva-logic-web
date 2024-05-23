@@ -314,10 +314,14 @@ export const ArticlesDataEn = [
     subb_1:
       "Welcome to our blog, where we dive into the exciting universe of futures trading. Whether you're a financial market enthusiast or an aspiring investor, this space will provide valuable information to understand and master the art of futures trading.",
     sepA_1: "",
+    
     titk_1: ["What are Futures?", "futures"],
     txtb_1:
       "Futures are derivative financial instruments that play a fundamental role in modern financial markets. These standardized contracts offer participants the opportunity to buy or sell an underlying asset at a fixed price on a predetermined future date. Originating in the 19th century, initially linked to crops, futures have evolved to cover a wide range of assets, from commodities to stock indices and interest rates.",
-    sepA_2: "",
+    
+      sepA_2: "",
+      imgb_1: "./articles_page/futuros_01.jpg",
+
     titk_2: ["History and Origin:", "history"],
     txtb_2:
       "The concept of futures emerged in the 19th century as a clever solution to challenges faced by farmers. These professionals, exposed to losses due to fluctuations in demand and unforeseen weather events, found in futures contracts a valuable tool to manage their risk.",
@@ -342,7 +346,10 @@ export const ArticlesDataEn = [
     ],
     txtb_12:
       "Knowing the futures contracts most traded by volume is essential to understand the dynamics of the financial market. Below, we present a list of the most traded futures contracts, ranked from highest to lowest volume:",
-    tit3_10: "Interest Rate Futures:",
+    
+      imgb_2: "./articles_page/futuros_02.jpg",
+    
+      tit3_10: "Interest Rate Futures:",
     txtb_13:
       "Linked to interest rates, these futures are crucial for risk management related to fluctuations in interest rates.",
     tit3_11: "Stock Index Futures:",
@@ -360,7 +367,7 @@ export const ArticlesDataEn = [
     tit3_6: "Metal Futures:",
     txtb_18:
       "Include precious metals such as gold, silver, and platinum, being attractive to investors looking to diversify their portfolios and protect against volatility in metal markets.",
-    iinb_2: "./articles_page/art1_02.png",
+      imgb_3: "./articles_page/art1_03.png",
     titk_10: ["Speculating in the Futures Market", "trading"],
     txtb_20:
       "In the world of futures contracts, many traders choose speculation as their primary focus. This involves buying and selling futures contracts with the aim of capitalizing on price movements, without the intention of executing the contracts on the expiration date. This approach, known as futures trading, focuses on capturing opportunities in financial markets, regardless of when the contract execution occurs.",
@@ -395,6 +402,8 @@ export const ArticlesDataEn = [
       "NinjaTrader, a leading trading platform founded in 2003, has evolved with the financial industry for over two decades. In this complete guide, we will explore the features, advantages, and disadvantages of NinjaTrader, as well as the trading strategies and opportunities it offers.",
     sepA_1: "",
     titk_1: ["Platform Advantages", "advantages"],
+
+    imgb_1: "./articles_page/ninja_01.jpg",
     txtb_1:
       "1. First-Class Charting Tools: Enhanced trading experience with customization options and a wide range of technical indicators.",
     txtb_2:
@@ -402,6 +411,8 @@ export const ArticlesDataEn = [
     txtb_3:
       "3. Comprehensive Educational Library: Educational resources that guide traders through the entire process, from beginners to advanced.",
     titk_2: ["Key Features", "features"],
+
+    imgb_2: "./articles_page/ninja_02.jpg",
     txtb_10:
       "NinjaTrader stands out as a comprehensive platform with key partnerships with popular brokers like Interactive Brokers and TD Ameritrade. Some of its key features include:",
     dotb_10:
@@ -419,6 +430,8 @@ export const ArticlesDataEn = [
     txtb_30:
       "Discover how NinjaTrader transforms the trading experience with its advanced visualization tools and charts. From unique features to the ability to trade directly from the chart, this platform offers a set of tools that allow traders to react quickly to market changes.",
     tit3_30: "Placing Orders Directly from the Chart:",
+    imgb_3: "./articles_page/ninja_03.jpg",
+    
     txtb_32:
       "NinjaTrader goes beyond conventional charts by allowing traders to place trades directly from the chart interface. This unique functionality empowers users to make quick and precise decisions, optimizing their reaction time to market fluctuations.",
     tit3_36: "Quick Access Keys and Efficient Execution:",
@@ -438,7 +451,10 @@ export const ArticlesDataEn = [
     tit3_52: "Simulation and Backtesting:",
     txtb_52:
       "Even without a funded account, NinjaTrader provides state-of-the-art simulation and backtesting tools. These functions allow traders to develop strategies, fine-tune their approaches, and explore the platform without the pressure of trading with real money. Simulation provides a realistic practice environment, replicating market conditions.",
-    tit3_54: "Develop Your Strategy:",
+      imgb_4: "./articles_page/ninja_04.jpg",
+    
+    
+      tit3_54: "Develop Your Strategy:",
     txtb_54:
       "Demo accounts in NinjaTrader are a safe playground to develop and refine trading strategies. Traders can experiment with different approaches, test theories, and adjust tactics as needed, all without risking real funds.",
     tit3_56: "Familiarize Yourself with NinjaTrader:",
@@ -463,7 +479,9 @@ export const ArticlesDataEn = [
       "Mini and micro futures have the noble mission of simplifying access to markets that might otherwise be challenging due to their logistical complexity or high costs. Consider, for example, commodity markets and the logistics involved in receiving, transporting, securing, and storing such assets. These contracts emerge as solutions that open the doors of trading to a broader spectrum of investors.",
     txtb_2:
       "Moreover, mini and micro contracts offer the possibility to participate in markets with a considerably lower investment than required for standard contracts. Although there is no one-size-fits-all scale, mini futures on indices, for example, can trade between one-fifth and one-tenth of the standard contract value. Similarly, micro futures can reduce the required investment in the same proportion, and even be 100 times more affordable than standard futures.",
-    titk_2: ["Key Features of Mini and Micro Futures:", "features"],
+    
+      imgb_1: "./articles_page/micro_01.jpg",
+      titk_2: ["Key Features of Mini and Micro Futures:", "features"],
     txtb_20:
       "Mini and micro futures establish an obligation between two parties, the holder and the issuer, committing to an agreed exchange of the asset and the corresponding payment in the future. Unlike other instruments, such as warrants, these contracts are traded on regulated markets, providing a safer and more transparent environment.",
     txtb_21:
@@ -476,7 +494,9 @@ export const ArticlesDataEn = [
     titk_4: ["Examples of Mini and Micro Futures:", "examples"],
     txtb_40:
       "Mini and micro futures cover various markets, including forex with key currency pairs (EUR/USD, GBP/USD) and commodities like gold, silver, and crude oil, all in more affordable formats. Among the most popular are mini and micro futures tracking leading global stock indices, such as Nasdaq 100, DAX 30, FTSE 100, S&P 500, and Ibex 35.",
-    titk_5: [
+    
+      imgb_2: "./articles_page/micro_02.jpg",
+      titk_5: [
       "Difference Between Mini Futures and Other Futures:",
       "differences",
     ],
@@ -492,13 +512,15 @@ export const ArticlesDataEn = [
     img02Sec: "./articles_page/art4_min.png",
     url: "wyckoff-method",
     titb: "Wyckoff Method Complete Guide",
-    imgb: "./articles_page/art1_01.png",
+    imgb: "./articles_page/wyckoff_03.jpg",
     subb_1:
       "In the vast world of investment, the Wyckoff method stands out as a century-old strategy created by Richard Wyckoff. This approach, based on market phase analysis, has withstood the test of time and continues to be a valuable tool for investors seeking to predict future asset movements. Let's explore together how to implement this strategy and how it can benefit investors.",
     titk_1: ["What Is It?", "wyckoff"],
     txtb_1:
       "The Wyckoff method is an investment system that, through the analysis of market phases, seeks to predict future price movements. Designed by Richard Wyckoff, this method focuses on generating long-term profits in the stock market. It provides a framework for identifying the best stocks to invest in and determining the optimal time to execute transactions. It is essential to note that this strategy is oriented towards long-term investments.",
     titk_2: ["Who Was Richard Wyckoff?", "history"],
+    
+    iinb_1: "./articles_page/wyckoff_01.jpg",
     txtb_2:
       "Richard Wyckoff, a pioneer in trading in the early 20th century, developed this method. He was one of the first to analyze techniques that would provide beneficial results in the stock market. Wyckoff stood out for his focus on technical analysis, using charts and observing the price and volume of financial instruments. His work laid the foundation for what we know as technical analysis today.",
     titk_3: ["Keys to Understanding Wyckoff's Trading Fundamentals:", "keys"],
@@ -517,7 +539,9 @@ export const ArticlesDataEn = [
       "Trend Phase (Phase B): Represents a mild upward trend with constant volume. Here, significant interests accumulate stocks at low prices in preparation for the next phase.",
     dotb_44:
       "Distribution Phase (Phase C): The final phase, where major investors begin to anticipate market movements. Volume increases as they unload accumulated stocks, preparing for a new phase.",
-    titk_5: [
+      imgb_1: "./articles_page/wyckoff_02_en.jpg",
+   
+      titk_5: [
       "Application of the Wyckoff Method in Daily Investments",
       "applications",
     ],

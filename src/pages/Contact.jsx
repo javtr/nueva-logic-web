@@ -10,6 +10,10 @@ import { TailSpin } from "react-loader-spinner";
 
 import LanguageContext from "../context/langContext";
 import { textEn, textEs } from "../assets/text/form-contact";
+import { SeoDataEs, SeoDataEn } from "../assets/objects/SEO_data";
+
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 
 
 
@@ -20,15 +24,23 @@ const Contact = () => {
 
   const { lang } = useContext(LanguageContext);
   const [text, setText] = useState([]);
+  const [seo, setSeo] = useState([]);
+
   const [isloading, setIsloading] = useState(true);
 
   useEffect(() => {
     if (lang === "en") {
       setText(textEn);
+      setSeo(SeoDataEn);
+
     } else if (lang === "es") {
       setText(textEs);
+      setSeo(SeoDataEs);
+
     } else {
       setText(textEn);
+      setSeo(SeoDataEn);
+
     }
     setIsloading(false);
   }, [lang]);
@@ -149,14 +161,41 @@ const Contact = () => {
 
 
   return (
+    <HelmetProvider>
 
     <>
       {!isloading ? (
         <>
+
           {text !== undefined ? (
 
 
     <div>
+            <Helmet>
+              <title>{seo[4].title}</title>
+              <meta name="description" content={seo[4].og_description} />
+              <meta name="keywords" content={seo[4].keywords} />
+              <link rel="canonical" href={seo[4].canonical} />
+
+              <meta property="og:title" content={seo[4].og_title} />
+              <meta property="og:description" content={seo[4].og_description} />
+              <meta property="og:image" content={seo[4].og_image} />
+              <meta property="og:url" content={seo[4].og_url} />
+
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content={seo[4].og_title} />
+              <meta
+                name="twitter:description"
+                content={seo[4].og_description}
+              />
+              <meta name="twitter:image" content={seo[4].og_image} />
+
+              <link
+                rel="icon"
+                href="https://www.logicindicators.com/logic.ico"
+              />
+            </Helmet>
+
       {mailState === "sending" && (
         <div style={{ display: "flex", justifyContent: "center" }}
             className="form__container--sending"
@@ -251,8 +290,9 @@ const Contact = () => {
       )}
     </>
 
-
+    </HelmetProvider>
   );
+
 };
 
 export default Contact;

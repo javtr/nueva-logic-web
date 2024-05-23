@@ -3,15 +3,19 @@ import Header from "../components/indicators/Header";
 import { BlogGenerator } from "../components/indicators/BlogGenerator";
 import { useParams } from "react-router-dom";
 import IndSideBar from "../components/indicators/IndSidebar";
+import { SeoDataEs, SeoDataEn } from "../assets/objects/SEO_data";
+
 
 import { IndicatorDataEn, IndicatorDataEs } from "../assets/objects/indicators-page";
 import LanguageContext from "../context/langContext";
 
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 export default function Indicator() {
   const { lang } = useContext(LanguageContext);
   const [text, setText] = useState([]);
+  const [seo, setSeo] = useState([]);
   const [isloading, setIsloading] = useState(true);
   const params = useParams();
   const [indId, setIndId] = useState(null);
@@ -22,14 +26,16 @@ export default function Indicator() {
   }, [text,params.IndicatorId]);
 
 
-
   useEffect(() => {
     if (lang === "en") {
       setText(IndicatorDataEn);
+      setSeo(SeoDataEn);
     } else if (lang === "es") {
       setText(IndicatorDataEs);
+      setSeo(SeoDataEs);
     } else {
       setText(IndicatorDataEn);
+      setSeo(SeoDataEn);
     }
 
     setIsloading(false);
@@ -40,13 +46,31 @@ export default function Indicator() {
   }, []);
 
 
-
   return (
-
+    <HelmetProvider>
     <>
       {!isloading ? (
 
     <>
+          <Helmet>
+            <title>{seo[1].title}</title>
+            <meta name="description" content={seo[1].og_description} />
+            <meta name="keywords" content={seo[1].keywords} />
+            <link rel="canonical" href={seo[1].canonical} />
+
+            <meta property="og:title" content={seo[1].og_title} />
+            <meta property="og:description" content={seo[1].og_description} />
+            <meta property="og:image" content={seo[1].og_image} />
+            <meta property="og:url" content={seo[1].og_url} />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={seo[1].og_title} />
+            <meta name="twitter:description" content={seo[1].og_description} />
+            <meta name="twitter:image" content={seo[1].og_image} />
+
+            <link rel="icon" href="https://www.logicindicators.com/logic.ico" />
+          </Helmet>    
+
       {text[indId] !== undefined ? (
 
         <div>
@@ -83,10 +107,15 @@ export default function Indicator() {
 
 
     ) : (
+      
         <></>
-      )}
-    </>  
+        
+      )
+      
+      }
 
+    </>  
+    </HelmetProvider>
 
   );
 }
