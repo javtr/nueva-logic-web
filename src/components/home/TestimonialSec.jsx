@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
-import avatar from "../../assets/img/avatar.png";
+import avatar1 from "../../assets/img/testimonials/test_04.png";
+import avatar2 from "../../assets/img/testimonials/test_03.png";
+import avatar3 from "../../assets/img/testimonials/test_01.png";
 
 import LanguageContext from "../../context/langContext";
 import { textEn, textEs } from "../../assets/text/home-experiences";
@@ -38,7 +40,7 @@ export default function TestimonialSec() {
 
                 </p>
                 <div>
-                  <img src={avatar} alt="avatar"></img>
+                  <img src={avatar1} alt="avatar"></img>
                   <h4> {text.tit3}</h4>
                 </div>
               </div>
@@ -48,7 +50,7 @@ export default function TestimonialSec() {
                 {text.txt1}
                 </p>
                 <div>
-                  <img src={avatar} alt="avatar"></img>
+                  <img src={avatar2} alt="avatar"></img>
                   <h4> {text.tit1}</h4>
                 </div>
               </div>
@@ -59,7 +61,7 @@ export default function TestimonialSec() {
 
                 </p>
                 <div>
-                  <img src={avatar} alt="avatar"></img>
+                  <img src={avatar3} alt="avatar"></img>
                   <h4> {text.tit4}</h4>
                 </div>
               </div>

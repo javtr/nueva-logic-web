@@ -58,6 +58,7 @@
         }
 
         &-img {
+          padding: 10px;
           width: 100%;
 
           @include breakpoint-down(medium) {

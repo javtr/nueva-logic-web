@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.otmtrading.com/</loc>
-        <priority>1</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.otmtrading.com/features</loc>
-        <priority>0.8</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.otmtrading.com/buy</loc>
-        <priority>0.2</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.otmtrading.com/example</loc>
-        <priority>0.8</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.otmtrading.com/contact</loc>
-        <priority>0.1</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.otmtrading.com/order</loc>
-        <priority>0.1</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-</urlset>
+  
+  <url>
+    <loc>https://www.logicindicators.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
 
+  <url>
+    <loc>https://www.logicindicators.com/indicator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.logicindicators.com/education</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.logicindicators.com/article</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.logicindicators.com/buy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.logicindicators.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

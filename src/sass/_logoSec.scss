@@ -13,8 +13,33 @@
       margin-top: 160px;
       margin-bottom: 100px;
       display: flex;
+      flex-direction: column;
+
       justify-content: center;
   
+      a{
+        display: flex;
+        justify-content: center;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: $white;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-left: 50px;
+
+        @include breakpoint-down(medium) {
+          margin-left: 10px;
+    
+        } 
+
+
+      }
+
+
       @include breakpoint-down(medium) {
         padding: 0 $margen-lat-mobil 0 $margen-lat-mobil;
         margin-top: 80px;
@@ -23,11 +48,23 @@
       }
 
 
+      &--aninja{
+        margin-bottom: 100px;
+    }
 
-        img{
+
+        &--imgninja{
             width: 85%;
         }
 
+        &--imgk{
+          width: 50%;
+
+          @include breakpoint-down(medium) {
+            width: 85%;
+      
+          }          
+      }
 
     }
 }

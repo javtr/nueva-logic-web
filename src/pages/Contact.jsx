@@ -55,6 +55,10 @@ const Contact = () => {
   const template = "template_7vyrf6s";
   const emailKey = "QyQP72Hg4ObCGjDYM";
   const captchaLocal = "6Le251MpAAAAAJ0Oec0l7x-koMG_kKUg6EypEbbi";
+  const captchaWeb = "6LdmJucpAAAAAPN--0vzj_7NuxLvMHqsRDrOkpxO";//6LdmJucpAAAAAAFjvyg_8pbH1mN9Mk6c-aQi7I24
+
+  // 6Ld2wr4fAAAAAJ3Op2VrKv4Vzn865fJm8wPcRh0e
+  // 6Ld2wr4fAAAAAOBRXktWM6IWMoLWOju2HxZQx4uk
 
   const [formData, setFormData] = useState({
     name: "",
@@ -117,28 +121,28 @@ const Contact = () => {
         scrollToTop();
 
         //! Test 
-        setTimeout(function() {
-          // Código que se ejecutará después de esperar 10 segundos
-          console.log("Han pasado 10 segundos");
-          setMailState("succes");
-          scrollToTop();
-        },5000);
+        // setTimeout(function() {
+        //   // Código que se ejecutará después de esperar 10 segundos
+        //   console.log("Han pasado 10 segundos");
+        //   setMailState("succes");
+        //   scrollToTop();
+        // },5000);
 
 
 
         //! No eliminar 
-        // emailjs.send(service, template, formData, emailKey).then(
-        //   (result) => {
-        //     setMailState("succes");
-        // scrollToTop();
+        emailjs.send(service, template, formData, emailKey).then(
+          (result) => {
+            setMailState("succes");
+        scrollToTop();
 
-        //   },
-        //   (error) => {
-        //     setMailState("fail");
-        // scrollToTop();
+          },
+          (error) => {
+            setMailState("fail");
+        scrollToTop();
 
-        //   }
-        // );
+          }
+        );
 
 
 
@@ -265,7 +269,7 @@ const Contact = () => {
 
               <div className="formContact__recaptcha">
                 <ReCAPTCHA
-                  sitekey={captchaLocal}
+                  sitekey={captchaWeb}
                   onChange={onChange}
                   size={window.innerWidth < 640 ? "compact" : "normal"}
                   theme="dark"

@@ -12,6 +12,7 @@ find . -mindepth 1 -name '.git' -prune -o ! -name '.*' -exec rm -rf {} +
 echo "========== Clean ==========="
 
 # copiar archivos
+cp ~/Desarrollo/nueva-logic-web/SEO/.htaccess ~/Desarrollo/nueva-logic-web/build
 cp -r ~/Desarrollo/nueva-logic-web/build/* ~/Desarrollo/logic-web-production
 cp -r ~/Desarrollo/nueva-logic-web/SEO/* ~/Desarrollo/logic-web-production
 echo "========== Copy ==========="

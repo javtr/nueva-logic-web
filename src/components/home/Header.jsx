@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import video_header from "../../assets/img/header_video.mp4";
-import avatar from "../../assets/img/avatar.png";
+import avatar from "../../assets/img/testimonials/test_02.png";
 
 import LanguageContext from "../../context/langContext";
 import { textEn, textEs } from "../../assets/text/home-header";

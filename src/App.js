@@ -10,6 +10,8 @@ import Buy from "./pages/Buy";
 import Indicator from "./pages/Indicator";
 import Article from "./pages/Article";
 import LanguageContext from "../src/context/langContext";
+import { HelmetProvider } from 'react-helmet-async';
+import Risk from "./pages/Risk";
 
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
 
 
   return (
+    <HelmetProvider>
     <LanguageContext.Provider value={value}>
       <>
         <Routes>
@@ -42,11 +45,12 @@ function App() {
             <Route path="/buy" element={<Buy />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/lic" element={<ContactLic />} />
-            
+            <Route path="/risk" element={<Risk />} />
           </Route>
         </Routes>
       </>
     </LanguageContext.Provider>
+    </HelmetProvider>
   );
 }
 

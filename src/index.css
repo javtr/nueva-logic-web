@@ -3,6 +3,7 @@
 /* Box sizing border-box para mejorar la consistencia del modelo de caja */
 html {
   box-sizing: border-box;
+  overflow-x: clip;
 }
 
 *, *::before, *::after {
@@ -19,6 +20,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, dl, dd, ul, ol, li, pre {
 /* Establece la fuente a la fuente del usuario o una fuente de sistema genérica */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  overflow-x: clip;
 }
 
 /* Elimina la decoración de texto predeterminada */

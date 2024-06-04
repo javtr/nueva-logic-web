@@ -39,9 +39,10 @@ const ContactLic = () => {
 
   //variables de oficial
   const service = "service_g9gfwit"; //! estos 3 valores son  de emailjs, se puede crear un template aparte
-  const template = "template_7vyrf6s";
+  const template = "template_6r8ymzt";
   const emailKey = "QyQP72Hg4ObCGjDYM";
   const captchaLocal = "6Le251MpAAAAAJ0Oec0l7x-koMG_kKUg6EypEbbi"; //! se debe meter en la pagina la url de la pagina y obtener un nuevo codigo
+  const captchaWeb = "6LdmJucpAAAAAPN--0vzj_7NuxLvMHqsRDrOkpxO";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -106,26 +107,26 @@ const ContactLic = () => {
         scrollToTop();
 
         //! Test
-        setTimeout(function () {
-          // Código que se ejecutará después de esperar 10 segundos
-          console.log("Han pasado 10 segundos");
-          setMailState("fail");
-          scrollToTop();
-        }, 5000);
+        // setTimeout(function () {
+        //   // Código que se ejecutará después de esperar 10 segundos
+        //   console.log("Han pasado 10 segundos");
+        //   setMailState("fail");
+        //   scrollToTop();
+        // }, 5000);
 
         //! No eliminar
-        // emailjs.send(service, template, formData, emailKey).then(
-        //   (result) => {
-        //     setMailState("succes");
-        // scrollToTop();
+        emailjs.send(service, template, formData, emailKey).then(
+          (result) => {
+            setMailState("succes");
+        scrollToTop();
 
-        //   },
-        //   (error) => {
-        //     setMailState("fail");
-        // scrollToTop();
+          },
+          (error) => {
+            setMailState("fail");
+        scrollToTop();
 
-        //   }
-        // );
+          }
+        );
       }
     }
   };
@@ -256,7 +257,7 @@ const ContactLic = () => {
 
                       <div className="formContact__recaptcha">
                         <ReCAPTCHA
-                          sitekey={captchaLocal}
+                          sitekey={captchaWeb}
                           onChange={onChange}
                           size={window.innerWidth < 640 ? "compact" : "normal"}
                           theme="dark"
