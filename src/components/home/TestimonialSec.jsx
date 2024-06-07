@@ -33,6 +33,13 @@ export default function TestimonialSec() {
             <h3 className="testimonialSec__container--h3">
             {text.sub}
             </h3>
+            <h3 className="testimonialSec__container--dec">
+            {text.dec}
+            </h3>
+
+
+
+
             <div className="testimonialSec__container--content">
               <div className="testimonialSec__container--content-testimonial">
                 <p className="testimonialSec__container--content-testimonial-text">

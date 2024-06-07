@@ -35,8 +35,20 @@
         margin-top: 20px;
         max-width: 1050px;
         align-self: center;
-        margin-bottom: 115px;
+        margin-bottom: 10px;
     }
+
+    &--dec {
+      font-size: $header_sub;
+      font-style: italic;
+      text-align: left;
+      color: $black;
+      line-height: 1.49;
+      margin-top: 20px;
+      max-width: 1050px;
+      align-self: center;
+      margin-bottom: 115px;
+  }
 
     &--content {
         display: flex;

@@ -2,6 +2,7 @@ export const textEn =
   {
     tit: "Successful Experiences",
     sub: "Discover how our users have successfully transformed their trading with our advanced tools.",
+    dec:"Testimonials appearing on this website may not be representative of other customers, and are not a guarantee of future performance or success.",
     tit1: "Marta Melgarejo",
     txt1: "I have made my withdrawal from Uprofit and now I am receiving my withdrawals from APEX, where I have been consistently profitable. This achievement has been reached with the assistance of the indicators. It is important to note that I have maintained my profitability consistently for years. Thank you!",
     tit2: "David Pinzón",
@@ -17,6 +18,7 @@ export const textEs =
   {
     tit: "Experiencias Exitosas",
     sub: "Descubre cómo nuestros usuarios han transformado su trading con éxito gracias a nuestras herramientas avanzadas.",
+    dec:"Es posible que los testimonios que aparecen en este sitio web no son representativos de otros clientes, y no es garantía alguna de futuro rendimiento o éxito",
     tit1: "Marta Melgarejo",
     txt1: "He realizado mi retiro de Uprofit y ahora estoy recibiendo mis retiros de APEX, donde he estado siendo rentable consistentemente. Este logro lo he alcanzado gracias a la asistencia de los indicadores. Es importante destacar que he mantenido mi rentabilidad de manera consistente durante años. ¡Gracias!",
     tit2: "David Pinzón",

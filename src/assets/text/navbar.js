@@ -1,5 +1,6 @@
 export const textEn =
   {
+    dec:"Risk",
     ind:"Indicators",
     edu:"Education",
     buy:"Buy",
@@ -9,6 +10,7 @@ export const textEn =
 
 export const textEs =
   {
+    dec:"Declaraciones",
     ind:"Indicadores",
     edu:"Educación",
     buy:"Comprar",

@@ -50,6 +50,7 @@ export default function Navbar() {
             </Link>
 
             <div className="navbar__content--links">
+              <Link to="/risk">{text.dec}</Link>
               <Link to="/#indicators">{text.ind}</Link>
               <Link to="/education">{text.edu}</Link>
               <Link to="/buy">{text.buy}</Link>

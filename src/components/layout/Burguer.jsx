@@ -33,6 +33,9 @@ export default function Burguer() {
         </div>
 
         <div className="sideBarLinks">
+        <Link className="link-before" onClick={turnOffSideBar} to="/risk">
+          Risk
+          </Link>
           <Link className="link-before" onClick={turnOffSideBar} to="/#indicators">
           Indicators
           </Link>
