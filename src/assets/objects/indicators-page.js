@@ -40,15 +40,15 @@ export const IndicatorDataEn = [
 
     titk_1: ["Easy Identification of Patterns", "patterns"],
 
-    iinb_1: "./indicators_page/of_ind_01.jpg",
+    imgb_1: "./indicators_page/of_ind_01.jpg",
 
     txtb_2: "Learn to identify patterns easily and effectively with Logic OrderFlow. The High Volume Area (HVA) stands out clearly on the chart with dark colors and prominent numbers. This area reflects where price finds liquidity, generating significant market pauses.",
 
-    iinb_2: "./indicators_page/of_ind_02.jpg",
+    imgb_2: "./indicators_page/of_ind_02.jpg",
 
     txtb_3: "Conversely, the Low Volume Area (LVA) is presented with lighter colors than the rest of the candle. This indicates that the price has traded these levels quickly due to a lack of liquidity in that area.",
 
-    iinb_3: "./indicators_page/of_ind_03.jpg",
+    imgb_3: "./indicators_page/of_ind_03.jpg",
 
     txtb_4: "The Low Imbalance, a variant of the Low Volume Area, shows imbalances in buys or sells (numbers in blue). This pattern indicates initiative but with limited strength. The movement may continue for a few ticks before reversing, signaling weak auction.",
 
@@ -56,7 +56,7 @@ export const IndicatorDataEn = [
 
     titk_2: ["Quick Loading: OrderFlow without Tick Replay", "quick-load"],
 
-    iinb_4: "./indicators_page/of_ind_03.gif",
+    imgb_4: "./indicators_page/of_ind_03.gif",
 
     txtb_5: "By eliminating unnecessary resource loading, our Logic Indicators tools excel at loading quickly and efficiently, without using the Tick Replay method. Experience up to 10 times more speed when integrating them into your NinjaTrader charts.",
 
@@ -64,7 +64,7 @@ export const IndicatorDataEn = [
 
     titk_3: ["Instant Loading: One-Click Default Templates", "templates"],
 
-    iinb_5: "./indicators_page/of_home.jpeg",
+    imgb_5: "./indicators_page/of_ind_05.gif",
 
     txtb_6: "Optimize your experience on the Logic OrderFlow panel with the ability to apply any template with a single click. Without reloading the chart, the template is applied instantly, providing unparalleled efficiency. Explore predesigned templates from leading futures platforms like Sierra Chart, ATAS, Quantower, or NinjaTrader. Don't waste time setting up – we've already done it for you!",
 
@@ -151,17 +151,17 @@ export const IndicatorDataEs = [
     titk_1:["Identificación Sencilla de Patrones","patrones"],
 
 
-    iinb_1: "./indicators_page/of_ind_01.jpg",
+    imgb_1: "./indicators_page/of_ind_01.jpg",
 
     txtb_2:"Aprende a identificar patrones de manera fácil y efectiva con Logic OrderFlow. El área de alto volumen (High Volume Area/HVA) se destaca claramente en el gráfico con colores oscuros y números prominentes. Esta zona refleja donde el precio encuentra liquidez, generando pausas significativas en el mercado.",
 
-    iinb_2: "./indicators_page/of_ind_02.jpg",
+    imgb_2: "./indicators_page/of_ind_02.jpg",
 
     txtb_3:"De manera opuesta, el área de bajo volumen (Low Volume Area/LVA) se presenta con colores más claros que el resto de la vela. Esto indica que el precio ha negociado estos niveles rápidamente debido a la falta de liquidez en esa zona.",
 
 
 
-    iinb_3: "./indicators_page/of_ind_03.jpg",
+    imgb_3: "./indicators_page/of_ind_03.jpg",
 
     txtb_4:"El Low Imbalance, una variante del Low Volume Área, muestra desequilibrios en las compras o ventas (números en azul). Este patrón indica iniciativa, pero con una fuerza limitada. El movimiento puede continuar por pocos ticks antes de revertirse, señalando una subasta débil.",
 
@@ -171,7 +171,7 @@ export const IndicatorDataEs = [
     titk_2:["Carga Rápida: OrderFlow sin Uso de Tick Replay","caga-rapida"],
 
 
-    iinb_4: "./indicators_page/of_ind_03.gif",
+    imgb_4: "./indicators_page/of_ind_03.gif",
     
     txtb_5:"Eliminando la carga innecesaria de recursos, nuestras herramientas de Logic Indicators se destacan al cargar de forma rápida y eficiente, prescindiendo del método Tick Replay. Experimenta hasta 10 veces más velocidad al integrarlas en tus gráficas de NinjaTrader.",
 
@@ -180,9 +180,30 @@ export const IndicatorDataEs = [
 
     titk_3:["Carga Instantánea: Plantillas Predeterminadas con un Solo Clic","plantillas"],
 
-    iinb_5: "./indicators_page/of_home.jpeg",
+    imgb_5: "./indicators_page/of_ind_05.gif",
     
     txtb_6:"Optimiza tu experiencia en el panel de Logic OrderFlow con la capacidad de aplicar cualquier plantilla con un solo clic. Sin recargar el gráfico, la plantilla se aplica al instante, proporcionando eficiencia inigualable. Explora las plantillas prediseñadas de plataformas destacadas en futuros, como Sierra Chart, ATAS, Quantower o NinjaTrader. No pierdas tiempo configurando, ¡nosotros ya lo hemos hecho por ti!",
+
+
+
+
+    titk_4:["Configuración en Tiempo Real","config"],
+
+    imgb_6: "./indicators_page/of_ind_05.gif",
+
+    txtb_7:"Nuestro software cuenta con una función única que revoluciona la experiencia de configuración para los traders. A diferencia de otros indicadores donde es necesario recargar la gráfica para aplicar los cambios, Logic OrderFlow integra configuración en tiempo real. Esta característica permite a los traders realizar ajustes y ver los resultados instantáneamente, sin necesidad de recargar el gráfico.",
+
+    dotb_1:"Eficiencia y Velocidad: Realiza ajustes sobre la marcha y observa los cambios al instante, sin interrupciones en tu análisis.",
+
+    dotb_2:"Comodidad y Flexibilidad: Modifica cualquier configuración gráfica directamente desde la ventana de configuración y aplica los cambios en tiempo real, ahorrando tiempo y esfuerzo.",
+
+    dotb_3:"Flujo de Trabajo Ininterrumpido: Mantén tu flujo de trabajo continuo sin la necesidad de recargar el chart, permitiéndote enfocarte completamente en tu estrategia de trading.",
+
+    txtb_8:"Esta ventaja proporciona una comodidad incomparable, mejorando significativamente la experiencia del usuario y permitiendo una adaptabilidad rápida a las condiciones cambiantes del mercado. Con Logic OrderFlow, optimizar tus gráficos nunca ha sido tan fácil y eficiente.",
+
+
+
+
 
 
     lnkb3: ["/buy", "Obtén Tu Indicador"],

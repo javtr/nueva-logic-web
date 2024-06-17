@@ -1,21 +1,21 @@
 #!/bin/bash
 
 # ejecutar run build
-cd ~/Desarrollo/nueva-logic-web
+cd /home/javier/Desarrollo/nueva-logic-web
 npm run build
 echo "========== Build ==========="
 
 # limpiar la carpeta build
-cd ~/Desarrollo/logic-web-production
+cd /home/javier/Desarrollo/logic_web_production
 find . -mindepth 1 -name '.git' -prune -o ! -name '.*' -exec rm -rf {} +
 
 echo "========== Clean ==========="
 
 # copiar archivos
-cp -r ~/Desarrollo/nueva-logic-web/build/* ~/Desarrollo/logic-web-production
-cp -r ~/Desarrollo/nueva-logic-web/SEO/* ~/Desarrollo/logic-web-production
+cp -r /home/javier/Desarrollo/nueva-logic-web/build/* /home/javier/Desarrollo/logic_web_production
+cp -r /home/javier/Desarrollo/nueva-logic-web/SEO/* /home/javier/Desarrollo/logic_web_production
 
-HTACCESS_PATH="$HOME/Desarrollo/logic-web-production/.htaccess"
+HTACCESS_PATH="/home/javier/Desarrollo/logic_web_production/.htaccess"
 
 HTACCESS_CONTENT='RewriteEngine On
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
@@ -43,14 +43,10 @@ echo "$HTACCESS_CONTENT" > "$HTACCESS_PATH"
 echo "Archivo .htaccess creado en $HTACCESS_PATH"
 
 
-
-
-
-
 echo "========== Copy ==========="
 
 # pushear archivos
-cd ~/Desarrollo/logic-web-production
+cd ~/home/javier/Desarrollo/logic_web_production
 git add .
 git commit -m "Build"
 git push origin main

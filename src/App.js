@@ -12,6 +12,7 @@ import Article from "./pages/Article";
 import LanguageContext from "../src/context/langContext";
 import { HelmetProvider } from 'react-helmet-async';
 import Risk from "./pages/Risk";
+import Indicators from "./pages/Indicators";
 
 
 function App() {
@@ -40,11 +41,13 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/indicator/:IndicatorId" element={<Indicator />} />
+            <Route path="/indicators" element={<Indicators />} />
             <Route path="/education" element={<Education />} />
             <Route path="/article/:articleId" element={<Article />} />
             <Route path="/buy" element={<Buy />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/lic" element={<ContactLic />} />
+
             <Route path="/risk" element={<Risk />} />
           </Route>
         </Routes>
