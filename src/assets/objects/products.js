@@ -20,7 +20,7 @@ export const ProductsDataEs = [
       adv05: "Opciones visuales sin recargar el gráfico",
       adv06: "Plantillas predeterminadas con un solo clic",
     },
-    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/cc8f8316-9438-46fe-bbe0-db9a1f2c6fec",
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/1d66aa2f-bfba-484f-868d-bae4809a7b9f",
   },
   {
     product: "Logic Order Flow",

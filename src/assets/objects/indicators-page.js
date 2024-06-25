@@ -148,6 +148,71 @@ export const IndicatorDataEs = [
     txtb_1:
       "Descubre una nueva dimensión en tu análisis de OrderFlow con Logic OrderFlow para NinjaTrader 8. Las herramientas convencionales pueden resultar visualmente desagradables, dificultando la interpretación de información crucial para tu éxito en el mercado. Con Logic OrderFlow, experimentarás una claridad visual sin precedentes, permitiéndote tomar decisiones más informadas y rentables.",
 
+
+
+      titk_3:["Carga Instantánea: Plantillas Predeterminadas con un Solo Clic","plantillas"],
+
+      imgb_5: "./indicators_page/of_ind_05.gif",
+      
+      txtb_6:"Optimiza tu experiencia en el panel de Logic OrderFlow con la capacidad de aplicar cualquier plantilla con un solo clic. Sin recargar el gráfico, la plantilla se aplica al instante, proporcionando eficiencia inigualable. Explora las plantillas prediseñadas de plataformas destacadas en futuros, como Sierra Chart, ATAS, Quantower o NinjaTrader. No pierdas tiempo configurando, ¡nosotros ya lo hemos hecho por ti!",
+  
+  
+
+      titk_4:["Configuración en Tiempo Real","config"],
+
+      imgb_6: "./indicators_page/of_ind_06.gif",
+  
+      txtb_7:"Nuestro software cuenta con una función única que revoluciona la experiencia de configuración para los traders. A diferencia de otros indicadores donde es necesario recargar la gráfica para aplicar los cambios, Logic OrderFlow integra configuración en tiempo real. Esta característica permite a los traders realizar ajustes y ver los resultados instantáneamente, sin necesidad de recargar el gráfico.",
+  
+      dotb_1:"Eficiencia y Velocidad: Realiza ajustes sobre la marcha y observa los cambios al instante, sin interrupciones en tu análisis.",
+  
+      dotb_2:"Comodidad y Flexibilidad: Modifica cualquier configuración gráfica directamente desde la ventana de configuración y aplica los cambios en tiempo real, ahorrando tiempo y esfuerzo.",
+  
+      dotb_3:"Flujo de Trabajo Ininterrumpido: Mantén tu flujo de trabajo continuo sin la necesidad de recargar el chart, permitiéndote enfocarte completamente en tu estrategia de trading.",
+  
+      txtb_8:"Esta ventaja proporciona una comodidad incomparable, mejorando significativamente la experiencia del usuario y permitiendo una adaptabilidad rápida a las condiciones cambiantes del mercado. Con Logic OrderFlow, optimizar tus gráficos nunca ha sido tan fácil y eficiente.",
+  
+  
+
+
+      titk_2:["Carga Rápida: OrderFlow sin Uso de Tick Replay","caga-rapida"],
+
+
+      imgb_4: "./indicators_page/of_ind_03.gif",
+      
+      txtb_5:"Eliminando la carga innecesaria de recursos, nuestras herramientas de Logic Indicators se destacan al cargar de forma rápida y eficiente, prescindiendo del método Tick Replay. Experimenta hasta 10 veces más velocidad al integrarlas en tus gráficas de NinjaTrader.",
+  
+  
+  
+    
+
+
+      titk_5:["Configuraciones Gráficas y Funcionalidades Avanzadas","funciones"],
+
+      imgb_7: "./indicators_page/of_ind_07.png",
+      
+      txtb_9:"Logic OrderFlow no solo ofrece una experiencia visual superior, sino que también incorpora una variedad de configuraciones y funcionalidades avanzadas para optimizar tu análisis y toma de decisiones:",
+
+      dotb_5: "Estilos Visuales Flexibles: Personaliza tus gráficos en una o dos columnas con datos de volumen, delta, bid x ask, y configuraciones del color de las celdas basadas en delta, volumen, bid x ask y dominant.",
+
+      dotb_6: "Footer y Databox Integrado: Accede a una rica cantidad de información con nuestro footer y databox integrado, que incluye datos de volumen, delta, delta %, delta acumulado, min delta, max delta, cambio delta, cot high, cot low, sell buy, sell buy %, entre otros.",
+
+      dotb_7: "Configuración de Columnas Avanzada: Disfruta del modo histograma y opacidad relativa para una mejor visualización y análisis. Además, un histograma lateral muestra datos de volumen o delta para un análisis más detallado.",
+
+      dotb_8: "Visualización de POC y Unfinished Auction: Identifica fácilmente el Point of Control (POC) y las subastas no terminadas para obtener una comprensión más profunda del mercado.",
+
+      dotb_9: "Agrupación por Ticks: Agrupa los datos por ticks para una vista más granular del mercado.",
+
+      dotb_10: "Optimización Visual: Ajusta el tamaño de la letra, utiliza colores automáticos para el texto, oculta valores en cero, y emplea sufijos métricos para una presentación de datos más clara y eficiente.",
+      
+
+      txtb_10:"Estas características permiten una personalización y optimización exhaustiva de tus gráficos, asegurando que cada detalle esté perfectamente adaptado a tus necesidades de trading. Con Logic OrderFlow, tienes el control completo para crear un entorno de análisis que mejore tu rendimiento y eficiencia en el mercado.",
+
+
+      lnkb2: ["/buy", "Obtén Acceso Ahora"],
+      
+
+
     titk_1:["Identificación Sencilla de Patrones","patrones"],
 
 
@@ -160,53 +225,12 @@ export const IndicatorDataEs = [
     txtb_3:"De manera opuesta, el área de bajo volumen (Low Volume Area/LVA) se presenta con colores más claros que el resto de la vela. Esto indica que el precio ha negociado estos niveles rápidamente debido a la falta de liquidez en esa zona.",
 
 
-
     imgb_3: "./indicators_page/of_ind_03.jpg",
 
     txtb_4:"El Low Imbalance, una variante del Low Volume Área, muestra desequilibrios en las compras o ventas (números en azul). Este patrón indica iniciativa, pero con una fuerza limitada. El movimiento puede continuar por pocos ticks antes de revertirse, señalando una subasta débil.",
 
     lnkb1: ["/buy", "Obtén Tu Indicador"],
 
-
-    titk_2:["Carga Rápida: OrderFlow sin Uso de Tick Replay","caga-rapida"],
-
-
-    imgb_4: "./indicators_page/of_ind_03.gif",
-    
-    txtb_5:"Eliminando la carga innecesaria de recursos, nuestras herramientas de Logic Indicators se destacan al cargar de forma rápida y eficiente, prescindiendo del método Tick Replay. Experimenta hasta 10 veces más velocidad al integrarlas en tus gráficas de NinjaTrader.",
-
-
-    lnkb2: ["/buy", "Obtén Acceso Ahora"],
-
-    titk_3:["Carga Instantánea: Plantillas Predeterminadas con un Solo Clic","plantillas"],
-
-    imgb_5: "./indicators_page/of_ind_05.gif",
-    
-    txtb_6:"Optimiza tu experiencia en el panel de Logic OrderFlow con la capacidad de aplicar cualquier plantilla con un solo clic. Sin recargar el gráfico, la plantilla se aplica al instante, proporcionando eficiencia inigualable. Explora las plantillas prediseñadas de plataformas destacadas en futuros, como Sierra Chart, ATAS, Quantower o NinjaTrader. No pierdas tiempo configurando, ¡nosotros ya lo hemos hecho por ti!",
-
-
-
-
-    titk_4:["Configuración en Tiempo Real","config"],
-
-    imgb_6: "./indicators_page/of_ind_05.gif",
-
-    txtb_7:"Nuestro software cuenta con una función única que revoluciona la experiencia de configuración para los traders. A diferencia de otros indicadores donde es necesario recargar la gráfica para aplicar los cambios, Logic OrderFlow integra configuración en tiempo real. Esta característica permite a los traders realizar ajustes y ver los resultados instantáneamente, sin necesidad de recargar el gráfico.",
-
-    dotb_1:"Eficiencia y Velocidad: Realiza ajustes sobre la marcha y observa los cambios al instante, sin interrupciones en tu análisis.",
-
-    dotb_2:"Comodidad y Flexibilidad: Modifica cualquier configuración gráfica directamente desde la ventana de configuración y aplica los cambios en tiempo real, ahorrando tiempo y esfuerzo.",
-
-    dotb_3:"Flujo de Trabajo Ininterrumpido: Mantén tu flujo de trabajo continuo sin la necesidad de recargar el chart, permitiéndote enfocarte completamente en tu estrategia de trading.",
-
-    txtb_8:"Esta ventaja proporciona una comodidad incomparable, mejorando significativamente la experiencia del usuario y permitiendo una adaptabilidad rápida a las condiciones cambiantes del mercado. Con Logic OrderFlow, optimizar tus gráficos nunca ha sido tan fácil y eficiente.",
-
-
-
-
-
-
-    lnkb3: ["/buy", "Obtén Tu Indicador"],
     
   },    
   {       
