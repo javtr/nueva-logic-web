@@ -122,74 +122,150 @@ export const IndicatorDataEn = [
     lnkb1: ["/buy", "Get Your Indicator"],
   },
   {
-    titSec: "Logic Volume Profile",
-    subSec:
-      "Discover the synergy between price, volume, and delta with Logic Analytics. Simplify understanding market ranges, intuitively visualizing interactions, and gaining a real-time deep understanding.",
-    img01Sec: "./indicators_page/pr_home.jpg",
-    img02Sec: "./indicators_page/pr_header.jpg",
-    url: "logic-volume-profile",
-
-    titb: "Powerful Volume Analysis for Efficient Strategy",
-
-    titk_1: ["Save Time on Configurations", "save"],
-
-    imgb: "./indicators_page/pr_01.gif",
-
-    txtb_1:
-      "Experience efficiency with Logic Volume Profile. Forget reloading charts to adjust visual options. Simply open the quick window, adjust your preferences, and see instant changes. Also, use preset presets for quick setup.",
-
-    titk_2: [
-      "Custom and Flexible Profile with TPO, Sessions, and More",
-      "features",
+    "titSec": "Logic Volume Profile",
+    "subSec":
+      "Experience ultimate versatility in volume analysis with this all-in-one profile, including TPO and volume profile. Its exceptional adaptability to any timeframe and trading type allows for complete customization. Simplify your analysis with an indicator that fits perfectly with your trading style.",
+    
+    "img01Sec": "./indicators_page/pr_home.jpg",
+    "img02Sec": "./indicators_page/pr_header.jpg",
+  
+    "url": "logic-volume-profile",
+  
+    "titb": "Powerful Volume Analysis for Efficient Strategy",
+  
+    "txtb_pr":
+      "Logic Volume Profile not only offers a superior visual experience but also incorporates a variety of advanced settings and functionalities to optimize your analysis and decision-making:",
+  
+    "titk_1": [
+      "Instant Template Loading and Real-Time Configurations",
+      "save"
     ],
+  
+    "imgb_1": "./indicators_page/pr_01.gif",
+  
+    "txtb_1":
+      "Logic Volume Profile allows instant loading of templates and graphic settings, letting you adjust your preferences in real-time without needing to reload the indicator.",
+  
+    "titk_2": ["Highly Customizable TPO Profile", "profile"],
+  
+    "iinb_2": "./indicators_page/pr_05.gif",
+  
+    "txtb_2":
+      "Enjoy a TPO profile with extensive customization options tailored to your specific market analysis needs.",
+  
+    "titk_3": ["Profile Settings and Options", "config"],
+  
+    "imgb_3": "./indicators_page/pr_02.gif",
+  
+    "txtb_3":
+      "Daily, Weekly, Monthly, and More Profiles: Configure profiles by day, week, month, date, composite, and draw box.",
+  
+    "txtb_32":
+      "Calculation in User-Defined or Continuous Sessions: Adjust your profiles to be calculated according to your defined sessions or continuously.",
+  
+    "titk_4": ["Optimal Performance without Tick Replay", "performance"],
+  
+    "imgb_4": "./indicators_page/pr_03.gif",
+  
+    "txtb_4":
+      "Logic Volume Profile does not require tick replay, ensuring faster and more efficient data loading.",
+  
+    "lnkb1": ["/buy", "Start Using Logic Indicators Today!"],
+      
+    "titk_5": ["Advanced Settings and Optimization", "config"],
+  
+    "imgb_5": "./indicators_page/pr_06.png",
+  
+    "dotb_51":
+      "Three Levels of Data Load Optimization: Choose from fast, intermediate, and precise to adjust the speed and detail of data loading according to your needs.",
+  
+    "dotb_52":
+      "Powerful Composite Profile: Calculate composite profiles from daily, weekly, monthly, chart, start date, or drawn profiles on the chart data.",
+  
+    "dotb_53":
+      "Customizable Profile Location and Alignment: Adjust the location and alignment of your profiles for optimal visualization.",
+  
+    "dotb_54":
+      "Value Area and POC Reference Levels: Clearly identify critical reference levels such as value area and point of control (POC).",
+  
+    "dotb_55":
+      "Detailed Information for Each Profile: Access complete data for each profile, including total volume, volume delta, range, ask, bid, maximum and minimum price.",
+  
+    "dotb_56":
+      "Profile Marks: Include marks such as opening and closing, range bar, and initial balance for more detailed analysis.",
+  
+    "txtb_6":
+      "These features allow for exhaustive customization and optimization of your charts, ensuring every detail is perfectly tailored to your trading needs. With Logic Volume Profile, you have complete control to create an analysis environment that enhances your performance and efficiency in the market.",
+  
+    "lnkb2": ["/buy", "Start Using Logic Indicators Today!"]
+  }
+,  
+{
+  "titSec": "Logic Analytics",
+  "subSec":
+    "Discover the synergy between price, volume, and delta with Logic Analytics. Simplify the understanding of market ranges by intuitively visualizing interactions and gaining a deep real-time understanding.",
+  "img01Sec": "./indicators_page/an_02.jpg",
+  "img02Sec": "./indicators_page/an_01.jpg",
+  "url": "logic-analytics",
 
-    imgb_1: "./indicators_page/pr_02.gif",
+  "titb_1": "Enhance Your Data Analysis with Logic Analytics",
 
-    txtb_2:
-      "With Logic Volume Profile, flexibility is key. Adapt it to your needs with daily, weekly, monthly, and date profiles. Split the American session from the Asian session according to your preferred hours. Check our setup manual with ready-made templates to save you hours.",
+  "titk_1": [
+    "Strategic Precision for Informed Decisions",
+    "precision"
+  ],
 
-    imgb_2: "./indicators_page/pr_03.gif",
+  "imgb_1": "./indicators_page/an_04.gif",
 
-    txtb_3:
-      "Explore fully configurable Volume Profile and Market Profile (TPO) options. Choose from four profile types in a single indicator. And for even faster setup, use one-click presets that don't require reloading the indicator.",
+  "txtb_1":
+    "With Logic Analytics, align your strategic decisions with precise data. Select the exact start and end points on your chart to obtain a detailed and comprehensive view of the data. This advanced tool is designed to provide valuable insights and significantly improve your market decision-making.",
 
-    lnkb1: ["/buy", "Start Using Logic Indicators Today!"],
-  },
-  {
-    titSec: "Logic Analytics",
-    subSec:
-      "Experience the ultimate versatility in volume analysis with this all-in-one profile, including TPO and volume profile. Its exceptional adaptability to any timeframe and trading type allows total customization. Simplify your analysis with an indicator that perfectly fits your trading style.",
-    img01Sec: "./indicators_page/an_02.jpg",
-    img02Sec: "./indicators_page/an_01.jpg",
-    url: "logic-analytics",
+  "titk_2": ["Essential Data for Optimal Execution", "data"],
 
-    titb: "Harness the Power of Data Analysis with Logic Analytics",
+  "txtb_2": "Quickly access crucial data to optimize your trades:",
 
-    titk_1: [
-      "Strategic Precision: Align Your Decisions with Logic Analytics",
-      "precision",
-    ],
+  "dotb_21":
+    "Delta Histogram: Analyze buying and selling pressure in the selected area. Easily identify exhaustion and continuations in market movements.",
+  
+  "iinb_21": "./indicators_page/an_06.png",
+  
+  "dotb_22":
+    "Threshold Detection: Use advanced statistical calculations to visualize the most relevant volumes, improving the timing of your entries and exits.",
+  
+  "iinb_22": "./indicators_page/an_05.png",
+  
+  "dotb_23":
+    "Detailed Statistics: View average data, standard deviation, and expected maximum values of Volume, Delta, and Range in a clear, easy-to-use interface. These insights will help you filter entries and make more informed, strategic decisions.",
 
-    imgb_1: "./indicators_page/an_04.gif",
+  "lnkb2": ["/buy", "Get Your Indicator"],
 
-    txtb_1:
-      "Precisely select the starting and ending points on your chart with Logic Analytics to gain a detailed view of the data. This advanced data analysis tool is designed to provide valuable insights and improve your decision-making in the market.",
+  "titk_3": ["Advanced Features for Comprehensive Analysis", "analysis"],
 
-    titk_2: ["Crucial Data at Your Fingertips for Quick Decisions", "data"],
+  "dotb_31":
+    "Real-Time Graphical Configuration: Customize your charts instantly without the need to reload the tool. Adjust visualizations according to your preferences in real time.",
+  
+  "imgb_31": "./indicators_page/an_08.gif",
+  
+  "dotb_32":
+    "Simultaneous Multiple Analyses: Logic Analytics now allows you to perform multiple analyses at once, providing a more complete and detailed market view.",
 
-    imgb_2: "./indicators_page/an_03.jpg",
+  "dotb_33":
+    "Optimal Performance without Tick Replay: Like other advanced indicators, Logic Analytics does not require the use of tick replay, ensuring faster and more efficient data loading.",
 
-    txtb_2: "Discover essential data to optimize your execution:",
+  "dotb_34":
+    "Minimization of Analysis Boxes: With a single button, you can hide analysis boxes to keep them from interfering with your chart, providing a clean and uncluttered view when needed.",
 
-    dotb_1:
-      "Delta Histogram: Get information about buying pressure in the selected area, allowing you to detect exhaustion or continuity in movements.",
-    dotb_2:
-      "Threshold Detection: Through statistical calculations, visualize the most relevant volumes to improve your entry timing.",
-    dotb_3:
-      "Statistics: Access average data, standard deviation, and expected maximum value of Volume, Delta, and Range in a clear interface. These insights will help you filter entries and make more informed decisions.",
+  "dotb_35":
+    "Data Visualization for 'Long' or 'Short': Easily switch between data visualizations oriented to long or short positions, allowing for more specific and relevant analysis according to your trading strategy.",
 
-    lnkb3: ["/buy", "Get Your Indicator"],
-  },
+  "imgb_35": "./indicators_page/an_07.gif",
+  
+  "dotb_4":
+    "These and other configurations and optimizations make Logic Analytics an indispensable tool for any trader looking to gain a competitive edge in the market. With a focus on precision and ease of use, Logic Analytics provides everything you need to make informed and strategic decisions.",
+
+  "lnkb3": ["/buy", "Get Your Indicator"]
+}
+
 ];
 
 export const IndicatorDataEs = [
@@ -324,7 +400,7 @@ export const IndicatorDataEs = [
 
     titk_2: ["Perfil TPO Altamente Personalizable", "profile"],
 
-    imgb_2: "./indicators_page/pr_01.gif",
+    iinb_2: "./indicators_page/pr_05.gif",
 
     txtb_2:
       "Disfruta de un perfil TPO con opciones de personalización extensivas que se adaptan a tus necesidades específicas de análisis de mercado.",
@@ -339,6 +415,8 @@ export const IndicatorDataEs = [
     txtb_32:
       "Cálculo en Sesiones Definidas por el Usuario o Continuas: Ajusta tus perfiles para que se calculen según tus sesiones definidas o de manera continua.",
 
+      lnkb1: ["/buy", "¡Comience a usar Logic Indicators Hoy!"],
+      
     titk_4: ["Rendimiento Óptimo sin Tick Replay", "performance"],
 
     imgb_4: "./indicators_page/pr_03.gif",
@@ -348,7 +426,7 @@ export const IndicatorDataEs = [
 
     titk_5: ["Configuraciones Avanzadas y Optimización", "config"],
 
-    imgb_5: "./indicators_page/pr_03.gif",
+    imgb_5: "./indicators_page/pr_06.png",
 
     dotb_51:
       "Tres Niveles de Optimización para la Carga de Datos: Elige entre rápido, intermedio y preciso para ajustar la velocidad y detalle de la carga de datos según tus necesidades.",
@@ -371,7 +449,7 @@ export const IndicatorDataEs = [
     txtb_6:
       "Estas características permiten una personalización y optimización exhaustiva de tus gráficos, asegurando que cada detalle esté perfectamente adaptado a tus necesidades de trading. Con Logic Volume Profile, tienes el control completo para crear un entorno de análisis que mejore tu rendimiento y eficiencia en el mercado.",
 
-      lnkb1: ["/buy", "¡Comience a usar Logic Indicators Hoy!"],
+      lnkb22: ["/buy", "¡Comience a usar Logic Indicators Hoy!"]
 
 
   },
@@ -383,31 +461,67 @@ export const IndicatorDataEs = [
     img02Sec: "./indicators_page/an_01.jpg",
     url: "logic-analytics",
 
-    titb: "Aproveche el Poder del Análisis de Datos con Logic Analytics",
+    titb_1: "Potencie su Análisis de Datos con Logic Analytics",
 
     titk_1: [
-      "Precision Estratégica: Alinee sus Decisiones con Logic Analytics",
+      "Precisión Estratégica para Decisiones Informadas",
       "precision",
     ],
 
     imgb_1: "./indicators_page/an_04.gif",
 
     txtb_1:
-      "Seleccione con precisión el punto inicial y final en su gráfico con Logic Analytics para obtener una visión detallada de los datos. Esta herramienta avanzada de análisis de datos está diseñada para brindarle información valiosa y mejorar su toma de decisiones en el mercado.",
+      "Con Logic Analytics, alinee sus decisiones estratégicas con datos precisos. Seleccione de manera exacta los puntos de inicio y final en su gráfico para obtener una visión detallada y comprensiva de los datos. Esta herramienta avanzada está diseñada para proporcionarle información valiosa y mejorar significativamente su toma de decisiones en el mercado.",
 
-    titk_2: ["Datos Cruciales a su Alcance para Decisiones Rápidas", "datos"],
 
-    imgb_2: "./indicators_page/an_03.jpg",
 
-    txtb_2: "Descubra datos esenciales para optimizar su ejecución:",
+    titk_2: ["Datos Esenciales para una Ejecución Óptima", "datos"],
 
-    dotb_1:
-      "Histograma Delta: Obtenga información sobre la presión compradora en el área seleccionada, permitiéndole detectar agotamientos o continuidad en los movimientos.",
-    dotb_2:
-      "Detección de Umbrales: Mediante cálculos estadísticos, visualice los volúmenes más relevantes para mejorar su timing de entradas.",
-    dotb_3:
-      "Estadísticas: Acceda a datos promedio, desviación estándar y valor máximo esperado de Volumen, Delta y Rango en una interfaz clara. Estos insights le ayudarán a filtrar entradas y tomar decisiones más informadas.",
+    txtb_2: "Acceda rápidamente a datos cruciales que optimizarán sus operaciones:",
 
-    lnkb3: ["/buy", "Obtén Tu Indicador"],
+    dotb_21:
+      "Histograma Delta: Analice la presión compradora y vendedora en el área seleccionada. Identifique fácilmente agotamientos y continuidades en los movimientos del mercado.",
+    
+    iinb_21: "./indicators_page/an_06.png",
+    
+      dotb_22:
+      "Detección de Umbrales: Utilice cálculos estadísticos avanzados para visualizar los volúmenes más relevantes, mejorando el timing de sus entradas y salidas.",
+    
+      iinb_22: "./indicators_page/an_05.png",
+    
+      dotb_23:
+      "Estadísticas Detalladas: Consulte datos promedio, desviación estándar y valores máximos esperados de Volumen, Delta y Rango en una interfaz clara y fácil de usar. Estos insights le permitirán filtrar entradas y tomar decisiones más informadas y estratégicas.",
+
+
+    lnkb2: ["/buy", "Obtén Tu Indicador"],
+
+    titk_3: ["Funcionalidades Avanzadas para un Análisis Completo", "analysis"],
+
+    dotb_31:
+      "Configuración Gráfica en Tiempo Real: Personalice sus gráficos instantáneamente sin necesidad de recargar la herramienta. Ajuste las visualizaciones de acuerdo a sus preferencias en tiempo real.",
+    
+      imgb_31: "./indicators_page/an_08.gif",
+      
+      dotb_32:
+      "Análisis Múltiples Simultáneos: Logic Analytics ahora permite realizar múltiples análisis al mismo tiempo, ofreciendo una visión más completa y detallada del mercado.",
+
+      dotb_33:
+      "Rendimiento Óptimo sin Tick Replay: Al igual que otros indicadores avanzados, Logic Analytics no requiere del uso de tick replay, asegurando una carga más rápida y eficiente de los datos.",
+
+      dotb_34:
+      "Minimización de Cajas de Análisis: Con un solo botón, puede ocultar las cajas de análisis para que no interfieran con su chart, proporcionando una vista limpia y despejada cuando lo necesite.",
+
+      dotb_35:
+      "Visualización de Datos para 'Long' o 'Short': Cambie fácilmente entre visualizaciones de datos orientadas a posiciones largas o cortas, permitiendo un análisis más específico y relevante según su estrategia de trading.",
+
+      imgb_35: "./indicators_page/an_07.gif",
+      
+      dotb_4:
+      "Estas y otras configuraciones y optimizaciones hacen de Logic Analytics una herramienta indispensable para cualquier trader que busque obtener una ventaja competitiva en el mercado. Con un enfoque en la precisión y la facilidad de uso, Logic Analytics le proporciona todo lo necesario para tomar decisiones informadas y estratégicas.",
+
+      lnkb3: ["/buy", "Obtén Tu Indicador"],
+
+
+
   },
 ];
