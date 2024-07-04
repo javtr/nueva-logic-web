@@ -69,7 +69,7 @@ export default function IndSideBar({ ind }) {
     <div className="indSidebar">
       <div className="indSidebar__content">
         <div className="indSidebar__content--susc">
-        <h3>Contenido</h3>
+        <h3>{lang === "en"? "Content":"Contenido"}</h3>
           <ul>
 
             {listaTitkValues.map(({ titulo, id }, index) => (
