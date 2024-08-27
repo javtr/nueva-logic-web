@@ -22,6 +22,81 @@
 //sepD: espacio de 100px
 export const ArticlesDataEs = [
   {
+    titSec: "Configuración del Order Flow",
+    subSec: "Aprendiendo sobre Logic OrderFlow",
+    img01Sec: "./articles_page/art_06.jpg",
+    img02Sec: "./articles_page/art_06.jpg",
+    url: "config-order-flow",
+    titb: "Logic OrderFlow",
+    imgb: "./articles_page/art_06.jpg",
+    subb_1:
+      "El Order Flow, o Footprint que traduce huella, nos permite ver el registro de las transacciones realizadas en el lado BID (ventas agresivas)  y el lado ASK (compras agresivas) en el mercado, hay múltiples formas de ver el Footprint aquí te presentamos las más comunes.",
+    sepA_1: "",
+    
+    
+    sepC_13: "",
+    sepB_13: "",
+  
+    titk_1: ["Footprint BIDXASK (sólo números)", "bidask"],
+    txtb_1:
+      "Esta configuración te permite observar los números del BID y el ASK de forma simple. Esta configuración está en las plantillas de Logic OrderFlow  y se llama BIDXASK imbalance. Si quieres observar únicamente los valores del BID y ASK junto con los  imbalances está opción es muy buena para ti.",
+    sepA_2: "",
+
+    sepC_1:"",
+
+    titk_2: ["Footprint BIDXASK (con colores e histograma)", "bidask_color"],
+
+    txtb_21:
+      "Esta forma de visualización te permite ver con escalas de colores en qué nivel de precio tenemos más volumen, es como un mapa de calor, dónde los valores altos son tonos saturados y los valores bajos menos saturados. Es útil para detectar fácilmente grandes cantidades de volumen y en qué nivel lo están haciendo.",
+
+      txtb_22:
+      "Así mismo puedes ver la suma de BID+ASK en una sola columna o tener el histograma de volumen en forma de perfil de volumen en la vela.",
+
+      sepC_21:"",
+      
+    imgb_1: "./articles_page/futuros_02.jpg",
+    
+    titk_3: ["Footprint Delta", "delta"],
+
+
+
+    sepC_2:"",
+
+    txtb_31:
+    "El Delta es la resta de ASK-BID, también podemos ver ese cambio en histograma gráfico y en números. Mediante el delta podemos observar esta diferencia de Compradores agresivos y Vendedores agresivos y ver quién tiene el control en cada uno de los niveles de precio, si están teniendo un resultado o están quedando atrapados.",
+  
+
+    imgb_31: "./articles_page/futuros_02.jpg",
+    
+    
+    dotb_3:"Los números verdes reflejan una actividad compradora mayor en tres veces respecto a las ventas agresivas.",
+
+
+    sepC_12: "",
+    sepB_12: "",
+
+
+
+    titk_4: ["Footprint de todas las formas y colores", "shapes"],
+
+    txtb_41:
+      "La forma en que configures el Footprint depende de tus necesidades y tus estrategias, si usas una estrategia de imbalances tu enfoque es encontrar esos desequilibrios, en ese caso la plantilla BIDXASK Imbalance te mostrará fácilmente esos niveles dónde hay mayor presión de un lado que del otro.",
+
+      sepC_4: "",
+      
+      txtb_42:
+      "Todo depende de qué tanta información quieres obtener y cuál es la más importante para ti.",
+
+
+      imgb_2: "./articles_page/futuros_02.jpg",
+      
+
+
+
+  },
+
+
+  {
     titSec: "Anomalías del Order Flow",
     subSec: "Cómo Identificar Señales Clave para Tomar Decisiones de Trading Más Informadas",
     img01Sec: "./articles_page/art5_anom.webp",
@@ -35,7 +110,7 @@ export const ArticlesDataEs = [
     
 
 
-    
+
     sepC_13: "",
     sepB_13: "",
   
