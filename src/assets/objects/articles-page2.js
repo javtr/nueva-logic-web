@@ -33,6 +33,9 @@ export const ArticlesDataEs = [
       "Una anomalía es un dato que no se ajusta a lo esperado. Identificar anomalías en el Order Flow puede brindarnos una ventaja en el mercado. A continuación, exploraremos algunas de estas anomalías:",
     sepA_1: "",
     
+
+
+    
     sepC_13: "",
     sepB_13: "",
   
