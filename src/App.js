@@ -13,6 +13,7 @@ import LanguageContext from "../src/context/langContext";
 import { HelmetProvider } from 'react-helmet-async';
 import Risk from "./pages/Risk";
 import Indicators from "./pages/Indicators";
+import Install from "./pages/Install";
 
 
 function App() {
@@ -48,7 +49,12 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/lic" element={<ContactLic />} />
 
+
+
             <Route path="/risk" element={<Risk />} />
+            <Route path="/install" element={<Install />} />
+
+
           </Route>
         </Routes>
       </>

@@ -1,7 +1,7 @@
 export const ProductsDataEs = [
   {
     product: "Logic Pack",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/pack_min.png",
     price: 397,
     features: {
       product01: "Logic Order Flow",
@@ -24,7 +24,7 @@ export const ProductsDataEs = [
   },
   {
     product: "Logic Order Flow",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/of_min.png",
     price: 197,
     description:
       "OrderFlow te proporciona la capacidad de analizar datos de subasta por nivel de precio en las velas japonesas, actuando como un rifle de alta precisión en tus operaciones. Su diseño ofrece múltiples ventajas, entre las cuales se incluyen:",
@@ -39,7 +39,7 @@ export const ProductsDataEs = [
   },
   {
     product: "Logic Profile",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/pr_min.png",
     price: 197,
     description:
       "Experimenta la versatilidad definitiva en el análisis de volumen con este perfil todo en uno, que incluye TPO y perfil de volumen. Su excepcional adaptabilidad a cualquier temporalidad y tipo de trading permite una personalización total. Simplifica tu análisis con un indicador que se ajusta perfectamente a tu estilo de trading.",
@@ -54,7 +54,7 @@ export const ProductsDataEs = [
   },
   {
     product: "Logic Analytics",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/an_min.png",
     price: 197,
     description:
       "Descubre la sinergia entre precio, volumen y delta con Logic Analytics. Simplifica la comprensión de los rangos de mercado, visualizando de manera intuitiva las interacciones y obteniendo una comprensión profunda en tiempo real",
@@ -72,7 +72,7 @@ export const ProductsDataEs = [
 export const ProductsDataEn = [
   {
     product: "Logic Pack",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/pack_min.png",
     price: 397,
     features: {
       product01: "Logic Order Flow",
@@ -93,7 +93,7 @@ export const ProductsDataEn = [
   },
   {
     product: "Logic Order Flow",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/of_min.png",
     price: 197,
     description:
       "OrderFlow provides you with the ability to analyze auction data by price level in Japanese candles, acting as a high-precision rifle in your trades. Its design offers multiple advantages, including:",
@@ -108,7 +108,7 @@ export const ProductsDataEn = [
   },
   {
     product: "Logic Profile",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/pr_min.png",
     price: 197,
     description:
       "Experience ultimate versatility in volume analysis with this all-in-one profile, which includes TPO and volume profile. Its exceptional adaptability to any timeframe and trading type allows for total customization. Simplify your analysis with an indicator that perfectly fits your trading style.",
@@ -123,7 +123,7 @@ export const ProductsDataEn = [
   },
   {
     product: "Logic Analytics",
-    img01: "./of_home.jpeg",
+    img01: "./indicators_page/an_min.png",
     price: 197,
     description:
       "Discover the synergy between price, volume, and delta with Logic Analytics. Simplify understanding of market ranges, intuitively visualizing interactions and gaining real-time deep understanding.",
