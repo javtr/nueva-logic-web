@@ -1,6 +1,7 @@
 //imagenes: miniatura: 765x400, grande: 1240x470
 //---- articulo ----------
 //imgb,grande: "./"
+//iinb_1, imagenes internas pequeñas: "./"
 //titb_1, titulos internos: "string"
 //tit2_1, titulos internos: "string"
 //tit3_1, titulos internos 3: "string"
@@ -12,7 +13,6 @@
 //dtlb_1, texto con dot y link: ["texto","link"]
 //bytb, autor: "string"
 //date, fecha: "string"
-//iinb_1, imagenes internas: "./"
 //vidb,ID video youtube: "6BAv9sIQ6BU"
 //lnkb: boton: ["link","nombre boton"]
 //key_: etiquetas
@@ -21,6 +21,148 @@
 //sepC: espacio de 40px
 //sepD: espacio de 100px
 export const ArticlesDataEs = [
+  {
+    titSec: "Anomalías del Order Flow",
+    subSec: "Cómo Identificar Señales Clave para Tomar Decisiones de Trading Más Informadas",
+    img01Sec: "./articles_page/art5_anom.webp",
+    img02Sec: "./articles_page/art5_anom.webp",
+    url: "order-flow-anomalies",
+    titb: "Identificar Señales Clave",
+    imgb: "./articles_page/art_05_init.jpg",
+    subb_1:
+      "Una anomalía es un dato que no se ajusta a lo esperado. Identificar anomalías en el Order Flow puede brindarnos una ventaja en el mercado. A continuación, exploraremos algunas de estas anomalías:",
+    sepA_1: "",
+    
+    sepC_13: "",
+    sepB_13: "",
+  
+    titk_1: ["Imbalance", "imbalance"],
+    txtb_1:
+      "Un imbalance alcista ocurre cuando se negocian más contratos de compra agresiva (lado derecho, ASK) en comparación con las ventas agresivas (lado izquierdo, BID) en una cantidad determinada, que puedes definir como 2, 3, 4 veces, etc.",
+    sepA_2: "",
+
+
+    txtb_2:
+      "Por otro lado, un imbalance bajista se presenta cuando en ciertos niveles de precio se negocian más contratos de venta agresiva (lado izquierdo, BID) que en el lado derecho de compras agresivas (ASK).",
+
+    sepC_1:"",
+
+    imgb_1: "./articles_page/futuros_02.jpg",
+    
+    sepC_2:"",
+
+    dotb_1:"Los números rojos reflejan que el número del lado izquierdo BID, es mayor en tres veces que su diagonal ASK, eso denota una agresividad y una mayor agresividad de venta en esos niveles de precios.",
+    
+
+    
+    dotb_3:"Los números verdes reflejan una actividad compradora mayor en tres veces respecto a las ventas agresivas.",
+
+
+    sepC_12: "",
+    sepB_12: "",
+
+
+
+
+    titk_2: ["Subasta inacabada (unfinished auction)", "unfinished"],
+
+    txtb_3:
+      "Cuando se forma correctamente un nuevo máximo, el final de la subasta alcista del mercado se caracteriza por 0 contratos negociados en la Oferta (no hay más compradores).",
+
+      sepC_4: "",
+      
+      imgb_2: "./articles_page/futuros_02.jpg",
+      
+      sepC_3: "",
+      
+      txtb_4:
+      "Una subasta inacabada ocurre cuando el máximo tiene volumen de compra y venta. La presencia de operaciones de oferta en el máximo de una barra podría significar que el movimiento ascendente aún no se ha agotado y existe la probabilidad de que el precio regrese a ese nivel pronto para completar el proceso.",
+
+      sepC_5: "",
+
+      imgb_3: "./articles_page/futuros_02.jpg",
+
+      sepC_6: "",
+
+
+      sepC_11: "",
+      sepB_11: "",
+      
+
+    titk_3: ["Divergencias delta", "diver"],
+
+    txtb_5:
+      "Ocurre cuando una vela alcista (vela verde) o vela bajista (vela roja) no posee un delta acorde a su color, es decir una vela verde (alcista) por definición deberá tener un delta positivo, y una vela roja (bajista) deberá tener un delta negativo. Cuando no es así, se considera una divergencia, vela roja y delta positivo, o vela verde y delta negativo. Es más común encontrarlas en temporalidades bajas.",
+
+      sepC_7: "",
+      
+      imgb_4: "./articles_page/futuros_02.jpg",
+      
+      sepC_8: "",
+      
+      txtb_6:
+      "Tenemos un delta de 266 y la vela es roja, y una vela positiva con delta de -8. En temporalidades bajas es más común tener estas divergencias.",
+
+
+      sepC_10: "",
+      sepB_10: "",
+
+
+      titk_4: ["Divergencias en COT", "cot"],
+
+      txtb_7:
+      "Hay otras métricas que ayudan a ver la presión compradora versus la vendedora, una de ellas es el COT (Commitment of Trade) que cuantifica el efecto neto de la demanda y la oferta dentro de una barra de negociación particular. Tenemos dos datos el COT High y COT Low.",
+
+      txtb_8:
+      "El COT High (COT Low) mide el Delta acumulado de oferta/demanda desde el punto en el que el precio alcanza un nuevo máximo (mínimo) o vuelve a visitar uno anterior. Es una herramienta valiosa para evaluar el equilibrio entre la actividad de compra y venta después de que se alcanza un nuevo nivel de precio.",
+
+      imgb_9: "./articles_page/futuros_02.jpg",
+
+      txtb_9:
+      "Calculemos el COT HIGH. En una vela alcista (fuerte).",
+
+
+      imgb_10: "./articles_page/futuros_02.jpg",
+
+      txtb_10:
+      "En una vela alcista (fuerte), algo “normal” para el COT High es un valor negativo “pequeño” o incluso cero, en este ejemplo -200.",
+
+      txtb_11:
+      "Ahora calculemos el COT LOW. En una vela alcista (fuerte).",
+
+      imgb_11: "./articles_page/futuros_02.jpg",
+
+
+      txtb_12:
+      "En una vela alcista (fuerte), algo “normal” es un valor positivo ligeramente superior al delta close. en este caso 1200.",
+
+      txtb_13:
+      "Podemos observar anomalías cuando en una vela o un conjunto de velas tenemos datos fuera de los parámetros “normales”.",
+
+
+      imgb_12: "./articles_page/futuros_02.jpg",
+
+      sepC_9: "",
+      sepB_9: "",
+
+
+
+      titk_5: ["Absorciones", "abs"],
+      
+
+      txtb_14:
+      "Ocurre cuando en algunos niveles de precio se transaccionan una gran cantidad de contratos  sin que el precio genere el movimiento esperado.",
+
+      txtb_15:
+      "También es conocido como Esfuerzo No resultado. En este ejemplo las ventas agresivas son absorbidas por compras limitadas, el precio no se desplaza ni un solo tick.",
+
+
+      imgb_13: "./articles_page/futuros_02.jpg",
+
+
+
+  },
+
   {
     titSec: "Manual basico Trading de futuros #1",
     subSec: "Descubriendo el Mundo del Trading de Futuros",
@@ -301,6 +443,11 @@ export const ArticlesDataEs = [
     txtb_80:
       "El método Wyckoff, fruto de la visión pionera de Richard Wyckoff, sigue siendo una guía valiosa en el mundo de la inversión. Ya sea para inversiones a largo plazo o para operaciones diarias, este método ofrece un enfoque sólido basado en el análisis profundo del mercado. Al comprender sus fundamentos, los inversionistas pueden tomar decisiones más informadas y potencialmente beneficiarse de los movimientos del mercado. En Libertex, estamos comprometidos a proporcionar información vital para que te aventures con éxito en el emocionante mundo de la inversión. ¡Sigue explorando nuestro blog para más conocimientos y estrategias!",
   },
+
+
+
+
+
 ];
 export const ArticlesDataEn = [
   {

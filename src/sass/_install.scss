@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+.installation {
+  display: flex;
+  justify-content: center;
+  background-color: $background;
+
+  Video{
+    width: 80%;
+  }
+}
