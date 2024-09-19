@@ -50,51 +50,70 @@ export default function Install() {
         <h2 className="installation__container--tit1">{text.titg1}</h2>
 
         <h3 className="installation__container--tit1">{text.tit1}</h3>
-        <video controls>
-          <source
-            src={lang === "en" ? vid_normal_en : vid_normal_es}
-            type="video/mp4"
-          />
-        </video>
+        <div className="installation__container--video">
+          <iframe
+            title="Instalación normal"
+            src={`https://www.youtube.com/embed/${text.url1}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <h3 className="installation__container--tit1">{text.tit2}</h3>
         <p className="installation__container--p">{text.subt2}</p>
-        <video controls>
-          <source
-            src={lang === "en" ? vid_secure_en : vid_secure_es}
-            type="video/mp4"
-          />
-        </video>
+        <div className="installation__container--video">
+          <iframe
+            title="Instalación con excepciones (recomendada)"
+            src={`https://www.youtube.com/embed/${text.url2}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <h3 className="installation__container--tit1">{text.tit3}</h3>
-        <video controls>
-          <source
-            src={lang === "en" ? vid_desinst_en : vid_desinst_es}
-            type="video/mp4"
-          />
-        </video>
+        <div className="installation__container--video">
+          <iframe
+            title="Desinstalar indicadores"
+            src={`https://www.youtube.com/embed/${text.url3}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
 
         <h2 className="installation__container--tit1">{text.titg2}</h2>
 
         <h3 className="installation__container--tit1">{text.tit4}</h3>
         <p className="installation__container--p">{text.subt4}</p>
-        <video controls>
-          <source
-            src={lang === "en" ? vid_noDllCode_en : vid_noDllCode_es}
-            type="video/mp4"
-          />
-        </video>
-
+        <div className="installation__container--video">
+          <iframe
+            title="El indicador no se muestra en el gráfico, pero el botón lateral está visible."
+            src={`https://www.youtube.com/embed/${text.url4}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <h3 className="installation__container--tit1">{text.tit5}</h3>
         <p className="installation__container--p">{text.subt5}</p>
-        <video controls>
-          <source
-            src={lang === "en" ? vid_noDll_en : vid_noDll_es}
-            type="video/mp4"
-          />
-        </video>
+        <div className="installation__container--video">
+          <iframe
+            title="El indicador no muestra ningún contenido, ni siquiera el botón lateral."
+            src={`https://www.youtube.com/embed/${text.url5}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
 
       </div>

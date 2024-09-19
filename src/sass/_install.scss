@@ -2,6 +2,7 @@
 
 .installation {
   background-color: $background;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +18,11 @@
 
     color: $back-light;
 
+    @include breakpoint-down(medium) {
+      padding: 90px $margen-lat-mobil 50px $margen-lat-mobil;
+
+    }
+
 
     h2 {
       font-size: 32px;
@@ -24,6 +30,11 @@
       line-height: 1.5;
       color: $white;
       margin-bottom: 40px;
+
+      @include breakpoint-down(medium) {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
 
     }
 
@@ -36,6 +47,12 @@
       color: $white;
       margin-bottom: 20px;
 
+      @include breakpoint-down(medium) {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
     }
 
 
@@ -46,14 +63,36 @@
       line-height: 1.5;
       color: $white;
       text-align: left;
-      margin-bottom: 70px;      
+      margin-bottom: 70px;   
+      
+      @include breakpoint-down(medium) {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+
     }
 
 
 
-    Video {
+    &--video {
       width: 80%;
       margin-bottom: 125px;
+
+      @include breakpoint-down(medium) {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      iframe{
+        width: 100%;
+        height: 650px;
+
+        @include breakpoint-down(medium) {
+          height: 250px;
+        }
+
+      }
+
     }
   }
 }
