@@ -1,18 +1,4 @@
 import React, { useState, useContext, useEffect } from "react";
-import vid_normal_es from "../assets/video/normal.mp4";
-import vid_secure_es from "../assets/video/secure.mp4";
-import vid_desinst_es from "../assets/video/uninstall.mp4";
-import vid_noDllCode_es from "../assets/video/no_dll_cod.mp4";
-import vid_noDll_es from "../assets/video/no_dll.mp4";
-
-import vid_normal_en from "../assets/video/normal_en.mp4";
-import vid_secure_en from "../assets/video/secure_en.mp4";
-import vid_desinst_en from "../assets/video/uninstall_en.mp4";
-
-import vid_noDllCode_en from "../assets/video/no_dll_cod_en.mp4";
-import vid_noDll_en from "../assets/video/no_dll_en.mp4";
-
-
 import LanguageContext from "../context/langContext";
 
 import { textEn, textEs } from "../assets/text/install";

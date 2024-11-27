@@ -9,3 +9,112 @@
         }
     }
 }
+
+
+/* BlackFriday.scss */
+.black-friday {
+    text-align: center;
+    background-color: #05002f;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: yellow;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(67, 67, 67);
+  }
+  
+  .countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
+    @media (max-width: 480px) {
+      gap: 5px; // Reducir el espacio entre los elementos para móviles
+    }
+  }
+  
+  .time-box {
+    text-align: center;
+  }
+  
+  .time-value {
+    font-size: 2rem;
+    display: block;
+  
+    @media (max-width: 768px) {
+      font-size: 1.5rem; // Reducir el tamaño del texto en tablets
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 1.2rem; // Reducir el tamaño del texto en móviles
+    }
+  }
+  
+  .time-label {
+    font-size: 1rem;
+  
+    @media (max-width: 768px) {
+      font-size: 0.9rem; // Reducir el tamaño del texto en tablets
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 0.8rem; // Reducir el tamaño del texto en móviles
+    }
+  }
+  
+  .coupon {
+    margin-top: 20px;
+  }
+  
+  .coupon-box {
+    border: 2px solid rgb(42, 42, 42);
+    padding: 15px 50px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: inline-block;
+    color: rgb(228, 228, 228);
+    background-color: rgb(18, 18, 18);
+    font-weight: bold;
+  
+    p:first-of-type {
+      font-weight: bolder;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  
+    p:nth-of-type(2) {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .validity {
+    margin-top: 20px;
+    background-color: yellow;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: black;
+    display: inline-block;
+  }
+  
+  .quedan {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  
+    @media (max-width: 480px) {
+      font-size: 1.2rem; // Reducir el tamaño del texto en móviles
+    }
+  }
+  

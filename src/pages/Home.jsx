@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
+import BlackFriday from "../components/home/blackfriday";
 import Header from "../components/home/Header";
 import IndicatorsSec from "../components/home/IndicatorsSec";
 import AdvantagerSec from "../components/home/AdvantagerSec";
@@ -67,6 +68,7 @@ export default function Home() {
           </Helmet>
 
           <div className="home__content">
+          <BlackFriday/>
             <Header />
             <IndicatorsSec />
             <AdvantagerSec />
