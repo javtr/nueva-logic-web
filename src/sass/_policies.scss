@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+.policies {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+
+  &__container {
+    max-width: $max-width;
+    width: 100%;
+    padding: 60px $margen-lat 90px $margen-lat;
+    color: white;
+
+    @include breakpoint-down(large) {
+      padding: 50px 20px 30px 20px;
+    }
+
+
+    h1 {
+      text-align: left;
+      font-size: 24px;
+      margin-bottom: 10px;
+
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 22px;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    p {
+      // margin-bottom: 50px;
+      line-height: 1.5;
+      position: relative; // Asegura que el pseudo-elemento se posicione correctamente
+      
+      &::before {
+        content: "• ";          // Agrega un punto seguido de un espacio
+        color: inherit;         // Hereda el color del texto del párrafo
+        font-size: 1.2em;       // Ajusta el tamaño del punto según sea necesario
+        margin-right: 8px;      // Espacio entre el punto y el texto
+        display: inline-block;  // Asegura que el punto y el texto estén en línea
+      }
+    }
+
+    &--tab{
+      margin-left: 30px;
+
+    }
+
+
+  }
+}

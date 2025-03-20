@@ -1,0 +1,245 @@
+
+// Suscripción y planes
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 70px;
+  color: #ffffff; // ✅ Color de texto independiente del degradado
+
+  &__switch-container {
+    display: flex;
+    align-items: center;
+    background: $background;
+    padding: 5px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+  }
+
+  &__switch-option {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $back-light;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 30px;
+
+    &--active {
+      background: white;
+      color: #333333;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // 🔥 Flexbox para alinear las tarjetas
+  &__plans {
+    display: flex;
+    gap: 2rem; // Espacio entre tarjetas
+    justify-content: center;
+    flex-wrap: wrap; // Para que las tarjetas se acomoden automáticamente
+    margin-top: 50px;
+  }
+
+  .subscription__plans-card {
+    background: $background;
+    padding: 1rem;
+    border-radius: 20px;
+    color: #ffffff; // ✅ Texto blanco independiente
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid transparent;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    // ✅ Fondo con SVG
+    .subscription__card-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      z-index: 0;
+      pointer-events: none;
+
+      .subscription__card-svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    // ✅ Todo el contenido sobre el SVG
+    * {
+      position: relative;
+      z-index: 1;
+    }
+
+    &--price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      position: relative;
+
+      &--circle {
+        width: 80px; // Ajusta el tamaño según lo necesites
+        height: 80px;
+        border-radius: 50%; // Esto crea el círculo
+        background: #ffffff; // Color de fondo para el círculo (puedes cambiarlo)
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #333333; // Color del texto dentro del círculo
+        font-size: 26px; // Tamaño de fuente
+        font-weight: bold;
+        margin-bottom: 10px; // Espacio entre el círculo y los detalles de precio
+        padding-top: 10px;
+      }
+      &--details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+
+        &--price2 {
+          font-size: 14px;
+          text-decoration: line-through;
+          color: #b8b8b8;
+        }
+      }
+    }
+
+    &--name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff; // ✅ Color independiente del SVG
+    }
+
+    &--subt {
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    // ✅ Lista de características
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      margin-bottom: 200px; //espacio  para botones
+      text-align: left;
+
+      li {
+        margin: 8px 0;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+
+        .feature-icon {
+          margin-right: 8px;
+          font-size: 16px;
+
+          &--success {
+            color: #00ff7f; // Color para el icono "✔️"
+          }
+
+          &--error {
+            color: #ff0000; // Color para el icono "X"
+          }
+        }
+      }
+    }
+    &--actions {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      // gap: 10px; // Espacio entre botones
+      // width: 90%; // Opcional, para definir el ancho del contenedor de botones
+    }
+
+    a{
+      width: 100%;
+    }
+
+    &--button {
+      background-color: #ff636300;
+      color: #ffffff;
+      padding: 12px 30px;
+      border: 2px solid #ff6363;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+      width: 50%; // Opcional: para que el botón ocupe el ancho del contenedor
+
+      &:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+      }
+
+      &::after {
+        content: "❱";
+        margin-left: 8px;
+      }
+    }
+
+    &--payments {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // gap: 10px; // Espacio entre botones
+      // margin-top: 20px;
+      width: 100%;
+      
+
+      hr {
+        border: 1px solid #bcbcbc;
+        width: 70%;
+        margin-top: 20px;
+
+      }
+
+      &-subt{
+        font-size: 14px;
+        color: hsl(0, 0%, 80%);
+        margin-top: 8px;
+
+      }
+
+
+      &-button {
+        background-color: transparent; // O el color que prefieras
+        color: #ffffff;
+        margin-top: 10px;
+        border-radius: 25px;
+        text-decoration: underline;
+        font-size: 14px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%; // Opcional: para que el botón ocupe el ancho del contenedor
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

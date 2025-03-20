@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import BuyHeader from "../components/buy/BuyHeader";
+import BuySuscripcion from "../components/buy/buySuscription";
 import BuyProductos from "../components/buy/BuyProductos";
 import { SeoDataEs, SeoDataEn } from "../assets/objects/SEO_data";
 import {
@@ -10,6 +11,8 @@ import LanguageContext from "../context/langContext";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function Buy() {
+  const [isYearly, setIsYearly] = useState(false); // Estado para cambiar entre mensual/anual
+  
   const { lang } = useContext(LanguageContext);
   const [seo, setSeo] = useState([]);
   const [isloading, setIsloading] = useState(true);
@@ -55,7 +58,8 @@ export default function Buy() {
                 href="https://www.logicindicators.com/logic.ico"
               />
             </Helmet>
-            <BuyHeader />
+            {/* <BuyHeader /> */}
+            <BuySuscripcion isYearly={isYearly} setIsYearly={setIsYearly} />
             <BuyProductos />
           </div>
         ) : (

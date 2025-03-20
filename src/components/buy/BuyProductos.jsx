@@ -64,6 +64,9 @@ export default function BuyProductos() {
                           <p>{product.advantages.adv03}</p>
                           <p>{product.advantages.adv04}</p>
 
+
+
+
                           <a
                             className="BuyProducts__container--card-content-right-button"
                             href={product.buyLink}
@@ -72,6 +75,14 @@ export default function BuyProductos() {
                           >
                             {lang === "en"? "Buy":"Comprar"}
                           </a>
+
+
+                          <div className="BuyProducts__container--card-content-right--purchase">
+                            <div className="BuyProducts__container--card-content-right--purchase-text">{lang === "en"? "By clicking 'Buy', you accept our":"Al hacer clic en 'Comprar', aceptas nuestras"}</div>
+                            <Link className="BuyProducts__container--card-content-right--purchase-footer__policies" to="/policies">{lang === "en"? "Sales and Return Policies.":"Políticas de venta y devolución."}</Link>
+                          </div>
+
+
                         </div>
                       </div>
                     </div>

@@ -65,14 +65,23 @@
         &-web{
             display: flex;
             width:  320px;
+            margin-bottom: 30px;
 
             a:nth-child(1){
                 margin-right: 30px;
             }
         }
 
+        &-policies{
+        }
+
 
       }
+
+
+
+
+
       p {
         font-size: 16px;
         font-weight: bold;
@@ -125,6 +134,11 @@
 
       }
     }
+
+
+
+
+
   }
 
   &__text {

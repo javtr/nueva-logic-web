@@ -68,7 +68,7 @@ export default function Home() {
           </Helmet>
 
           <div className="home__content">
-          <BlackFriday/>
+          {/* <BlackFriday/> */}
             <Header />
             <IndicatorsSec />
             <AdvantagerSec />

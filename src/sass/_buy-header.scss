@@ -149,7 +149,7 @@
         }
       }
 
-      a {
+      &-button {
         max-width: 650px;
         width: 100%;
         height: 60px;
@@ -163,6 +163,34 @@
         justify-content: center;
         align-items: center;
       }
+
+      &--purchase {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 30px;
+      
+        &-text {
+          display: inline; // O usa inline-block si necesitas
+          margin-right: 5px; // Espacio entre el texto y el enlace
+          font-size: 14px;
+          color: #555;
+        }
+      
+        &-footer__policies {
+          font-size: 14px;
+          color: #007bff;
+          text-decoration: none;
+      
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+  
+  
+      }
+
     }
   }
 }

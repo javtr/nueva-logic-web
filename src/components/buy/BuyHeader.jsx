@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import LanguageContext from "../../context/langContext";
 import { ProductsDataEn, ProductsDataEs } from "../../assets/objects/products";
 
@@ -70,6 +70,13 @@ export default function BuyHeader() {
                   >
                             {lang === "en"? "Buy":"Comprar"}
                   </a>
+
+                  <div className="BuyHeader__container--card--purchase">
+                    <div className="BuyHeader__container--card--purchase-text">{lang === "en"? "By clicking 'Buy', you accept our":"Al hacer clic en 'Comprar', aceptas nuestras"}</div>
+                    <Link className="BuyHeader__container--card--purchase-footer__policies" to="/policies">{lang === "en"? "Sales and Return Policies.":"Políticas de venta y devolución."}</Link>
+                  </div>
+
+
                 </div>
               </div>
             </div>

@@ -14,6 +14,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Risk from "./pages/Risk";
 import Indicators from "./pages/Indicators";
 import Install from "./pages/Install";
+import Policies from "./pages/policies";
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
             <Route path="/buy" element={<Buy />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/lic" element={<ContactLic />} />
-
+            <Route path="policies" element={<Policies ></Policies>}></Route>
 
 
             <Route path="/risk" element={<Risk />} />
