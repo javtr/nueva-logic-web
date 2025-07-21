@@ -67,6 +67,36 @@ export const ProductsDataEs = [
     indLink: "logic-analytics",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/9e3ccf11-7188-43cf-823c-4e70036b05b1",
   },
+  {
+    product: "Logic BigTrades",
+    img01: "./indicators_page/an_min.png",
+    price: 197,
+    description:
+      "Descripción genérica para Logic BigTrades. Reemplaza este texto por la descripción real del indicador.",
+    advantages: {
+      adv01: "Ventaja 1: Reemplaza con la ventaja real.",
+      adv02: "Ventaja 2: Reemplaza con la ventaja real.",
+      adv03: "Ventaja 3: Reemplaza con la ventaja real.",
+      adv04: "Adicionalmente tienes material educativo diario en Telegram",
+    },
+    indLink: "logic-bigtrades",
+    buyLink: "#",
+  },
+  {
+    product: "Logic Algorithms",
+    img01: "./indicators_page/an_min.png",
+    price: 197,
+    description:
+      "Descripción genérica para Logic Algorithms. Reemplaza este texto por la descripción real del indicador.",
+    advantages: {
+      adv01: "Ventaja 1: Reemplaza con la ventaja real.",
+      adv02: "Ventaja 2: Reemplaza con la ventaja real.",
+      adv03: "Ventaja 3: Reemplaza con la ventaja real.",
+      adv04: "Adicionalmente tienes material educativo diario en Telegram",
+    },
+    indLink: "logic-algorithms",
+    buyLink: "#",
+  },
 ];
 
 export const ProductsDataEn = [
@@ -135,6 +165,36 @@ export const ProductsDataEn = [
     },
     indLink: "logic-analytics",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/6a132704-c1e3-4f8b-a89c-47380649ffe3",
+  },
+  {
+    product: "Logic BigTrades",
+    img01: "./indicators_page/an_min.png",
+    price: 197,
+    description:
+      "Generic description for Logic BigTrades. Replace this text with the real indicator description.",
+    advantages: {
+      adv01: "Advantage 1: Replace with the real advantage.",
+      adv02: "Advantage 2: Replace with the real advantage.",
+      adv03: "Advantage 3: Replace with the real advantage.",
+      adv04: "Additionally, you have daily educational material on Telegram.",
+    },
+    indLink: "logic-bigtrades",
+    buyLink: "#",
+  },
+  {
+    product: "Logic Algorithms",
+    img01: "./indicators_page/an_min.png",
+    price: 197,
+    description:
+      "Generic description for Logic Algorithms. Replace this text with the real indicator description.",
+    advantages: {
+      adv01: "Advantage 1: Replace with the real advantage.",
+      adv02: "Advantage 2: Replace with the real advantage.",
+      adv03: "Advantage 3: Replace with the real advantage.",
+      adv04: "Additionally, you have daily educational material on Telegram.",
+    },
+    indLink: "logic-algorithms",
+    buyLink: "#",
   },
 ];
 
