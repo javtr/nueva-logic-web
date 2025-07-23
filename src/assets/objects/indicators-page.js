@@ -35,7 +35,7 @@ export const IndicatorDataEn = [
     subb_1: "Transform Your Visual Experience in OrderFlow Analysis",
 
     txtb_1:
-      "Discover a new dimension in your OrderFlow analysis with Logic OrderFlow for NinjaTrader 8. Conventional tools can be visually unpleasant, making it difficult to interpret crucial information for your market success. With Logic OrderFlow, you'll experience unprecedented visual clarity, allowing you to make more informed and profitable decisions.",
+      "Discover a new dimension in your OrderFlow analysis with Logic OrderFlow for NinjaTrader 8. Conventional tools can be visually unpleasant, making it difficult to interpret crucial information for your market success. With Logic OrderFlow, you'll experience unprecedented visual clarity, allowing you to make more informed and consistent decisions.",
 
     titk_3: ["Instant Loading: One-Click Default Templates", "templates"],
 
@@ -261,67 +261,110 @@ export const IndicatorDataEn = [
   {
     titSec: "Logic BigTrades",
     subSec:
-      "Generic description for Logic BigTrades indicator. Replace this with real content.",
-    img01Sec: "./indicators_page/an_02.jpg",
-    img02Sec: "./indicators_page/an_01.jpg",
-    url: "logic-bigtrades",
-    titb_1: "Enhance Your Data Analysis with Logic BigTrades",
-    titk_1: ["Strategic Precision for Informed Decisions", "precision"],
-    imgb_1: "./indicators_page/an_04.gif",
+      "Track institutional activity in real time with Logic BigTrades. Clear visualization, tick-by-tick tracking, and Live mode give you an edge during high-volatility sessions.",
+    img01Sec: "./indicators_page/bt_card2.png",
+    img02Sec: "./indicators_page/bt_card.png",
+    url: "logic-big-trades",
+  
+    titb: "Master Institutional Flow with Logic BigTrades",
+    imgb: "./indicators_page/bigTrades/bt_cont_04.jpg",
+  
+    subb_1: "Accurate and Real-Time Detection of Large Trades",
+  
     txtb_1:
-      "This is a placeholder text for Logic BigTrades. Replace with real description and features.",
-    titk_2: ["Essential Data for Optimal Execution", "data"],
-    txtb_2: "Quickly access crucial data to optimize your trades.",
-    dotb_21: "Feature 1: Replace with real feature.",
-    iinb_21: "./indicators_page/an_06.png",
-    dotb_22: "Feature 2: Replace with real feature.",
-    iinb_22: "./indicators_page/an_05.png",
-    dotb_23: "Feature 3: Replace with real feature.",
-    lnkb2: ["/buy", "Get Your Indicator"],
-    titk_3: ["Advanced Features for Comprehensive Analysis", "analysis"],
-    dotb_31: "Advanced feature 1: Replace with real feature.",
-    imgb_31: "./indicators_page/an_08.gif",
-    dotb_32: "Advanced feature 2: Replace with real feature.",
-    dotb_33: "Advanced feature 3: Replace with real feature.",
-    dotb_34: "Advanced feature 4: Replace with real feature.",
-    dotb_35: "Advanced feature 5: Replace with real feature.",
-    imgb_35: "./indicators_page/an_07.gif",
+      "Logic BigTrades redefines volume analysis with a unique ability to detect and display large contract volumes in real time. Its tick-by-tick tracking technology and Live mode deliver an immediate and crystal-clear view of institutional activity. Perfect for traders operating in dynamic sessions who require pinpoint flow reading.",
+  
+    titk_1: ["Live Mode with Tick-by-Tick Tracking", "modo-live"],
+    imgb_1: "./indicators_page/bigTrades/bt_cont_02.jpg",
+    txtb_2:
+      "With its exclusive Live mode, Logic BigTrades updates large trade data in real time. Each new block is generated instantly, allowing you to spot institutional action the moment it happens.",
+  
+    titk_6: ["Historical Mode (Bar): Retroactive Big Trades Analysis", "modo-bar"],
+    imgb_6: "./indicators_page/bigTrades/bt_cont_03.jpg",
+    txtb_7:
+      "In addition to the groundbreaking Live mode, Logic BigTrades includes a Historical (Bar) mode—perfect for analyzing past big trades directly on your chart. Study precisely when and how large orders appeared in previous sessions, validating key levels and market reactions. Unlike tools that only offer this mode, Logic BigTrades delivers both real-time and historical analysis for a complete market view.",
+  
+    lnkb1: ["/buy", "Get Your Indicator"],
+  
+    titk_2: ["Smart Visual Grouping", "agrupacion"],
+    imgb_2: "./indicators_page/bt_merge_01.gif",
+    txtb_3:
+      "During high volatility, data can become overwhelming. Logic BigTrades automatically groups large trades into clean, readable blocks—keeping your focus sharp and your analysis clear.",
+  
+    titk_4: [
+      "Visual Optimization, Real-Time Configuration & Tick Replay-Free Performance",
+      "optimizacion-configuracion"
+    ],
+    imgb_4: "./indicators_page/bt_visual_01.gif",
+    dotb_1:
+      "Instant configuration: adjust styles, sizes, and colors in real time without reloading the chart.",
+    dotb_2:
+      "Fast and efficient loading: does not require Tick Replay, reducing resource usage and speeding up your workflow.",
+    dotb_3:
+      "Adjustable font sizes and customizable color palettes to highlight the most relevant blocks.",
     dotb_4:
-      "These and other configurations and optimizations make Logic BigTrades an indispensable tool. Replace with real summary.",
-    lnkb3: ["/buy", "Get Your Indicator"],
+      "Group trades by type (aggressive buys or sells) with distinctive icons or color schemes.",
+    dotb_5:
+      "Group trades by volume threshold (customizable minimum to define a 'big trade').",
+    dotb_6:
+      "Clean display with filters to hide irrelevant data and highlight only what matters most.",
+  
+    txtb_6:
+      "Logic BigTrades provides an organized, detailed view of institutional behavior. Each block is an opportunity—turning volume into clear, actionable information.",
+  
+    lnkb2: ["/buy", "Get Access Now"]
   },
   {
     titSec: "Logic Algorithms",
     subSec:
-      "Generic description for Logic Algorithms indicator. Replace this with real content.",
-    img01Sec: "./indicators_page/an_02.jpg",
-    img02Sec: "./indicators_page/an_01.jpg",
+      "Combine three powerful Order Flow algorithms to anticipate key market moves. With imbalance zones, absorption detection, and intelligent clusters, Logic Algorithms delivers precise and actionable analysis.",
+  
+    img01Sec: "./indicators_page/algorithms/abs_bg_01.jpg",
+    img02Sec: "./indicators_page/algorithms/imb_bg_01.jpg",
     url: "logic-algorithms",
-    titb_1: "Enhance Your Data Analysis with Logic Algorithms",
-    titk_1: ["Strategic Precision for Informed Decisions", "precision"],
-    imgb_1: "./indicators_page/an_04.gif",
+  
+    titb: "Advanced Order Flow Analysis with Logic Algorithms",
+    imgb: "./indicators_page/algorithms/alg_all_01.jpg",
+  
+    subb_1: "Strategic Detection of Key Market Levels",
+  
     txtb_1:
-      "This is a placeholder text for Logic Algorithms. Replace with real description and features.",
-    titk_2: ["Essential Data for Optimal Execution", "data"],
-    txtb_2: "Quickly access crucial data to optimize your trades.",
-    dotb_21: "Feature 1: Replace with real feature.",
-    iinb_21: "./indicators_page/an_06.png",
-    dotb_22: "Feature 2: Replace with real feature.",
-    iinb_22: "./indicators_page/an_05.png",
-    dotb_23: "Feature 3: Replace with real feature.",
-    lnkb2: ["/buy", "Get Your Indicator"],
-    titk_3: ["Advanced Features for Comprehensive Analysis", "analysis"],
-    dotb_31: "Advanced feature 1: Replace with real feature.",
-    imgb_31: "./indicators_page/an_08.gif",
-    dotb_32: "Advanced feature 2: Replace with real feature.",
-    dotb_33: "Advanced feature 3: Replace with real feature.",
-    dotb_34: "Advanced feature 4: Replace with real feature.",
-    dotb_35: "Advanced feature 5: Replace with real feature.",
-    imgb_35: "./indicators_page/an_07.gif",
-    dotb_4:
-      "These and other configurations and optimizations make Logic Algorithms an indispensable tool. Replace with real summary.",
-    lnkb3: ["/buy", "Get Your Indicator"],
-  },
+      "Logic Algorithms is an Order Flow indicator that fuses three cutting-edge algorithmic engines to provide a comprehensive view of institutional behavior. Imbalance Zones, Absorption Finder, and Cluster Analysis work together to filter critical zones, detect liquidity absorption, and highlight high-probability movement areas. Built for traders who demand precise, real-time decision-making.",
+  
+    titk_1: ["Imbalance Zones: Detecting Pressure Imbalances", "imbalance"],
+    imgb_1: "./indicators_page/algorithms/imb_md_01.jpg",
+    txtb_2:
+      "The Imbalance Zones engine highlights areas where aggressive buying and selling are out of balance—pinpointing potential reversal or breakout zones. It uses bid x ask relationships and volume filters for maximum accuracy.",
+  
+    titk_2: ["Absorption Finder: Spot Liquidity Absorption", "absorption"],
+    imgb_2: "./indicators_page/algorithms/abs_md_01.jpg",
+    txtb_3:
+      "Absorption Finder reveals where significant institutional absorption occurred—zones where the market tried to push but was blocked by large passive orders. A key tool for spotting price traps and potential reversals.",
+  
+    titk_3: ["Smart Clusters: Filtered by Bid, Ask, Volume & Delta", "cluster"],
+    imgb_3: "./indicators_page/algorithms/clust_md_01.jpg",
+    txtb_4:
+      "The Cluster module highlights areas of interest through configurable filtering of ask, bid, volume, and delta. These zones reveal institutional defenses or attack points, raising the quality of your trade decisions.",
+  
+    lnkb1: ["/buy", "Get Your Indicator"],
+  
+    titk_4: ["Full Integration & Consolidated View", "integracion"],
+    imgb_4: "./indicators_page/algorithms/alg_all_01.gif",
+    txtb_5:
+      "By integrating all three algorithms into a single tool, Logic Algorithms provides a rich, intuitive, and unified reading of the market. Each module can be activated independently or in combination to suit your trading style—without cluttering your chart.",
+  
+    titk_5: ["Visual Optimization & Real-Time Configuration", "optimizacion"],
+    imgb_5: "./indicators_page/algorithms/alg_visualp.png",
+    dotb_1: "Independent sensitivity and display settings for each algorithm.",
+    dotb_2: "Configure visuals in real time—no chart reloads required.",
+    dotb_3: "Clear visuals with adaptive color schemes, opacity, and volume filters.",
+    dotb_4: "Modular activation: enable only the algorithms you need in each session.",
+  
+    txtb_6:
+      "Logic Algorithms is built to maximize operational efficiency—cut through the noise, highlight what matters, and adapt to your workflow. Make it your core tool to interpret institutional order flow and trade with confidence.",
+  
+    lnkb2: ["/buy", "Get Access Now"]
+  }
 ];
 
 export const IndicatorDataEs = [
@@ -578,8 +621,8 @@ export const IndicatorDataEs = [
     img02Sec: "./indicators_page/bt_card.png",
     url: "logic-big-trades",
   
-    titb: "Domina el Flujo Institucional con Logic BigTrades para NinjaTrader 8",
-    imgb: "./indicators_page/bt_cont_gen.png",
+    titb: "Domina el Flujo Institucional con Logic BigTrades",
+    imgb: "./indicators_page/bigTrades/bt_cont_04.jpg",
   
     subb_1: "Detección Precisa y en Tiempo Real de Grandes Operaciones",
   
@@ -587,15 +630,17 @@ export const IndicatorDataEs = [
       "Logic BigTrades revoluciona el análisis de volumen con una capacidad única: identificar y mostrar la entrada de grandes volúmenes de contratos en tiempo real. Su tecnología de seguimiento tick a tick y su modo Live brindan una visión clara e inmediata de la actividad institucional en los mercados. Ideal para quienes operan en sesiones dinámicas y necesitan leer el flujo con precisión milimétrica.",
   
     titk_1: ["Modo Live con Seguimiento Tick a Tick", "modo-live"],
-    imgb_1: "./indicators_page/bt_cont_live.png",
+    imgb_1: "./indicators_page/bigTrades/bt_cont_02.jpg",
     txtb_2:
       "Gracias a su exclusivo modo en vivo, Logic BigTrades actualiza la información de grandes operaciones en tiempo real. Cada nuevo bloque se genera sin retraso, permitiendo identificar la acción institucional en el preciso momento en que sucede.",
   
     titk_6: ["Modo Histórico (Bar): Análisis Retroactivo de Big Trades", "modo-bar"],
-    imgb_6: "./indicators_page/bt_cont_bars.png",
+    imgb_6: "./indicators_page/bigTrades/bt_cont_03.jpg",
     txtb_7:
       "Además del revolucionario modo en vivo, Logic BigTrades incluye un modo histórico (Bar), ideal para analizar datos pasados directamente en tu gráfico. Este modo te permite estudiar con precisión cómo y cuándo aparecieron grandes operaciones en sesiones anteriores, facilitando la validación de zonas clave, reacciones institucionales y comportamiento del mercado. A diferencia de otras herramientas que solo ofrecen este modo, Logic BigTrades combina lo mejor del análisis en tiempo real con el análisis retroactivo para una visión completa.",
   
+      lnkb1: ["/buy", "Obtén Tu Indicador"],
+
     titk_2: ["Agrupación Visual Inteligente", "agrupacion"],
     imgb_2: "./indicators_page/bt_merge_01.gif",
     txtb_3:
@@ -622,7 +667,7 @@ export const IndicatorDataEs = [
     txtb_6:
       "Logic BigTrades te ofrece una visión organizada y detallada del comportamiento institucional. Cada bloque representa una oportunidad: el volumen se vuelve información procesable, clara y útil.",
   
-    lnkb1: ["/buy", "Obtén Tu Indicador"],
+   
     lnkb2: ["/buy", "Obtén Acceso Ahora"]
   },
   {
@@ -634,7 +679,7 @@ export const IndicatorDataEs = [
     img02Sec: "./indicators_page/algorithms/imb_bg_01.jpg",
     url: "logic-algorithms",
   
-    titb: "Análisis Avanzado de Order Flow con Logic Algorithms para NinjaTrader 8",
+    titb: "Análisis Avanzado de Order Flow con Logic Algorithms",
     imgb: "./indicators_page/algorithms/alg_all_01.jpg",
   
     subb_1: "Detección Estratégica de Niveles Clave del Mercado",
@@ -657,6 +702,9 @@ export const IndicatorDataEs = [
     txtb_4:
       "El módulo Cluster permite visualizar zonas de interés mediante un filtrado conjunto de datos ask, bid, volumen y delta. Estas áreas, marcadas con criterios configurables, destacan posibles puntos de entrada o defensa institucional, elevando la calidad de tus decisiones operativas.",
   
+      lnkb1: ["/buy", "Obtén Tu Indicador"],
+
+
     titk_4: ["Integración Total y Lectura Consolidada", "integracion"],
     imgb_4: "./indicators_page/algorithms/alg_all_01.gif",
     txtb_5:
@@ -672,7 +720,6 @@ export const IndicatorDataEs = [
     txtb_6:
       "Logic Algorithms está diseñado para maximizar la eficiencia operativa: filtra el ruido, destaca lo importante y se adapta a tu estilo. Conviértelo en tu herramienta central para leer el mercado institucional y tomar decisiones con base sólida en Order Flow.",
   
-    lnkb1: ["/buy", "Obtén Tu Indicador"],
     lnkb2: ["/buy", "Obtén Acceso Ahora"]
   },
 ];

@@ -69,33 +69,33 @@ export const ProductsDataEs = [
   },
   {
     product: "Logic BigTrades",
-    img01: "./indicators_page/an_min.png",
+    img01: "./indicators_page/bt_buy_02.jpg",
     price: 197,
     description:
-      "Descripción genérica para Logic BigTrades. Reemplaza este texto por la descripción real del indicador.",
+      "Detecta grandes operaciones en tiempo real con Logic BigTrades. Visualiza bloques de volumen institucional con seguimiento tick a tick y agrupación inteligente. Incluye modo en vivo y modo histórico para un análisis completo del Order Flow.",
     advantages: {
-      adv01: "Ventaja 1: Reemplaza con la ventaja real.",
-      adv02: "Ventaja 2: Reemplaza con la ventaja real.",
-      adv03: "Ventaja 3: Reemplaza con la ventaja real.",
-      adv04: "Adicionalmente tienes material educativo diario en Telegram",
+      adv01: "Modo Live único en el mercado con actualización tick a tick en tiempo real.",
+      adv02: "Modo Histórico (Bar) para analizar zonas institucionales en sesiones anteriores.",
+      adv03: "Agrupación visual inteligente.",
+      adv04: "Configuración instantánea sin necesidad de recargar."
     },
     indLink: "logic-bigtrades",
-    buyLink: "#",
+    buyLink: "#"
   },
   {
     product: "Logic Algorithms",
-    img01: "./indicators_page/an_min.png",
+    img01: "./indicators_page/algorithms/alg_all_01.jpg",
     price: 197,
     description:
-      "Descripción genérica para Logic Algorithms. Reemplaza este texto por la descripción real del indicador.",
+      "Integra tres algoritmos avanzados de Order Flow: zonas de imbalance, detección de absorciones y clusters filtrados por volumen, bid, ask y delta. Ideal para anticipar zonas clave de reversión o continuación en el mercado.",
     advantages: {
-      adv01: "Ventaja 1: Reemplaza con la ventaja real.",
-      adv02: "Ventaja 2: Reemplaza con la ventaja real.",
-      adv03: "Ventaja 3: Reemplaza con la ventaja real.",
-      adv04: "Adicionalmente tienes material educativo diario en Telegram",
+      adv01: "Imbalance Zones: identifica zonas de desequilibrio de presión compradora y vendedora.",
+      adv02: "Absorption Finder: detecta puntos donde hubo absorción institucional significativa.",
+      adv03: "Cluster Analysis: destaca zonas relevantes con filtrado avanzado de volumen y delta.",
+      adv04: "Configuración instantánea sin necesidad de recargar."
     },
     indLink: "logic-algorithms",
-    buyLink: "#",
+    buyLink: "#"
   },
 ];
 
@@ -168,33 +168,33 @@ export const ProductsDataEn = [
   },
   {
     product: "Logic BigTrades",
-    img01: "./indicators_page/an_min.png",
+    img01: "./indicators_page/bt_buy_02.jpg",
     price: 197,
     description:
-      "Generic description for Logic BigTrades. Replace this text with the real indicator description.",
+      "Detect large trades in real time with Logic BigTrades. Visualize institutional volume blocks with tick-by-tick tracking and smart grouping. Includes Live mode and Historical mode for complete Order Flow analysis.",
     advantages: {
-      adv01: "Advantage 1: Replace with the real advantage.",
-      adv02: "Advantage 2: Replace with the real advantage.",
-      adv03: "Advantage 3: Replace with the real advantage.",
-      adv04: "Additionally, you have daily educational material on Telegram.",
+      adv01: "Exclusive Live Mode with real-time tick-by-tick updates.",
+      adv02: "Historical Mode (Bar) to analyze institutional zones in past sessions.",
+      adv03: "Smart visual grouping.",
+      adv04: "Instant configuration without the need to reload the chart."
     },
     indLink: "logic-bigtrades",
-    buyLink: "#",
+    buyLink: "#"
   },
   {
     product: "Logic Algorithms",
-    img01: "./indicators_page/an_min.png",
+    img01: "./indicators_page/algorithms/alg_all_01.jpg",
     price: 197,
     description:
-      "Generic description for Logic Algorithms. Replace this text with the real indicator description.",
+      "Integrates three advanced Order Flow algorithms: imbalance zones, absorption detection, and filtered clusters using volume, bid, ask, and delta. Ideal for anticipating key reversal or continuation areas in the market.",
     advantages: {
-      adv01: "Advantage 1: Replace with the real advantage.",
-      adv02: "Advantage 2: Replace with the real advantage.",
-      adv03: "Advantage 3: Replace with the real advantage.",
-      adv04: "Additionally, you have daily educational material on Telegram.",
+      adv01: "Imbalance Zones: detects areas of buying and selling pressure imbalance.",
+      adv02: "Absorption Finder: identifies zones where significant institutional absorption occurred.",
+      adv03: "Cluster Analysis: highlights key areas with advanced filtering of volume and delta.",
+      adv04: "Instant configuration without the need to reload the chart."
     },
     indLink: "logic-algorithms",
-    buyLink: "#",
-  },
+    buyLink: "#"
+  }
 ];
 
