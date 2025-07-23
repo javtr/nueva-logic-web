@@ -1,0 +1,17 @@
+RewriteEngine On  
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+    RewriteRule ^ - [L]
+    RewriteRule ^ /index.html [L]
+
+Redirect 301 /app/es/indicators.html https://logicindicators.com
+Redirect 301 /app/en/indicators.html https://logicindicators.com/buy
+Redirect 301 /app/en/indicators.html https://logicindicators.com
+Redirect 301 /app/es/buy.html https://logicindicators.com/buy
+Redirect 301 /app/en/index.html https://logicindicators.com
+Redirect 301 /app/es/order_pack.html https://logicindicators.com
+Redirect 301 /app/en/index.html https://logicindicators.com
+Redirect 301 /app/en/order_of.html https://logicindicators.com
+Redirect 301 /app/en/order_vp.html https://logicindicators.com
+
+
