@@ -22,7 +22,7 @@
     "sass": "^1.69.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://logicindicators.com",
+  "homepage": "https://javtr.github.io/nueva-logic-web",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -79,8 +79,8 @@ export const ProductsDataEs = [
       adv03: "Agrupación visual inteligente.",
       adv04: "Configuración instantánea sin necesidad de recargar."
     },
-    indLink: "logic-bigtrades",
-    buyLink: "#"
+    indLink: "logic-big-trades",
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/beb8d682-4fa2-44c3-8d35-4b9cdedde10e"
   },
   {
     product: "Logic Algorithms",
@@ -95,7 +95,7 @@ export const ProductsDataEs = [
       adv04: "Configuración instantánea sin necesidad de recargar."
     },
     indLink: "logic-algorithms",
-    buyLink: "#"
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/1f134ffc-f315-4659-b49a-c2aa8cced80a"
   },
 ];
 
@@ -178,8 +178,8 @@ export const ProductsDataEn = [
       adv03: "Smart visual grouping.",
       adv04: "Instant configuration without the need to reload the chart."
     },
-    indLink: "logic-bigtrades",
-    buyLink: "#"
+    indLink: "logic-big-trades",
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/beb8d682-4fa2-44c3-8d35-4b9cdedde10e"
   },
   {
     product: "Logic Algorithms",
@@ -194,7 +194,7 @@ export const ProductsDataEn = [
       adv04: "Instant configuration without the need to reload the chart."
     },
     indLink: "logic-algorithms",
-    buyLink: "#"
+    buyLink: "https://logic-indicators.lemonsqueezy.com/buy/1f134ffc-f315-4659-b49a-c2aa8cced80a"
   }
 ];
 
