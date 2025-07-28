@@ -22,7 +22,7 @@
     "sass": "^1.69.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://javtr.github.io/nueva-logic-web",
+  "homepage": "https://logicindicators.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
