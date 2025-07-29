@@ -20,7 +20,7 @@ export const textEs =
     sub: "Descubre cómo nuestros usuarios han transformado su trading con éxito gracias a nuestras herramientas avanzadas.",
     dec:"Es posible que los testimonios que aparecen en este sitio web no son representativos de otros clientes, y no es garantía alguna de futuro rendimiento o éxito",
     tit1: "Marta Melgarejo",
-    txt1: "He realizado mi retiro de Uprofit y ahora estoy recibiendo mis retiros de APEX, donde he estado siendo rentable consistentemente. Este logro lo he alcanzado gracias a la asistencia de los indicadores. Es importante destacar que he mantenido mi rentabilidad de manera consistente durante años. ¡Gracias!",
+    txt1: "He realizado mi retiro de Uprofit y ahora estoy recibiendo mis retiros de APEX, donde he estado siendo consistente. Este logro lo he alcanzado gracias a la asistencia de los indicadores. Es importante destacar que he mantenido mi rentabilidad de manera consistente durante años. ¡Gracias!",
     tit2: "David Pinzón",
     txt2: "He logrado obtener más de 10 cuentas fondeadas. Gracias a estas herramientas, he podido aumentar significativamente mi porcentaje de efectividad y mejorar mi relación riesgo-beneficio. Este cambio ha sido transformador. Para lograr resultados extraordinarios, es fundamental abandonar las prácticas convencionales y buscar constantemente conocimientos excepcionales para adaptarnos a los cambios del mercado. Esta experiencia ha transformado no solo mi enfoque operativo, sino también mi vida en general.",
     tit3: "Axel Bravo",

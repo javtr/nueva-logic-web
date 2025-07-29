@@ -19,7 +19,9 @@ export const ProductsDataEs = [
       adv04: "No usa Tick Replay lo que lo hace más rápido",
       adv05: "Opciones visuales sin recargar el gráfico",
       adv06: "Plantillas predeterminadas con un solo clic",
+
     },
+      txt01:"Leer más",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/1d66aa2f-bfba-484f-868d-bae4809a7b9f",
   },
   {
@@ -34,6 +36,7 @@ export const ProductsDataEs = [
       adv03: "Visualización de patrones de alta calidad y Plantillas predeterminadas.",
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
+      txt01:"Leer más",
     indLink: "logic-order-flow",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/5e5d5a9d-6f94-43fc-b535-47ea01a5380a",
   },
@@ -49,6 +52,7 @@ export const ProductsDataEs = [
       adv03: "Plantillas predeterminadas que se cargan con un solo clic.",
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
+      txt01:"Leer más",
     indLink: "logic-volume-profile",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/ef58c449-367a-473a-ab97-5e120db29c35",
   },
@@ -64,6 +68,7 @@ export const ProductsDataEs = [
       adv03: "Creación de múltiples instancias y análisis de datos en vivo",
       adv04: "Adicionalmente tienes material educativo diario en Telegram",
     },
+      txt01:"Leer más",
     indLink: "logic-analytics",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/9e3ccf11-7188-43cf-823c-4e70036b05b1",
   },
@@ -77,8 +82,10 @@ export const ProductsDataEs = [
       adv01: "Modo Live único en el mercado con actualización tick a tick en tiempo real.",
       adv02: "Modo Histórico (Bar) para analizar zonas institucionales en sesiones anteriores.",
       adv03: "Agrupación visual inteligente.",
-      adv04: "Configuración instantánea sin necesidad de recargar."
+      adv04: "Configuración instantánea sin necesidad de recargar.",
+
     },
+      txt01:"Leer más",
     indLink: "logic-big-trades",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/beb8d682-4fa2-44c3-8d35-4b9cdedde10e"
   },
@@ -92,8 +99,10 @@ export const ProductsDataEs = [
       adv01: "Imbalance Zones: identifica zonas de desequilibrio de presión compradora y vendedora.",
       adv02: "Absorption Finder: detecta puntos donde hubo absorción institucional significativa.",
       adv03: "Cluster Analysis: destaca zonas relevantes con filtrado avanzado de volumen y delta.",
-      adv04: "Configuración instantánea sin necesidad de recargar."
+      adv04: "Configuración instantánea sin necesidad de recargar.",
+
     },
+      txt01:"Leer más",
     indLink: "logic-algorithms",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/1f134ffc-f315-4659-b49a-c2aa8cced80a"
   },
@@ -119,6 +128,7 @@ export const ProductsDataEn = [
       adv05: "Visual options without reloading the chart.",
       adv06: "One-click default templates.",
     },
+      txt01:"Read more",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/a0c319f6-4f10-44ab-b02b-2659e3ddd1e6",
   },
   {
@@ -133,6 +143,7 @@ export const ProductsDataEn = [
       adv03: "Visualization of high-quality patterns and default templates.",
       adv04: "Additionally, you have daily educational material on Telegram.",
     },
+      txt01:"Read more",
     indLink: "logic-order-flow",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/5bc9b081-c887-415f-a283-06b64a001598",
   },
@@ -148,6 +159,7 @@ export const ProductsDataEn = [
       adv03: "Default templates that load with one click.",
       adv04: "Additionally, you have daily educational material on Telegram.",
     },
+      txt01:"Read more",
     indLink: "logic-volume-profile",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/192de401-0db2-478d-acf6-eba03d06f658",
   },
@@ -163,6 +175,7 @@ export const ProductsDataEn = [
       adv03: "Creation of multiple instances and live data analysis.",
       adv04: "Additionally, you have daily educational material on Telegram.",
     },
+      txt01:"Read more",
     indLink: "logic-analytics",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/6a132704-c1e3-4f8b-a89c-47380649ffe3",
   },
@@ -178,6 +191,7 @@ export const ProductsDataEn = [
       adv03: "Smart visual grouping.",
       adv04: "Instant configuration without the need to reload the chart."
     },
+      txt01:"Read more",
     indLink: "logic-big-trades",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/beb8d682-4fa2-44c3-8d35-4b9cdedde10e"
   },
@@ -193,6 +207,7 @@ export const ProductsDataEn = [
       adv03: "Cluster Analysis: highlights key areas with advanced filtering of volume and delta.",
       adv04: "Instant configuration without the need to reload the chart."
     },
+      txt01:"Read more",
     indLink: "logic-algorithms",
     buyLink: "https://logic-indicators.lemonsqueezy.com/buy/1f134ffc-f315-4659-b49a-c2aa8cced80a"
   }
