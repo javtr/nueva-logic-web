@@ -8,13 +8,11 @@ import { HashRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <BrowserRouter>
-  <Router>
+  <BrowserRouter>
     <React.StrictMode>
       <App />
     </React.StrictMode>
-    </Router>
-  // </BrowserRouter>
+  </BrowserRouter>
 );
 
 reportWebVitals();
