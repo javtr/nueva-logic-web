@@ -382,7 +382,7 @@ export const IndicatorDataEs = [
     subb_1: "Transforma tu Experiencia Visual en el Análisis de OrderFlow",
 
     txtb_1:
-      "Descubre una nueva dimensión en tu análisis de OrderFlow con Logic OrderFlow para NinjaTrader 8. Las herramientas convencionales pueden resultar visualmente desagradables, dificultando la interpretación de información crucial para tu éxito en el mercado. Con Logic OrderFlow, experimentarás una claridad visual sin precedentes, permitiéndote tomar decisiones más informadas y rentables.",
+      "Descubre una nueva dimensión en tu análisis de OrderFlow con Logic OrderFlow para NinjaTrader 8. Las herramientas convencionales pueden resultar visualmente desagradables, dificultando la interpretación de información crucial para tu éxito en el mercado. Con Logic OrderFlow, experimentarás una claridad visual sin precedentes, permitiéndote tomar decisiones más informadas y consistentes.",
 
     titk_3: [
       "Carga Instantánea: Plantillas Predeterminadas con un Solo Clic",

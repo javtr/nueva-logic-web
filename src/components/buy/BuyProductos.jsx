@@ -46,7 +46,7 @@ export default function BuyProductos() {
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              Leer más
+                              {product.txt01}
                             </Link>
                           </div>
 
