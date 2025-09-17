@@ -409,6 +409,97 @@ export const ArticlesDataEs = [
 ];
 export const ArticlesDataEn = [
   {
+  titSec: "Advanced Volume Profile Guide",
+  subSec:
+    "If you already know the basics of volume analysis, this guide goes deeper into how to use the Volume Profile (VP) tool to improve your trading strategy. You will learn how to configure it, identify anomalies, and mark key support and resistance zones.",
+  img01Sec: "./articles_page/blog_volume_profile/min_volume_profile.png",
+  img02Sec: "./articles_page/blog_volume_profile/min_volume_profile.png",
+  url: "volume-profile-guide",
+  titb: "Advanced Volume Profile Guide",
+  imgb: "./articles_page/blog_volume_profile/min_volume_profile.png",
+
+  subb_1:
+    "If you already know the basics of volume analysis, this guide goes deeper into how to use the Volume Profile (VP) tool to improve your trading strategy. You will learn how to configure it, identify anomalies, and mark key support and resistance zones.",
+
+  sepA_1: "",
+
+  // 1) Configurations (each bullet point now dotb_* + image)
+  titk_1: ["1. Key Volume Profile Configurations", "configurations"],
+  txtb_1:
+    "The Volume Profile is a versatile tool that adapts to different trading styles. Here are the main configurations you should master:",
+  dotb_1:
+    "Volume Profile by bars: Ideal for short-term trading, as it shows the volume profile on each individual bar.",
+  imgb_1: "./articles_page/blog_volume_profile/image2.png",
+  dotb_2:
+    "Volume Profile by selection: Allows you to analyze a specific part of the market by drawing a box.",
+  imgb_2: "./articles_page/blog_volume_profile/image3.gif",
+  dotb_3:
+    "Volume Profile by session (current): Displays the volume profile of the current trading session and is useful to see transaction accumulation in real time.",
+  imgb_3: "./articles_page/blog_volume_profile/image4.gif",
+  dotb_4:
+    "Composite Volume Profile: This function groups multiple sessions to condense information and identify macro levels and low-volume areas.",
+  imgb_4: "./articles_page/blog_volume_profile/image9.png",
+  dotb_5:
+    "Weekly and Monthly Volume Profile: Provide a broader market perspective by accumulating volume data over a full week or month.",
+  imgb_5: "./articles_page/blog_volume_profile/image6.png",
+  imgb_52: "./articles_page/blog_volume_profile/image7.png",
+  
+  sepA_2: "",
+
+  // 2) Anomalies (also separated)
+  titk_2: ["2. Identifying Volume Profile Anomalies", "anomalies"],
+  txtb_3:
+    "Although theoretically the volume profile should have a bell-shaped distribution, anomalies are common and provide trading opportunities. The most important are:",
+  imgb_61: "./articles_page/blog_volume_profile/image112.png",
+  dotb_6:
+    "Low Volume Areas (LVA): Areas with few transactions that can act as future support or resistance levels.",
+  imgb_6: "./articles_page/blog_volume_profile/image113.png",
+  dotb_7:
+    "High Volume Nodes (HVN): Points with a high number of transactions, indicating significant liquidity areas.",
+  imgb_7: "./articles_page/blog_volume_profile/image114.png",
+  dotb_8:
+    "Poor High/Low Distributions: Areas where the volume distribution is incomplete. The market often tends to “repair” these distributions, which can generate trading opportunities.",
+  imgb_8: "./articles_page/blog_volume_profile/image116.png",
+  
+
+  sepA_3: "",
+
+  // 3) S&R (separated)
+  titk_3: [
+    "3. Marking Support and Resistance Zones (S&R)",
+    "sr-zones"
+  ],
+  txtb_5:
+    "Using Volume Profile anomalies allows you to mark S&R zones objectively:",
+  dotb_9:
+    "Session S&R (Micro): You can identify S&R levels based on the value area high (VAH) and value area low (VAL) of individual sessions.",
+  imgb_9: "./articles_page/blog_volume_profile/image118.png",
+  dotb_10:
+    "Weekly S&R (Macro): More significant S&R zones can be marked by analyzing the weekly volume profile, using LVAs and weekly highs.",
+  imgb_10: "./articles_page/blog_volume_profile/image119.png",
+
+  sepB_1: "",
+
+  // 4) Day Types (separated)
+  titk_4: ["4. Volume Profile Day Types", "day-types"],
+  txtb_7:
+    "Volume profiles can form different “day types,” each with its own auction dynamic:",
+  dotb_11: "D-shaped Day: A rounded distribution with a bell shape.",
+  imgb_11: "./articles_page/blog_volume_profile/image30.png",
+  dotb_12: "Neutral Day: A narrow-range day.",
+  imgb_12: "./articles_page/blog_volume_profile/image31.png",
+  dotb_13:
+    "Bimodal/Multimodal Day: Days with two or more distinct volume distributions.",
+  imgb_13: "./articles_page/blog_volume_profile/image32.png",
+  dotb_14:
+    "P-shaped and b-shaped Day: Days where the volume concentrates at the top or bottom of the profile, respectively.",
+  imgb_14: "./articles_page/blog_volume_profile/image33.png",
+
+  txtb_101: ""
+},
+
+  
+  {
     titSec: "Basic Manual for Futures Trading #1",
     subSec: "Discovering the World of Futures Trading",
     img01Sec: "./articles_page/art1_min.png",
