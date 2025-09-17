@@ -76,7 +76,7 @@ export default function Footer() {
         <p>{text.pr3}</p>
       </div>
 
-      <p className="footer__mark">@ 2024 Logic Indicators.</p>
+      <p className="footer__mark">@ 2025 Logic Indicators.</p>
     </div>
 
     ) : (

@@ -21,225 +21,105 @@
 //sepC: espacio de 40px
 //sepD: espacio de 100px
 export const ArticlesDataEs = [
-  // {
-  //   titSec: "Configuración del Order Flow",
-  //   subSec: "Aprendiendo sobre Logic OrderFlow",
-  //   img01Sec: "./articles_page/art_06.jpg",
-  //   img02Sec: "./articles_page/art_06.jpg",
-  //   url: "config-order-flow",
-  //   titb: "Logic OrderFlow",
-  //   imgb: "./articles_page/art_06.jpg",
-  //   subb_1:
-  //     "El Order Flow, o Footprint que traduce huella, nos permite ver el registro de las transacciones realizadas en el lado BID (ventas agresivas)  y el lado ASK (compras agresivas) en el mercado, hay múltiples formas de ver el Footprint aquí te presentamos las más comunes.",
-  //   sepA_1: "",
-    
-    
-  //   sepC_13: "",
-  //   sepB_13: "",
+{
+  titSec: "Guía Avanzada del Volume Profile",
+  subSec:
+    "Si ya conoces los conceptos básicos del análisis de volumen, esta guía profundiza en cómo usar la herramienta Volume Profile (VP) para mejorar tu estrategia de trading. Aprenderás a configurarlo, a identificar anomalías y a marcar zonas clave de soporte y resistencia.",
+  img01Sec: "./articles_page/blog_volume_profile/min_volume_profile.png",
+  img02Sec: "./articles_page/blog_volume_profile/min_volume_profile.png",
+  url: "volume-profile-guide",
+  titb: "Guía Avanzada del Volume Profile",
+  imgb: "./articles_page/blog_volume_profile/min_volume_profile.png",
+
+  subb_1:
+    "Si ya conoces los conceptos básicos del análisis de volumen, esta guía profundiza en cómo usar la herramienta Volume Profile (VP) para mejorar tu estrategia de trading. Aprenderás a configurarlo, a identificar anomalías y a marcar zonas clave de soporte y resistencia.",
+
+  sepA_1: "",
+
+  // 1) Configuraciones (cada viñeta ahora es dotb_* + imagen propia)
+  titk_1: ["1. Configuraciones Clave del Volume Profile", "configuraciones"],
+  txtb_1:
+    "El Volume Profile es una herramienta versátil que se adapta a diferentes estilos de trading. Aquí están las configuraciones principales que debes dominar:",
+  dotb_1:
+    "Volume Profile por velas: Ideal para el trading a corto plazo, ya que muestra el perfil de volumen en cada vela individual.",
+  imgb_1: "./articles_page/blog_volume_profile/image2.png",
+  dotb_2:
+    "Volume Profile por selección: Permite analizar una parte específica del mercado que elijas al dibujar una caja.",
+  imgb_2: "./articles_page/blog_volume_profile/image3.gif",
+  dotb_3:
+    "Volume Profile por sesión (en curso): Muestra el perfil de volumen de la sesión de trading actual y es útil para ver la acumulación de transacciones en tiempo real.",
+  imgb_3: "./articles_page/blog_volume_profile/image4.gif",
+  dotb_4:
+    "Volume Profile compuesto: Esta función agrupa múltiples sesiones para condensar la información e identificar niveles macro y zonas de bajo volumen.",
+  imgb_4: "./articles_page/blog_volume_profile/image9.png",
+  dotb_5:
+    "Volume Profile semanal y mensual: Ofrecen una perspectiva más amplia del mercado al acumular datos de volumen durante una semana o un mes completo.",
+  imgb_5: "./articles_page/blog_volume_profile/image6.png",
+  imgb_52: "./articles_page/blog_volume_profile/image7.png",
   
-  //   titk_1: ["Footprint BIDXASK (sólo números)", "bidask"],
-  //   txtb_1:
-  //     "Esta configuración te permite observar los números del BID y el ASK de forma simple. Esta configuración está en las plantillas de Logic OrderFlow  y se llama BIDXASK imbalance. Si quieres observar únicamente los valores del BID y ASK junto con los  imbalances está opción es muy buena para ti.",
-  //   sepA_2: "",
+  sepA_2: "",
 
-  //   sepC_1:"",
-
-  //   titk_2: ["Footprint BIDXASK (con colores e histograma)", "bidask_color"],
-
-  //   txtb_21:
-  //     "Esta forma de visualización te permite ver con escalas de colores en qué nivel de precio tenemos más volumen, es como un mapa de calor, dónde los valores altos son tonos saturados y los valores bajos menos saturados. Es útil para detectar fácilmente grandes cantidades de volumen y en qué nivel lo están haciendo.",
-
-  //     txtb_22:
-  //     "Así mismo puedes ver la suma de BID+ASK en una sola columna o tener el histograma de volumen en forma de perfil de volumen en la vela.",
-
-  //     sepC_21:"",
-      
-  //   imgb_1: "./articles_page/futuros_02.jpg",
-    
-  //   titk_3: ["Footprint Delta", "delta"],
-
-
-
-  //   sepC_2:"",
-
-  //   txtb_31:
-  //   "El Delta es la resta de ASK-BID, también podemos ver ese cambio en histograma gráfico y en números. Mediante el delta podemos observar esta diferencia de Compradores agresivos y Vendedores agresivos y ver quién tiene el control en cada uno de los niveles de precio, si están teniendo un resultado o están quedando atrapados.",
+  // 2) Anomalías (también separados)
+  titk_2: ["2. Identificando las Anomalías del Volume Profile", "anomalias"],
+  txtb_3:
+    "Aunque teóricamente el perfil de volumen debería tener una forma de campana, las anomalías son comunes y ofrecen oportunidades de trading. Las más importantes son:",
+  imgb_61: "./articles_page/blog_volume_profile/image112.png",
+    dotb_6:
+    "Áreas de Bajo Volumen (LVA): Zonas con pocas transacciones que pueden actuar como futuros niveles de soporte o resistencia.",
+  imgb_6: "./articles_page/blog_volume_profile/image113.png",
+  dotb_7:
+    "Nodos de Alto Volumen (HVN): Puntos con un alto número de transacciones, indicando áreas de liquidez significativa.",
+  imgb_7: "./articles_page/blog_volume_profile/image114.png",
+  dotb_8:
+    "Distribuciones no simétricas (Poor High/Low): Zonas donde la distribución de volumen es incompleta. El mercado a menudo tiende a \"reparar\" estas distribuciones, lo que puede generar oportunidades de trading.",
+  imgb_8: "./articles_page/blog_volume_profile/image116.png",
   
 
-  //   imgb_31: "./articles_page/futuros_02.jpg",
-    
-    
-  //   dotb_3:"Los números verdes reflejan una actividad compradora mayor en tres veces respecto a las ventas agresivas.",
+  sepA_3: "",
+
+  // 3) S&R (separados)
+  titk_3: [
+    "3. Marcación de Zonas de Soporte y Resistencia (S&R)",
+    "sr-zonas"
+  ],
+  txtb_5:
+    "Usar las anomalías del Volume Profile permite marcar zonas de S&R de manera objetiva:",
+  dotb_9:
+    "S&R de sesiones (Micro): Puedes identificar los niveles de S&R basándote en el área de valor alto (VAH) y el área de valor bajo (VAL) de las sesiones individuales.",
+  imgb_9: "./articles_page/blog_volume_profile/image118.png",
+  dotb_10:
+    "S&R semanal (Macro): Se pueden marcar zonas de S&R más significativas analizando el perfil de volumen semanal, utilizando las áreas de bajo volumen (LVA) y los máximos semanales.",
+  imgb_10: "./articles_page/blog_volume_profile/image119.png",
+
+  sepB_1: "",
+
+  // 4) Tipos de día (separados)
+  titk_4: ["4. Tipos de Días del Volume Profile", "tipos-de-dia"],
+  txtb_7:
+    "Los perfiles de volumen pueden formar diferentes \"tipos de días\", cada uno con su propia dinámica de subasta:",
+  dotb_11: "Día en D: Una distribución redondeada con forma de campana.",
+  imgb_11: "./articles_page/blog_volume_profile/image30.png",
+  dotb_12: "Día Neutro: Un día de rango estrecho.",
+  imgb_12: "./articles_page/blog_volume_profile/image31.png",
+  dotb_13:
+    "Día Bimodal/Multimodal: Días con dos o más distribuciones de volumen distintas.",
+  imgb_13: "./articles_page/blog_volume_profile/image32.png",
+  dotb_14:
+    "Día en P y Día en b: Días en los que el volumen se concentra en la parte superior o inferior del perfil, respectivamente.",
+  imgb_14: "./articles_page/blog_volume_profile/image33.png",
+
+  // txtb_9:
+  //   "Para una comprensión más profunda de estos tipos de días, puedes descargar una guía gratuita en PDF y obtener una versión gratis del indicador Volume Profile de Logic Indicators.",
+
+  // lnkb3: ["/#indicators", "Descarga recursos y prueba el VP gratis"],
+
+  // txtb_100:
+  //   "Guía Avanzada del Volume Profile para Trading 📈\n1. Configuraciones Clave del Volume Profile\n2. Identificando las Anomalías del Volume Profile\n3. Marcación de Zonas de Soporte y Resistencia (S&R)\n4. Tipos de Días del Volume Profile",
+  txtb_101: ""
+}
+,
 
 
-  //   sepC_12: "",
-  //   sepB_12: "",
-
-
-
-  //   titk_4: ["Footprint de todas las formas y colores", "shapes"],
-
-  //   txtb_41:
-  //     "La forma en que configures el Footprint depende de tus necesidades y tus estrategias, si usas una estrategia de imbalances tu enfoque es encontrar esos desequilibrios, en ese caso la plantilla BIDXASK Imbalance te mostrará fácilmente esos niveles dónde hay mayor presión de un lado que del otro.",
-
-  //     sepC_4: "",
-      
-  //     txtb_42:
-  //     "Todo depende de qué tanta información quieres obtener y cuál es la más importante para ti.",
-
-
-  //     imgb_2: "./articles_page/futuros_02.jpg",
-      
-
-
-
-  // },
-
-
-  // {
-  //   titSec: "Anomalías del Order Flow",
-  //   subSec: "Cómo Identificar Señales Clave para Tomar Decisiones de Trading Más Informadas",
-  //   img01Sec: "./articles_page/art5_anom.webp",
-  //   img02Sec: "./articles_page/art5_anom.webp",
-  //   url: "order-flow-anomalies",
-  //   titb: "Identificar Señales Clave",
-  //   imgb: "./articles_page/art_05_init.jpg",
-  //   subb_1:
-  //     "Una anomalía es un dato que no se ajusta a lo esperado. Identificar anomalías en el Order Flow puede brindarnos una ventaja en el mercado. A continuación, exploraremos algunas de estas anomalías:",
-  //   sepA_1: "",
-    
-
-
-
-  //   sepC_13: "",
-  //   sepB_13: "",
-  
-  //   titk_1: ["Imbalance", "imbalance"],
-  //   txtb_1:
-  //     "Un imbalance alcista ocurre cuando se negocian más contratos de compra agresiva (lado derecho, ASK) en comparación con las ventas agresivas (lado izquierdo, BID) en una cantidad determinada, que puedes definir como 2, 3, 4 veces, etc.",
-  //   sepA_2: "",
-
-
-  //   txtb_2:
-  //     "Por otro lado, un imbalance bajista se presenta cuando en ciertos niveles de precio se negocian más contratos de venta agresiva (lado izquierdo, BID) que en el lado derecho de compras agresivas (ASK).",
-
-  //   sepC_1:"",
-
-  //   imgb_1: "./articles_page/futuros_02.jpg",
-    
-  //   sepC_2:"",
-
-  //   dotb_1:"Los números rojos reflejan que el número del lado izquierdo BID, es mayor en tres veces que su diagonal ASK, eso denota una agresividad y una mayor agresividad de venta en esos niveles de precios.",
-    
-
-    
-  //   dotb_3:"Los números verdes reflejan una actividad compradora mayor en tres veces respecto a las ventas agresivas.",
-
-
-  //   sepC_12: "",
-  //   sepB_12: "",
-
-
-
-
-  //   titk_2: ["Subasta inacabada (unfinished auction)", "unfinished"],
-
-  //   txtb_3:
-  //     "Cuando se forma correctamente un nuevo máximo, el final de la subasta alcista del mercado se caracteriza por 0 contratos negociados en la Oferta (no hay más compradores).",
-
-  //     sepC_4: "",
-      
-  //     imgb_2: "./articles_page/futuros_02.jpg",
-      
-  //     sepC_3: "",
-      
-  //     txtb_4:
-  //     "Una subasta inacabada ocurre cuando el máximo tiene volumen de compra y venta. La presencia de operaciones de oferta en el máximo de una barra podría significar que el movimiento ascendente aún no se ha agotado y existe la probabilidad de que el precio regrese a ese nivel pronto para completar el proceso.",
-
-  //     sepC_5: "",
-
-  //     imgb_3: "./articles_page/futuros_02.jpg",
-
-  //     sepC_6: "",
-
-
-  //     sepC_11: "",
-  //     sepB_11: "",
-      
-
-  //   titk_3: ["Divergencias delta", "diver"],
-
-  //   txtb_5:
-  //     "Ocurre cuando una vela alcista (vela verde) o vela bajista (vela roja) no posee un delta acorde a su color, es decir una vela verde (alcista) por definición deberá tener un delta positivo, y una vela roja (bajista) deberá tener un delta negativo. Cuando no es así, se considera una divergencia, vela roja y delta positivo, o vela verde y delta negativo. Es más común encontrarlas en temporalidades bajas.",
-
-  //     sepC_7: "",
-      
-  //     imgb_4: "./articles_page/futuros_02.jpg",
-      
-  //     sepC_8: "",
-      
-  //     txtb_6:
-  //     "Tenemos un delta de 266 y la vela es roja, y una vela positiva con delta de -8. En temporalidades bajas es más común tener estas divergencias.",
-
-
-  //     sepC_10: "",
-  //     sepB_10: "",
-
-
-  //     titk_4: ["Divergencias en COT", "cot"],
-
-  //     txtb_7:
-  //     "Hay otras métricas que ayudan a ver la presión compradora versus la vendedora, una de ellas es el COT (Commitment of Trade) que cuantifica el efecto neto de la demanda y la oferta dentro de una barra de negociación particular. Tenemos dos datos el COT High y COT Low.",
-
-  //     txtb_8:
-  //     "El COT High (COT Low) mide el Delta acumulado de oferta/demanda desde el punto en el que el precio alcanza un nuevo máximo (mínimo) o vuelve a visitar uno anterior. Es una herramienta valiosa para evaluar el equilibrio entre la actividad de compra y venta después de que se alcanza un nuevo nivel de precio.",
-
-  //     imgb_9: "./articles_page/futuros_02.jpg",
-
-  //     txtb_9:
-  //     "Calculemos el COT HIGH. En una vela alcista (fuerte).",
-
-
-  //     imgb_10: "./articles_page/futuros_02.jpg",
-
-  //     txtb_10:
-  //     "En una vela alcista (fuerte), algo “normal” para el COT High es un valor negativo “pequeño” o incluso cero, en este ejemplo -200.",
-
-  //     txtb_11:
-  //     "Ahora calculemos el COT LOW. En una vela alcista (fuerte).",
-
-  //     imgb_11: "./articles_page/futuros_02.jpg",
-
-
-  //     txtb_12:
-  //     "En una vela alcista (fuerte), algo “normal” es un valor positivo ligeramente superior al delta close. en este caso 1200.",
-
-  //     txtb_13:
-  //     "Podemos observar anomalías cuando en una vela o un conjunto de velas tenemos datos fuera de los parámetros “normales”.",
-
-
-  //     imgb_12: "./articles_page/futuros_02.jpg",
-
-  //     sepC_9: "",
-  //     sepB_9: "",
-
-
-
-  //     titk_5: ["Absorciones", "abs"],
-      
-
-  //     txtb_14:
-  //     "Ocurre cuando en algunos niveles de precio se transaccionan una gran cantidad de contratos  sin que el precio genere el movimiento esperado.",
-
-  //     txtb_15:
-  //     "También es conocido como Esfuerzo No resultado. En este ejemplo las ventas agresivas son absorbidas por compras limitadas, el precio no se desplaza ni un solo tick.",
-
-
-  //     imgb_13: "./articles_page/futuros_02.jpg",
-
-
-
-  // },
 
   {
     titSec: "Manual basico Trading de futuros #1",
