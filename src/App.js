@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Education from "./pages/Education";
@@ -20,6 +20,7 @@ function App() {
   const [lang, setLang] = useState("");
   const value = useMemo(() => ({ lang, setLang }), [lang]);
 
+  // Idioma
   useEffect(() => {
     const langStorage = localStorage.getItem("logic_lang");
     if (langStorage === "en" || langStorage === "es") {
@@ -29,6 +30,44 @@ function App() {
       setLang("en");
     }
   }, []);
+
+  // === Lemon Squeezy: persistencia de ?aff en rutas con enlaces a productos ===
+  const location = useLocation();
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const currentAff = url.searchParams.get("aff");
+
+    // Rutas donde quieres mantener visible ?aff (incluye subrutas)
+    const allowPrefixes = ["/buy", "/indicators", "/indicator", "/education", "/"]; 
+    // Si NO quieres mostrar ?aff en la home, quita "/" del array de arriba.
+
+    // Normaliza el path (quita slash final excepto si es "/")
+    let path = location.pathname;
+    if (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);
+
+    const isAllowed = allowPrefixes.some((p) => path === p || path.startsWith(p + "/"));
+
+    if (currentAff) {
+      // Si llegó un ?aff, guárdalo para mantenerlo en navegación SPA
+      sessionStorage.setItem("lsq_aff", currentAff);
+    } else {
+      // Si no hay ?aff en la URL pero tenemos uno guardado y la ruta está permitida, lo reinyectamos
+      const saved = sessionStorage.getItem("lsq_aff");
+      if (saved && isAllowed) {
+        url.searchParams.set("aff", saved);
+        window.history.replaceState({}, "", url.toString());
+        return; // ya actualizamos la URL
+      }
+    }
+
+    // (Opcional) si hay ?aff en una ruta NO permitida, limpiarlo para no contaminar SEO/analytics
+    if (currentAff && !isAllowed) {
+      url.searchParams.delete("aff");
+      window.history.replaceState({}, "", url.toString());
+    }
+  }, [location.pathname]);
+  // === Fin Lemon Squeezy ===
 
   return (
     <HelmetProvider>
