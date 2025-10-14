@@ -15,6 +15,7 @@ import Policies from "./pages/policies";
 import LanguageContext from "../src/context/langContext";
 import { HelmetProvider } from "react-helmet-async";
 import "./App.scss";
+import FreeIndicators from "./pages/FreeIndicators";
 
 function App() {
   const [lang, setLang] = useState("");
@@ -88,6 +89,7 @@ function App() {
             <Route path="policies" element={<Policies />} />
             <Route path="risk" element={<Risk />} />
             <Route path="install" element={<Install />} />
+            <Route path="free" element={<FreeIndicators />} />
 
             {/* Cualquier otra ruta vuelve al Home */}
             <Route path="*" element={<Navigate to="/" replace />} />
