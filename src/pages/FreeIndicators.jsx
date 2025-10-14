@@ -35,6 +35,9 @@ const FreeIndicators = () => {
         />
         <div className="free-indicators__indicator__details">
           <h2>{content.indicators[selectedIndicator].name}</h2>
+          {content.indicators[selectedIndicator].description && (
+            <p className="description">{content.indicators[selectedIndicator].description}</p>
+          )}
           <ul>
             {content.indicators[selectedIndicator].features.map((feature, idx) => (
               <li key={idx}>{feature}</li>
