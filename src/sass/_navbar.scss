@@ -4,14 +4,13 @@
   background-color: $background;
   display: flex;
   justify-content: center;
-  height: 175px;
+  /* altura reducida para una barra más compacta */
+  height: 110px;
   color: $white;
 
   @include breakpoint-down(medium) {
-    height: 90px;
-
+    height: 70px;
   }
-
 
   &__content {
     max-width: $max-width;
@@ -22,79 +21,118 @@
     // display: flex;
     // justify-content: space-between;
 
-
     @include breakpoint-down(medium) {
       padding: 0 $margen-lat-mobil 0 $margen-lat-mobil;
     }
 
-
-
-
+    /* Logo */
     &--logo {
       position: absolute;
-      top: 75px;
-      left: 50px;
-
+      top: 18px;
+      left: 20px;
 
       @include breakpoint-down(large) {
-        top: 75px;
+        top: 18px;
       }
 
       @include breakpoint-down(medium) {
-        top: 20px;
-        left: 25px;
-        
+        top: 10px;
+        left: 18px;
       }
 
       img {
-        width: 72px;
+        width: 64px;
 
         @include breakpoint-down(medium) {
-          width: 50px;
+          width: 44px;
         }
-
       }
-
-
-
-
     }
 
+    /* Enlaces principales */
     &--links {
       position: absolute;
-      top: 95px;
-      right:180px;
+      top: 36px;
+      right: 140px; /* acercado un poco al centro para ganar espacio */
 
+      font-size: 1rem; /* ligeramente reducido */
 
-
-      font-size: 1.3rem;
-
+      > a,
       :nth-child(n) {
-        margin: 0 12px 0 12px;
+        margin: 0 8px 0 8px; /* reducido de 12px a 8px */
+      }
 
+      /* Entre 'medium' (~768px) y 'large' (~1024px) aplicamos un estilo muy compacto
+         para que los botones no se rompan en varias líneas: menos margin, menos padding y
+         fuente un poco menor. */
+      @include breakpoint-down(large) {
+        @include breakpoint-up(medium) {
+          font-size: 0.95rem;
 
-        @include breakpoint-down(medium) {
-          display: none;
+          > a,
+          :nth-child(n) {
+            margin: 0 4px 0 4px; /* aún más compactos */
+          }
 
+          > a {
+            padding: 2px 6px; /* padding reducido para compactar */
+          }
         }
+      }
 
+      /* Ocultar enlaces solo en móviles (<= medium) */
+      @include breakpoint-down(medium) {
+        display: none;
+      }
 
+      /* Estilos aplicados a los enlaces dentro de &--links */
+      > a {
+        color: $white;
+        text-decoration: none;
+        display: inline-block;
+          padding: 4px 8px; /* padding reducido para compactar */
+        border-radius: 8px;
+        transition: background-color 0.18s ease, color 0.18s ease, transform 0.12s ease;
+
+        &:hover,
+        &:focus {
+          background-color: $back-mid; /* color tomado de variables.scss */
+          color: $white;
+          transform: translateY(-2px);
+          outline: none;
+          animation: navPulse 0.4s ease;
+        }
       }
     }
 
-    &--languaje {
+      /* Animaciones y estados para enlaces: caja redondeada con relleno */
+      > a {
+        color: $white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 8px;
+        transition: background-color 0.18s ease, color 0.18s ease, transform 0.12s ease;
 
-      position: absolute;
-      top: 97px;
-      right: 50px;
-
-
-      @include breakpoint-down(medium) {
-        top: 20px;
-        right: 105px;
-        
+        &:hover,
+        &:focus {
+          background-color: $back-mid; /* color tomado de variables.scss */
+          color: $white;
+          transform: translateY(-2px);
+          outline: none;
+        }
       }
 
+    /* Selector de idioma */
+    &--languaje {
+      position: absolute;
+      top: 38px;
+      right: 40px;
+
+      @include breakpoint-down(medium) {
+        top: 8px;
+        right: 105px;
+      }
 
       select{
         font-size: 18px;
@@ -106,19 +144,43 @@
         color: $white;
         font-weight: bold;
         padding: 0 7px;
-
-        
       }
 
       option{
         background-color: aqua;
       }
-
-
-
-      
-
     }
 
+    /* Botón burger: oculto por defecto, se muestra cuando los links desaparecen */
+    &__burger {
+      display: none;
+      position: absolute;
+      top: 32px;
+      right: 40px;
+      width: 40px;
+      height: 36px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      span {
+        display: block;
+        height: 3px;
+        background: $white;
+        margin: 6px 0;
+        border-radius: 3px;
+      }
+
+      @include breakpoint-down(medium) {
+        display: block;
+      }
+    }
   }
+}
+
+/* Animación de prueba para hover en enlaces del navbar */
+@keyframes navPulse {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2px) scale(1.03); }
+  100% { transform: translateY(-2px) scale(1); }
 }
