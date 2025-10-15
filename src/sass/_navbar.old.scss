@@ -1,0 +1,216 @@
+// Navbar principal
+.navbar {
+  background-color: $background;
+  color: $white;
+  height: map-get($spacing-scale, '9'); // 72px
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  @include box-shadow('sm');
+  
+  @include breakpoint-down(md) {
+    height: map-get($spacing-scale, '8'); // 64px
+  }
+
+  &__container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  // Logo
+  &__logo {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    
+    img {
+      height: map-get($spacing-scale, '7'); // 56px
+      width: auto;
+      transition: transform 0.3s ease;
+      
+      @include breakpoint-down(md) {
+        height: map-get($spacing-scale, '6'); // 48px
+      }
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  // Menú de navegación
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: map-get($spacing-scale, '4');
+    margin-left: auto;
+    
+    @include breakpoint-down(md) {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 400px;
+      height: 100vh;
+      background-color: $background;
+      flex-direction: column;
+      justify-content: center;
+      transition: right 0.3s ease-in-out;
+      z-index: 5;
+      padding: map-get($spacing-scale, '6');
+      
+      &--open {
+        right: 0;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  // Enlaces de navegación
+  &__link {
+    @include text-style('base', 500);
+    color: $white;
+    text-decoration: none;
+    padding: map-get($spacing-scale, '2') map-get($spacing-scale, '3');
+    border-radius: map-get($border-radius, 'md');
+    transition: all 0.2s ease;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: $secundary;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    &:hover, 
+    &--active {
+      color: $white;
+      background-color: rgba($secundary, 0.1);
+      
+      &::after {
+        width: 60%;
+      }
+    }
+    
+    @include breakpoint-down(md) {
+      font-size: map-get($font-sizes, 'lg');
+      padding: map-get($spacing-scale, '3') map-get($spacing-scale, '4');
+      width: 100%;
+      text-align: center;
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  // Selector de idioma
+  &__language {
+    margin-left: map-get($spacing-scale, '4');
+    position: relative;
+    z-index: 10;
+    
+    select {
+      @include text-style('sm', 500);
+      background-color: rgba($white, 0.1);
+      color: $white;
+      border: 1px solid rgba($white, 0.2);
+      border-radius: map-get($border-radius, 'md');
+      padding: map-get($spacing-scale, '1') map-get($spacing-scale, '3');
+      cursor: pointer;
+      transition: all 0.2s ease;
+      appearance: none;
+      padding-right: map-get($spacing-scale, '6');
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      
+      &:hover {
+        background-color: rgba($white, 0.15);
+        border-color: rgba($white, 0.3);
+      }
+      
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba($secundary, 0.5);
+      }
+      
+      option {
+        background-color: $background;
+        color: $white;
+      }
+    }
+    
+    @include breakpoint-down(md) {
+      margin: map-get($spacing-scale, '4') 0 0;
+      width: 100%;
+      text-align: center;
+      
+      select {
+        width: 100%;
+        max-width: 200px;
+        padding: map-get($spacing-scale, '2') map-get($spacing-scale, '4');
+      }
+    }
+  }
+  
+  // Botón de menú móvil
+  &__menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $white;
+    font-size: map-get($font-sizes, '3xl');
+    cursor: pointer;
+    z-index: 20;
+    padding: map-get($spacing-scale, '2');
+    margin-left: auto;
+    
+    &:focus {
+      outline: none;
+      color: $secundary;
+    }
+    
+    @include breakpoint-down(md) {
+      display: block;
+    }
+  }
+  
+  // Overlay para el menú móvil
+  &__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+    &--visible {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+// Clase para el body cuando el menú está abierto
+.body-menu-open {
+  overflow: hidden;
+  
+  @include breakpoint-up(md) {
+    overflow: visible;
+  }
+}
