@@ -89,7 +89,10 @@ function App() {
             <Route path="policies" element={<Policies />} />
             <Route path="risk" element={<Risk />} />
             <Route path="install" element={<Install />} />
-            <Route path="free" element={<FreeIndicators />} />
+            <Route path="free">
+              <Route index element={<Navigate to="/free/otm-deltabar-free" replace />} />
+              <Route path=":indicatorPath" element={<FreeIndicators />} />
+            </Route>
 
             {/* Cualquier otra ruta vuelve al Home */}
             <Route path="*" element={<Navigate to="/" replace />} />

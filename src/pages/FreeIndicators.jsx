@@ -1,13 +1,44 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
+import { useParams, Link } from "react-router-dom";
 import { freeIndicatorsContent } from "../assets/objects/freeIndicators";
 import LanguageContext from "../context/langContext";
 import "../sass/_freeIndicators.scss";
 
+const IndicatorDetails = ({ indicator }) => (
+  <div className="free-indicators__indicator">
+    <img src={indicator.image} alt={indicator.name} />
+    <div className="free-indicators__indicator__details">
+      <h2>{indicator.name}</h2>
+      {indicator.description && <p className="description">{indicator.description}</p>}
+      <ul>
+        {indicator.features.map((feature, idx) => (
+          <li key={idx}>{feature}</li>
+        ))}
+      </ul>
+      {indicator.downloadUrl ? (
+        <a
+          className="download-btn"
+          href={indicator.downloadUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {indicator.downloadText}
+        </a>
+      ) : (
+        <button>{indicator.downloadText}</button>
+      )}
+    </div>
+  </div>
+);
+
 const FreeIndicators = () => {
   const { lang } = useContext(LanguageContext);
-  const content = freeIndicatorsContent[lang] || freeIndicatorsContent['en'];
+  const content = freeIndicatorsContent[lang] || freeIndicatorsContent["en"];
+  const { indicatorPath } = useParams();
 
-  const [selectedIndicator, setSelectedIndicator] = useState(0);
+  const selectedIndicator =
+    content.indicators.find((ind) => ind.path === indicatorPath) ||
+    content.indicators[0];
 
   return (
     <div className="free-indicators">
@@ -17,35 +48,18 @@ const FreeIndicators = () => {
       </div>
 
       <div className="free-indicators__buttons">
-        {content.indicators.map((indicator, index) => (
-          <button
-            key={index}
-            className={selectedIndicator === index ? "active" : ""}
-            onClick={() => setSelectedIndicator(index)}
+        {content.indicators.map((indicator) => (
+          <Link
+            key={indicator.path}
+            to={`/free/${indicator.path}`}
+            className={selectedIndicator.path === indicator.path ? "active" : ""}
           >
             {indicator.name}
-          </button>
+          </Link>
         ))}
       </div>
 
-      <div className="free-indicators__indicator">
-        <img
-          src={content.indicators[selectedIndicator].image}
-          alt={content.indicators[selectedIndicator].name}
-        />
-        <div className="free-indicators__indicator__details">
-          <h2>{content.indicators[selectedIndicator].name}</h2>
-          {content.indicators[selectedIndicator].description && (
-            <p className="description">{content.indicators[selectedIndicator].description}</p>
-          )}
-          <ul>
-            {content.indicators[selectedIndicator].features.map((feature, idx) => (
-              <li key={idx}>{feature}</li>
-            ))}
-          </ul>
-          <button>{content.indicators[selectedIndicator].downloadText}</button>
-        </div>
-      </div>
+      <IndicatorDetails indicator={selectedIndicator} />
     </div>
   );
 };

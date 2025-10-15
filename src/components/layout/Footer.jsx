@@ -46,8 +46,8 @@ export default function Footer() {
             </div>
 
             <div className="footer__container--left-links-web">
-              <Link to="https://logicindicators.com/">Instagram</Link>
-              <Link to="https://logicindicators.com/">YouTube</Link>
+              <Link target="_blank" to="https://www.instagram.com/logic_indicators/">Instagram</Link>
+              <Link target="_blank" to="https://www.youtube.com/@LogicIndicators">YouTube</Link>
             </div>
 
             <Link className="footer__container--left-links-policies" to="/policies">{text.link4}</Link>
