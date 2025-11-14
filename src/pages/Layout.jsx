@@ -1,4 +1,4 @@
-import React, { useContext,useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { Outlet } from "react-router-dom";
@@ -8,12 +8,13 @@ import ScrollToTop from "react-scroll-to-top";
 import { IconContext } from "react-icons";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import CookieBannera from "../components/layout/CookieBanner";
+import PromoBanner from "../components/PromoBanner";
 
 import LanguageContext from "../context/langContext";
-import { textEn, textEs } from "../assets/text/form-contactLic";
+// Importación de estilos y contexto
 
 function Layout() {
-  const { lang, setLang } = useContext(LanguageContext);
+  const { lang } = useContext(LanguageContext);
   let repliTime = "";
   let message = "";
 
@@ -33,8 +34,8 @@ function Layout() {
 
   return (
     <div className="layout">
-
-      <CookieBannera></CookieBannera>    
+      <PromoBanner />
+      <CookieBannera></CookieBannera>
       <ScrollToTop
         className="gl-goTop--cont"
         smooth
