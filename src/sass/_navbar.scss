@@ -4,18 +4,17 @@
   background-color: $background;
   display: flex;
   justify-content: center;
-  /* altura reducida para una barra más compacta */
-  height: 110px;
+  height: 82px;
   color: $white;
 
   @include breakpoint-down(medium) {
-    height: 70px;
+    height: 64px;
   }
 
   &__content {
     max-width: $max-width;
     width: 100%;
-    padding: 0 $margen-lat 0 $margen-lat;
+    padding: 0 ($margen-lat - 12px);
     position: relative;
 
     // display: flex;
@@ -28,20 +27,20 @@
     /* Logo */
     &--logo {
       position: absolute;
-      top: 18px;
-      left: 20px;
+      top: 10px;
+      left: 16px;
 
       @include breakpoint-down(large) {
         top: 18px;
       }
 
       @include breakpoint-down(medium) {
-        top: 10px;
-        left: 18px;
+        top: 6px;
+        left: 14px;
       }
 
       img {
-        width: 64px;
+        width: 56px;
 
         @include breakpoint-down(medium) {
           width: 44px;
@@ -52,14 +51,14 @@
     /* Enlaces principales */
     &--links {
       position: absolute;
-      top: 36px;
-      right: 140px; /* acercado un poco al centro para ganar espacio */
+      top: 28px;
+      right: 120px;
 
-      font-size: 1rem; /* ligeramente reducido */
+      font-size: 0.95rem;
 
       > a,
       :nth-child(n) {
-        margin: 0 8px 0 8px; /* reducido de 12px a 8px */
+        margin: 0 6px;
       }
 
       /* Entre 'medium' (~768px) y 'large' (~1024px) aplicamos un estilo muy compacto
@@ -67,15 +66,15 @@
          fuente un poco menor. */
       @include breakpoint-down(large) {
         @include breakpoint-up(medium) {
-          font-size: 0.95rem;
+          font-size: 0.9rem;
 
           > a,
           :nth-child(n) {
-            margin: 0 4px 0 4px; /* aún más compactos */
+            margin: 0 3px;
           }
 
           > a {
-            padding: 2px 6px; /* padding reducido para compactar */
+            padding: 2px 5px;
           }
         }
       }
@@ -90,7 +89,7 @@
         color: $white;
         text-decoration: none;
         display: inline-block;
-          padding: 4px 8px; /* padding reducido para compactar */
+        padding: 3px 6px;
         border-radius: 8px;
         transition: background-color 0.18s ease, color 0.18s ease, transform 0.12s ease;
 
@@ -126,18 +125,18 @@
     /* Selector de idioma */
     &--languaje {
       position: absolute;
-      top: 38px;
-      right: 40px;
+      top: 26px;
+      right: 36px;
 
       @include breakpoint-down(medium) {
-        top: 8px;
-        right: 105px;
+        top: 6px;
+        right: 96px;
       }
 
       select{
-        font-size: 18px;
-        height: 36px;
-        width: 100px;
+        font-size: 16px;
+        height: 32px;
+        width: 92px;
         background-color: $back-mid;
         border: 1px solid #000;
         border-radius: 8px;
@@ -155,19 +154,19 @@
     &__burger {
       display: none;
       position: absolute;
-      top: 32px;
-      right: 40px;
-      width: 40px;
-      height: 36px;
+      top: 22px;
+      right: 28px;
+      width: 34px;
+      height: 30px;
       background: transparent;
       border: none;
       cursor: pointer;
 
       span {
         display: block;
-        height: 3px;
+        height: 2px;
         background: $white;
-        margin: 6px 0;
+        margin: 5px 0;
         border-radius: 3px;
       }
 
