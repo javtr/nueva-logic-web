@@ -1,17 +1,33 @@
-/* Reset de estilos para el banner */
+/* Contenedor principal */
+.promo-banners {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Reset de estilos para cada banner */
 .promo-banner {
   all: initial;
   font-family: Arial, sans-serif !important;
   box-sizing: border-box;
   width: 100%;
   display: block;
-  position: relative;
-  z-index: 1000;
 }
 
 .promo-banner,
 .promo-banner * {
   font-family: Arial, sans-serif !important;
+}
+
+.promo-banner--primary .promo-banner__container {
+  background: linear-gradient(90deg, #7b0000, #d10000, #7b0000);
+}
+
+.promo-banner--green .promo-banner__container {
+  background: linear-gradient(90deg, #0a4b32, #0f7a50, #0a4b32);
 }
 
 .promo-banner__container {
@@ -21,7 +37,7 @@
   display: block;
   background: linear-gradient(90deg, #8b0000, #ff0000, #8b0000);
   color: white;
-  padding: 10px 0;
+  padding: 8px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,29 +47,70 @@
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 6px 18px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
+}
+
+.promo-banner__content--single {
+  justify-content: center;
+}
+
+.promo-banner__content--primary {
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
 }
 
 .promo-banner__text {
   all: initial;
   font-family: inherit;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 5px;
   color: white;
 }
 
+.promo-banner__extra {
+  all: initial;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+}
+
 .promo-banner__icon {
   color: #FFD700 !important;
   animation: blink 1s infinite alternate;
   flex-shrink: 0;
+}
+
+.promo-banner__countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.promo-banner__countdown-intro {
+  all: initial;
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.promo-banner__dash {
+  all: initial;
+  font-family: inherit;
+  color: white;
+  font-size: 0.95rem;
 }
 
 .promo-banner__countdown {
@@ -82,7 +139,7 @@
 .countdown-number {
   all: initial;
   font-family: inherit;
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
   font-weight: 700 !important;
   line-height: 1 !important;
   display: block !important;
@@ -92,7 +149,7 @@
 .countdown-label {
   all: initial;
   font-family: inherit;
-  font-size: 0.65rem !important;
+  font-size: 0.6rem !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   opacity: 0.9;
@@ -120,35 +177,59 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .promo-banners {
+    gap: 0;
+  }
+
   .promo-banner__content {
-    justify-content: center;
-    padding: 5px 10px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+    gap: 6px;
   }
-  
+
+  .promo-banner__content--single {
+    align-items: center;
+  }
+
+  .promo-banner__content--primary {
+    align-items: center;
+  }
+
   .promo-banner__text {
-    font-size: 0.9rem;
-    white-space: nowrap;
+    font-size: 0.95rem;
+    text-align: center;
   }
-  
+
+  .promo-banner__extra {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .promo-banner__countdown-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .promo-banner__countdown-intro {
+    font-size: 0.85rem;
+  }
+
   .countdown-item {
-    min-width: 35px;
-    padding: 2px 5px;
+    min-width: 32px;
+    padding: 2px 4px;
   }
-  
+
   .countdown-number {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
   }
-  
+
   .countdown-label {
-    font-size: 0.55rem !important;
+    font-size: 0.5rem !important;
   }
-  
+
   .countdown-separator {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
 }

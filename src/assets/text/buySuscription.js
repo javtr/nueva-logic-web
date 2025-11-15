@@ -105,8 +105,8 @@ export const textEs = {
     },
     {
       name: "Plus",
-      price: 490,
-      price2: "745",
+      price: 590,
+      price2: "845",
       url:"https://logic-indicators.lemonsqueezy.com/buy/cb7ccc70-d3e9-417a-b4d5-d1cacec667a4",
       pricetext: "/por año",
       pricesub: "Por año",
@@ -117,8 +117,11 @@ export const textEs = {
         { text: "Logic Analytics", icon: "✓" },
         { text: "Logic Big Trades", icon: "✓" },
         { text: "Logic Algorithms", icon: "✓" },        
-        { text: "Order Flow y estrategias de giros: Curso.", icon: "✓" },
-        { text: "Ejemplos en vivo: Giros con Order Flow (Curso).", icon: "✓" },
+        { text: "Order Flow y estrategias de giros (Curso)", icon: "✓" },
+        { text: "Ejemplos en vivo: Giros con Order Flow (Curso)", icon: "✓" },
+        { text: "Volume profile Elite (Nuevo Curso)", icon: "✓" },
+        { text: "Estrategias de Swing trading con Volume Profile (Nuevo Curso)", icon: "✓" },
+        { text: "Estrategias de Big trades (Nuevo Curso)", icon: "✓" },
 
       ],
       color1: "#BF08E3",
@@ -151,8 +154,8 @@ export const textEs = {
     },
     {
       name: "Plus",
-      price: 790,
-      price2: "1185",
+      price: 890,
+      price2: "1285",
       url:"https://logic-indicators.lemonsqueezy.com/buy/0e69f39a-e367-4f6e-8827-47da09ff413a",
       urlpayments: "https://logic-indicators.lemonsqueezy.com/buy/c1ef87b0-edd6-4989-9348-fbdde607e4bc",
       pricesub: "Pago único",
@@ -164,13 +167,18 @@ export const textEs = {
         { text: "Logic Big Trades", icon: "✓" },
         { text: "Logic Algorithms", icon: "✓" },        
         
-        { text: "Order Flow y estrategias de giros: Curso.", icon: "✓" },
-        { text: "Ejemplos en vivo: Giros con Order Flow (Curso).", icon: "✓" },
+        { text: "Order Flow y estrategias de giros (Curso)", icon: "✓" },
+        { text: "Ejemplos en vivo: Giros con Order Flow (Curso)", icon: "✓" },
+        { text: "Volume profile Elite (Nuevo Curso)", icon: "✓" },
+        { text: "Estrategias de Swing trading con Volume Profile (Nuevo Curso)", icon: "✓" },
+        { text: "Estrategias de Big trades (Nuevo Curso)", icon: "✓" },
+      
+      
       ],
       color1: "#BF08E3",
       color2: "#FF4ED6",
       paymentstext:"Diferir cuotas",
-      payments: "5 pagos de $158",
+      payments: "5 pagos de $178",
     },
   ],
 };
