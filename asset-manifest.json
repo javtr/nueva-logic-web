@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a179141.css",
-    "main.js": "/static/js/main.8bfd1b2a.js",
+    "main.css": "/static/css/main.79814ae1.css",
+    "main.js": "/static/js/main.9c50e467.js",
     "static/js/787.0c6b9861.chunk.js": "/static/js/787.0c6b9861.chunk.js",
     "static/media/Installation.mp4": "/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/image4.gif": "/static/media/image4.1b527553fd533d7bd597.gif",
@@ -47,12 +47,16 @@
     "static/media/wyckoff_02_en.jpg": "/static/media/wyckoff_02_en.0620d846f63a532ce767.jpg",
     "static/media/an_04.gif": "/static/media/an_04.4c7e5f4708a6a87ac61d.gif",
     "static/media/test_01.png": "/static/media/test_01.4f14337780a3ee052b1b.png",
+    "static/media/profile-image.jpg": "/static/media/profile-image.d5cf92923f6e46d8422d.jpg",
     "static/media/adv03.png": "/static/media/adv03.2f9cd7ee7aa09bb89787.png",
     "static/media/wyckoff_02_es.jpg": "/static/media/wyckoff_02_es.7514fca18f7d275d5c13.jpg",
     "static/media/imb_bg_01.jpg": "/static/media/imb_bg_01.117f23452c0e93f15caa.jpg",
     "static/media/futuros_02.jpg": "/static/media/futuros_02.70c3f6edf5c5c4dbcc1a.jpg",
     "static/media/an_01.jpg": "/static/media/an_01.f37dcd096e24dff24e75.jpg",
+    "static/media/deltabar-image.jpg": "/static/media/deltabar-image.14fea626e155575bad35.jpg",
     "static/media/adv01.png": "/static/media/adv01.35730dbdf7d5fd8cbd4c.png",
+    "static/media/vwap-image.jpg": "/static/media/vwap-image.72be3f2d64f3eb65e9d3.jpg",
+    "static/media/poc-image.jpg": "/static/media/poc-image.35bb369ed07247b65e73.jpg",
     "static/media/an_02.jpg": "/static/media/an_02.1562986eb370f6bc66c3.jpg",
     "static/media/clust_bg_01.jpg": "/static/media/clust_bg_01.2a378989bd227b7f5cdf.jpg",
     "static/media/pr_home.jpg": "/static/media/pr_home.374de39b211c03c8f67c.jpg",
@@ -118,12 +122,12 @@
     "static/media/NinjaTrader_Wordmark_color_RGB.png": "/static/media/NinjaTrader_Wordmark_color_RGB.4631492dc55b4b48f19a.png",
     "static/media/image7.png": "/static/media/image7.3babd70fbf219aee2fca.png",
     "index.html": "/index.html",
-    "main.5a179141.css.map": "/static/css/main.5a179141.css.map",
-    "main.8bfd1b2a.js.map": "/static/js/main.8bfd1b2a.js.map",
+    "main.79814ae1.css.map": "/static/css/main.79814ae1.css.map",
+    "main.9c50e467.js.map": "/static/js/main.9c50e467.js.map",
     "787.0c6b9861.chunk.js.map": "/static/js/787.0c6b9861.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a179141.css",
-    "static/js/main.8bfd1b2a.js"
+    "static/css/main.79814ae1.css",
+    "static/js/main.9c50e467.js"
   ]
 }
