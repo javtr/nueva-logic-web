@@ -22,6 +22,13 @@ const BuySuscripcion = ({ isYearly, setIsYearly }) => {
       : text.yearly
     : [];
 
+  const handleScrollToIndividual = () => {
+    const section = document.getElementById("individual-products");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="subscription">
       {/* Switch para cambiar entre mensual y anual */}
@@ -143,6 +150,16 @@ const BuySuscripcion = ({ isYearly, setIsYearly }) => {
           </div>
         ))}
       </div>
+
+      <button
+        type="button"
+        className="subscription__cta-button"
+        onClick={handleScrollToIndividual}
+      >
+        {lang === "en"
+          ? "Shop individual tools"
+          : "Comprar herramientas individuales"}
+      </button>
     </div>
   );
 };

@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   color: #ffffff; // ✅ Color de texto independiente del degradado
 
   &__switch-container {
@@ -37,20 +37,20 @@
   // 🔥 Flexbox para alinear las tarjetas
   &__plans {
     display: flex;
-    gap: 2rem; // Espacio entre tarjetas
+    gap: 1.5rem; // Espacio entre tarjetas
     justify-content: center;
     flex-wrap: wrap; // Para que las tarjetas se acomoden automáticamente
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .subscription__plans-card {
     background: $background;
-    padding: 1rem;
-    border-radius: 20px;
+    padding: 0.75rem;
+    border-radius: 14px;
     color: #ffffff; // ✅ Texto blanco independiente
     position: relative;
     overflow: hidden;
-    width: 300px;
+    width: 260px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     border: 2px solid transparent;
@@ -66,7 +66,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 120px;
+      height: 100px;
       z-index: 0;
       pointer-events: none;
 
@@ -87,12 +87,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 10px;
+      margin-top: 0;
       position: relative;
 
       &--circle {
-        width: 80px; // Ajusta el tamaño según lo necesites
-        height: 80px;
+        width: 64px; // Ajusta el tamaño según lo necesites
+        height: 64px;
         border-radius: 50%; // Esto crea el círculo
         background: #ffffff; // Color de fondo para el círculo (puedes cambiarlo)
         display: flex;
@@ -100,9 +100,10 @@
         align-items: center;
         justify-content: center;
         color: #333333; // Color del texto dentro del círculo
-        font-size: 26px; // Tamaño de fuente
+        font-size: 20px; // Tamaño de fuente
         font-weight: bold;
-        margin-bottom: 10px; // Espacio entre el círculo y los detalles de precio
+        padding-top: 6px;
+        margin-bottom: 6px; // Espacio entre el círculo y los detalles de precio
         padding-top: 10px;
       }
       &--details {
@@ -112,7 +113,7 @@
         margin-left: 10px;
 
         &--price2 {
-          font-size: 14px;
+          font-size: 13px;
           text-decoration: line-through;
           color: #b8b8b8;
         }
@@ -120,7 +121,7 @@
     }
 
     &--name {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       color: #ffffff; // ✅ Color independiente del SVG
     }
@@ -134,8 +135,8 @@
     ul {
       list-style: none;
       padding: 0;
-      margin-top: 20px;
-      margin-bottom: 200px; //espacio  para botones
+      margin-top: 16px;
+      margin-bottom: 130px; //espacio  para botones
       text-align: left;
 
       li {
@@ -161,7 +162,7 @@
     }
     &--actions {
       position: absolute;
-      bottom: 20px;
+      bottom: 14px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -179,10 +180,10 @@
     &--button {
       background-color: #ff636300;
       color: #ffffff;
-      padding: 12px 30px;
-      border: 2px solid #ff6363;
+      padding: 9px 22px;
+      border: 1.5px solid #ff6363;
       border-radius: 25px;
-      font-size: 16px;
+      font-size: 14px;
       cursor: pointer;
       font-weight: bold;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -212,7 +213,7 @@
 
       hr {
         border: 1px solid #bcbcbc;
-        width: 70%;
+        width: 65%;
         margin-top: 20px;
 
       }
@@ -231,7 +232,7 @@
         margin-top: 10px;
         border-radius: 25px;
         text-decoration: underline;
-        font-size: 14px;
+        font-size: 13px;
         cursor: pointer;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         width: 100%; // Opcional: para que el botón ocupe el ancho del contenedor
@@ -240,6 +241,33 @@
           transform: scale(1.05);
         }
       }
+    }
+  }
+
+  .subscription__cta-button {
+    margin-top: 28px;
+    background: linear-gradient(90deg, #ff4d67, #ff8a5c);
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    padding: 12px 34px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    &::after {
+      content: "↓";
+      font-size: 1rem;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
     }
   }
 }

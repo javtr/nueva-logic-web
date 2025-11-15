@@ -29,7 +29,7 @@ export default function BuyProductos() {
       {!isloading ? (
         <>
           {text !== undefined ? (
-            <div className="BuyProducts">
+            <div className="BuyProducts" id="individual-products">
               <div className="BuyProducts__container">
                 {text.map((product, index) =>
                   index > 0 ? (
