@@ -50,7 +50,7 @@
     color: #ffffff; // ✅ Texto blanco independiente
     position: relative;
     overflow: hidden;
-    width: 260px;
+    width: 315px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     border: 2px solid transparent;
@@ -240,6 +240,13 @@
         &:hover {
           transform: scale(1.05);
         }
+      }
+
+      &-note {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.65);
+        margin-top: 6px;
+        text-align: center;
       }
     }
   }

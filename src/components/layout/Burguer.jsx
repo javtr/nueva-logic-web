@@ -39,9 +39,9 @@ export default function Burguer() {
           <Link className="link-before" onClick={turnOffSideBar} to="/indicators">
             Indicators
           </Link>
-          <Link className="link-before" onClick={turnOffSideBar} to="/free">
+          {/* <Link className="link-before" onClick={turnOffSideBar} to="/free">
             Free
-          </Link>
+          </Link> */}
           <Link className="link-before" onClick={turnOffSideBar} to="/education">
             Education
           </Link>

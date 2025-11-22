@@ -30,9 +30,9 @@
       top: 10px;
       left: 16px;
 
-      @include breakpoint-down(large) {
-        top: 18px;
-      }
+      // @include breakpoint-down(large) {
+      //   top: 18px;
+      // }
 
       @include breakpoint-down(medium) {
         top: 6px;
@@ -141,13 +141,13 @@
         border: 1px solid #000;
         border-radius: 8px;
         color: $white;
-        font-weight: bold;
+        // font-weight: bold;
         padding: 0 7px;
       }
 
-      option{
-        background-color: aqua;
-      }
+      // option{
+      //   background-color: aqua;
+      // }
     }
 
     /* Botón burger: oculto por defecto, se muestra cuando los links desaparecen */

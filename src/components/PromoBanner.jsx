@@ -50,24 +50,24 @@ const PromoBanner = () => {
 
   const translations = {
     en: {
-      preTitle: 'Pre-Black Friday',
-      preSubtitle: '20% OFF on individual tools',
-      preSuffix: 'until Nov 22',
-      mainTitle: 'Black Friday',
-      mainSubtitle: '30% OFF on annual & lifetime packs',
-      countdownIntro: 'Starts in',
-      days: 'Days',
-      hours: 'Hours',
-      minutes: 'Minutes',
-      seconds: 'Seconds'
-    },
+  preTitle: 'Pre-Black Friday',
+  preSubtitle: '20% DISCOUNT on individual tools',
+  preSuffix: 'use the code: "PREBLACK20" - Valid until Nov 22',
+  mainTitle: 'Black Friday',
+  mainSubtitle: '30% DISCOUNT on annual and lifetime packs',
+  countdownIntro: 'Starts in:',
+  days: 'Days',
+  hours: 'Hours',
+  minutes: 'Minutes',
+  seconds: 'Seconds'
+},
     es: {
       preTitle: 'Pre-Black Friday',
-      preSubtitle: "20% DE DESCUENTO en herramientas individuales -",
-      preSuffix: 'Hasta Nov 22',
+      preSubtitle: "20% DE DESCUENTO en herramientas individuales",
+      preSuffix: 'usa el codigo: "PREBLACK20" - Valido hasta Nov 22',
       mainTitle: 'Black Friday',
       mainSubtitle: '30% DE DESCUENTO en packs anuales y lifetime',
-      countdownIntro: 'Inicia en',
+      countdownIntro: 'Inicia en:',
       days: 'Días',
       hours: 'Horas',
       minutes: 'Minutos',

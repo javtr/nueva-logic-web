@@ -144,6 +144,9 @@ const BuySuscripcion = ({ isYearly, setIsYearly }) => {
                       {plan.payments}
                     </button>
                   </a>
+                  <p className="subscription__plans-card--payments-note">
+                    Códigos de descuento aplican únicamente a la primera cuota
+                  </p>
                 </div>
               )}
             </div>
