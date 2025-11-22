@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.79814ae1.css",
-    "main.js": "/static/js/main.9c50e467.js",
+    "main.css": "/static/css/main.1b51d1ca.css",
+    "main.js": "/static/js/main.1abc23a2.js",
     "static/js/787.0c6b9861.chunk.js": "/static/js/787.0c6b9861.chunk.js",
     "static/media/Installation.mp4": "/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/image4.gif": "/static/media/image4.1b527553fd533d7bd597.gif",
@@ -122,12 +122,12 @@
     "static/media/NinjaTrader_Wordmark_color_RGB.png": "/static/media/NinjaTrader_Wordmark_color_RGB.4631492dc55b4b48f19a.png",
     "static/media/image7.png": "/static/media/image7.3babd70fbf219aee2fca.png",
     "index.html": "/index.html",
-    "main.79814ae1.css.map": "/static/css/main.79814ae1.css.map",
-    "main.9c50e467.js.map": "/static/js/main.9c50e467.js.map",
+    "main.1b51d1ca.css.map": "/static/css/main.1b51d1ca.css.map",
+    "main.1abc23a2.js.map": "/static/js/main.1abc23a2.js.map",
     "787.0c6b9861.chunk.js.map": "/static/js/787.0c6b9861.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79814ae1.css",
-    "static/js/main.9c50e467.js"
+    "static/css/main.1b51d1ca.css",
+    "static/js/main.1abc23a2.js"
   ]
 }
