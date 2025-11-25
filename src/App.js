@@ -27,8 +27,8 @@ function App() {
     if (langStorage === "en" || langStorage === "es") {
       setLang(langStorage);
     } else {
-      localStorage.setItem("logic_lang", "en");
-      setLang("en");
+      localStorage.setItem("logic_lang", "es");
+      setLang("es");
     }
   }, []);
 
