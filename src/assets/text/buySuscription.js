@@ -38,7 +38,7 @@ export const textEn = {
       color2: "#FF4ED6",
       paymentstext:"Defer payments",
       payments: "5 payments of $125",
-      paymentsnote: "Discount codes apply only to the first installment",
+      paymentsnote: "Discount codes apply to all installments",
       
     },
   ],
@@ -151,7 +151,7 @@ export const textEs = {
       color2: "#3ED7FF",
       paymentstext:"Diferir cuotas",
       payments: "5 pagos de $125",
-      paymentsnote: "Códigos de descuento aplican únicamente a la primera cuota",
+      paymentsnote: "Códigos de descuento aplican a todas las cuotas",
 
     },
     {
@@ -181,7 +181,7 @@ export const textEs = {
       color2: "#FF4ED6",
       paymentstext:"Diferir cuotas",
       payments: "5 pagos de $178",
-      paymentsnote: "Códigos de descuento aplican únicamente a la primera cuota",
+      paymentsnote: "Códigos de descuento aplican a todas las cuotas",
     },
   ],
 };

@@ -34,7 +34,7 @@ function Layout() {
 
   return (
     <div className="layout">
-      <PromoBanner />
+      {/* <PromoBanner /> */}
       <CookieBannera></CookieBannera>
       <ScrollToTop
         className="gl-goTop--cont"
