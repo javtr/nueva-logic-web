@@ -23,12 +23,15 @@ function App() {
 
   // Idioma
   useEffect(() => {
-    const langStorage = localStorage.getItem("logic_lang");
-    if (langStorage === "en" || langStorage === "es") {
-      setLang(langStorage);
+    // 1. PRIORIDAD: ¿El usuario cambió idioma manualmente?
+    const preferenciaManual = localStorage.getItem("logic_lang_manual");
+    if (preferenciaManual === "en" || preferenciaManual === "es") {
+      setLang(preferenciaManual);
     } else {
-      localStorage.setItem("logic_lang", "es");
-      setLang("es");
+      // 2. DETECCIÓN AUTOMÁTICA: Si no hay preferencia manual
+      const idiomaNavegador = navigator.language || navigator.userLanguage || 'en';
+      const idiomaDetectado = idiomaNavegador.toLowerCase().startsWith('es') ? 'es' : 'en';
+      setLang(idiomaDetectado);
     }
   }, []);
 

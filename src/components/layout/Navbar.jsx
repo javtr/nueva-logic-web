@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const changeLanguage = (selectedLanguage) => {
     setLang(selectedLanguage);
-    localStorage.setItem("logic_lang", selectedLanguage);
+    localStorage.setItem("logic_lang_manual", selectedLanguage);
   };
 
   useEffect(() => {
