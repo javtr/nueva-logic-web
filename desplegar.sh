@@ -1,7 +1,5 @@
 #!/bin/bash
-
-# 1. DETENER EL SCRIPT SI HAY ERRORES
-set -e
+set -e # ¡ESTO ES LO QUE LO HACE SEGURO!
 
 # ejecutar run build
 cd /home/javier/Desarrollo/nueva-logic-web
@@ -10,18 +8,15 @@ echo "========== Build Terminado ==========="
 
 # limpiar la carpeta de produccion
 cd /home/javier/Desarrollo/logic_web_production
-# 2. LIMPIEZA MÁS SEGURA
 rm -rf *
 echo "========== Clean Terminado ==========="
 
 # copiar archivos
-# 3. USO DE PUNTO (.) EN LUGAR DE ASTERISCO (*)
 cp -r /home/javier/Desarrollo/nueva-logic-web/build/. /home/javier/Desarrollo/logic_web_production/
 cp -r /home/javier/Desarrollo/nueva-logic-web/SEO/. /home/javier/Desarrollo/logic_web_production/
 echo "========== Copy Terminado ==========="
 
 HTACCESS_PATH="/home/javier/Desarrollo/logic_web_production/.htaccess"
-
 HTACCESS_CONTENT='RewriteEngine On
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
@@ -45,10 +40,9 @@ Redirect 301 /app/en/order_vp.html https://logicindicators.com'
 echo "$HTACCESS_CONTENT" > "$HTACCESS_PATH"
 echo "Archivo .htaccess creado en $HTACCESS_PATH"
 
-# pushear archivos
-# 4. CORRECCIÓN DE LA RUTA CD
+# pushear archivos a producción
 cd /home/javier/Desarrollo/logic_web_production
 git add .
-git commit -m "Build"
+git commit -m "Build y despliegue seguro"
 git push origin main
 echo "========== Push Terminado ==========="
