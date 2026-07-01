@@ -12,6 +12,7 @@ import Risk from "./pages/Risk";
 import Indicators from "./pages/Indicators";
 import Install from "./pages/Install";
 import Policies from "./pages/policies";
+import EdgeAnalyzer from "./pages/EdgeAnalyzer";
 import LanguageContext from "../src/context/langContext";
 import { HelmetProvider } from "react-helmet-async";
 import "./App.scss";
@@ -49,6 +50,7 @@ function App() {
             <Route path="policies" element={<Policies />} />
             <Route path="risk" element={<Risk />} />
             <Route path="install" element={<Install />} />
+            <Route path="edge-analyzer" element={<EdgeAnalyzer />} />
 
             {/* Cualquier otra ruta vuelve al Home */}
             <Route path="*" element={<Navigate to="/" replace />} />
