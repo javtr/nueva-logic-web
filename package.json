@@ -23,7 +23,6 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://logicindicators.com",
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

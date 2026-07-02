@@ -1,22 +1,22 @@
 #!/bin/bash
-set -e # ¡ESTO ES LO QUE LO HACE SEGURO!
+set -e
 
 # ejecutar run build
-cd /home/javier/Desarrollo/nueva-logic-web
+cd /f/Desarrollo/nueva-logic-web
 npm run build
 echo "========== Build Terminado ==========="
 
 # limpiar la carpeta de produccion
-cd /home/javier/Desarrollo/logic_web_production
+cd /f/Desarrollo/logic_web_production
 rm -rf *
 echo "========== Clean Terminado ==========="
 
 # copiar archivos
-cp -r /home/javier/Desarrollo/nueva-logic-web/build/. /home/javier/Desarrollo/logic_web_production/
-cp -r /home/javier/Desarrollo/nueva-logic-web/SEO/. /home/javier/Desarrollo/logic_web_production/
+cp -r /f/Desarrollo/nueva-logic-web/build/. /f/Desarrollo/logic_web_production/
+cp -r /f/Desarrollo/nueva-logic-web/SEO/. /f/Desarrollo/logic_web_production/
 echo "========== Copy Terminado ==========="
 
-HTACCESS_PATH="/home/javier/Desarrollo/logic_web_production/.htaccess"
+HTACCESS_PATH="/f/Desarrollo/logic_web_production/.htaccess"
 HTACCESS_CONTENT='RewriteEngine On
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
@@ -41,7 +41,7 @@ echo "$HTACCESS_CONTENT" > "$HTACCESS_PATH"
 echo "Archivo .htaccess creado en $HTACCESS_PATH"
 
 # pushear archivos a producción
-cd /home/javier/Desarrollo/logic_web_production
+cd /f/Desarrollo/logic_web_production
 git add .
 git commit -m "Build y despliegue seguro"
 git push origin main
